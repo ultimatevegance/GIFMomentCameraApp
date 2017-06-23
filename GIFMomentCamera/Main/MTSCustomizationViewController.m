@@ -20,6 +20,7 @@ static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
 @property (weak, nonatomic) IBOutlet UIButton *customizationOptions;
 @property (weak, nonatomic) IBOutlet UICollectionView *FiltersCollectionView;
 @property (strong, nonatomic) NSArray *filtersData;
+@property (strong, nonatomic) NSMutableArray *filters;
 @end
 
 @implementation MTSCustomizationViewController
@@ -86,6 +87,7 @@ static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
 }
 #pragma mark - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
 }
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
 }
@@ -109,6 +111,16 @@ static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
     if (filterJSONString) {
         NSDictionary *filterJSONDic = [self dictionaryWithJsonString:filterJSONString];
         _filtersData = [MTLJSONAdapter modelsOfClass:[MTSFilterDataModel class] fromJSONArray:filterJSONDic[@"Filters"] error:nil];
+        NSMutableArray *temp = [NSMutableArray array];
+        if ([_filtersData count]) {
+            for (int i = 0; i < _filtersData.count; i ++) {
+                MTSFilterDataModel *filterData = _filtersData[i];
+              SCFilter *filter = [SCFilter filterWithContentsOfURL:[[NSBundle mainBundle] URLForResource:filterData.FilterPath withExtension:@"cisf"]];
+                [temp addObject:filter];
+
+            }
+            _filters = [NSMutableArray arrayWithArray:temp];
+        }
     }
 }
 
