@@ -1,0 +1,20 @@
+PODS:
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
+  - JVTransitionAnimator (0.3)
+  - SCRecorder (2.7.0)
+
+DEPENDENCIES:
+  - ChameleonFramework
+  - JVTransitionAnimator
+  - SCRecorder
+
+SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  JVTransitionAnimator: c6c36c53620bf46c8beaa6761bbfa978d5d878f0
+  SCRecorder: bbb521dbc222908876ec9cd9156bbc8a893bed44
+
+PODFILE CHECKSUM: 1c12deb1ef246960ed41cebf9898c5715c99d965
+
+COCOAPODS: 1.2.0

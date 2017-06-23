@@ -1,0 +1,1 @@
+../../../JVTransitionAnimator/Pod/Classes/JVTransitionAnimator.h
