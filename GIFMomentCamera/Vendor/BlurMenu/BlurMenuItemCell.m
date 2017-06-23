@@ -18,7 +18,7 @@
     if (self) {
         title = [[UILabel alloc] initWithFrame:self.contentView.frame];
         title.backgroundColor = [UIColor clearColor];
-        title.font = [UIFont fontWithName:@"GillSans-Light" size:25.0f];
+        title.font = [UIFont fontWithName:@"Phosphate-Inline" size:25.0f];
         title.textAlignment = NSTextAlignmentCenter;
         title.textColor = ShotButtonColor;
         title.adjustsFontSizeToFitWidth = YES;

@@ -15,15 +15,13 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
     self.window.rootViewController = [[MTSMainViewController alloc] init];
-    [NSThread sleepForTimeInterval:3];//延长3秒}
-    //appearance
-    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSFontAttributeName :[UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:20]} forState:UIControlStateNormal];
+   // appearance
+    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSFontAttributeName :[UIFont fontWithName:@"Phosphate-Solid" size:20]} forState:UIControlStateNormal];
     return YES;
 }
 

@@ -2,7 +2,7 @@ GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ChameleonFramework" "${PODS_ROOT}/Headers/Public/JVTransitionAnimator" "${PODS_ROOT}/Headers/Public/Mantle" "${PODS_ROOT}/Headers/Public/SCRecorder"
 LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/ChameleonFramework" "$PODS_CONFIGURATION_BUILD_DIR/JVTransitionAnimator" "$PODS_CONFIGURATION_BUILD_DIR/Mantle" "$PODS_CONFIGURATION_BUILD_DIR/SCRecorder"
 OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/ChameleonFramework" -isystem "${PODS_ROOT}/Headers/Public/JVTransitionAnimator" -isystem "${PODS_ROOT}/Headers/Public/Mantle" -isystem "${PODS_ROOT}/Headers/Public/SCRecorder"
-OTHER_LDFLAGS = $(inherited) -ObjC -framework "AVFoundation" -framework "CoreGraphics" -framework "Foundation" -framework "QuartzCore" -framework "UIKit" -weak_framework "GLKit" -weak_framework "Metal"
+OTHER_LDFLAGS = $(inherited) -ObjC
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}/Pods

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		425129A1FA35F8A1BFD9490D /* libPods-GIFMomentCameraUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0BD390F33AACEF6A1AB9A9 /* libPods-GIFMomentCameraUITests.a */; };
+		728226381EFD76CA0014DCAC /* Phosphate.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 72DAEA921EFD71D700D17F34 /* Phosphate.ttc */; };
 		8D0FC0BD1EFBC136004B634E /* BlurMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0FC0BA1EFBC136004B634E /* BlurMenu.m */; };
 		8D0FC0BE1EFBC136004B634E /* BlurMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0FC0BC1EFBC136004B634E /* BlurMenuItemCell.m */; };
 		8D0FC0C11EFBC1FD004B634E /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0FC0C01EFBC1FD004B634E /* UIImage+ImageEffects.m */; };
@@ -125,6 +126,7 @@
 		4F4FD8A7DBECECDAA346E8B4 /* libPods-GIFMomentCameraTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GIFMomentCameraTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDDCBA160E1D8E82FF75B55 /* Pods-GIFMomentCameraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFMomentCameraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GIFMomentCameraUITests/Pods-GIFMomentCameraUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D0830479FE1A317D0126F0F /* Pods-GIFMomentCameraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFMomentCameraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GIFMomentCameraTests/Pods-GIFMomentCameraTests.release.xcconfig"; sourceTree = "<group>"; };
+		72DAEA921EFD71D700D17F34 /* Phosphate.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Phosphate.ttc; sourceTree = "<group>"; };
 		82606728FD787B359AC59042 /* libPods-GIFMomentCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GIFMomentCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D0FC0AF1EFB9F18004B634E /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		8D0FC0B91EFBC136004B634E /* BlurMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurMenu.h; sourceTree = "<group>"; };
@@ -378,6 +380,7 @@
 		8D8744881EFB89A800025AE4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				72DAEA921EFD71D700D17F34 /* Phosphate.ttc */,
 				8D9E4F061EFD0B7A006D9541 /* filtersData.json */,
 				8D9E4EC01EFCDD94006D9541 /* Filters */,
 				8D8744891EFB89A800025AE4 /* main.m */,
@@ -746,6 +749,7 @@
 				8D9E4EEC1EFCDD94006D9541 /* Filter_Gloom.cisf in Resources */,
 				8D9E4EE31EFCDD94006D9541 /* Filter_Colorful.cisf in Resources */,
 				8D9E4EF71EFCDD94006D9541 /* Filter_Poster.cisf in Resources */,
+				728226381EFD76CA0014DCAC /* Phosphate.ttc in Resources */,
 				8D9E4EF91EFCDD94006D9541 /* Filter_SepiaTone.cisf in Resources */,
 				8D9E4F091EFD0CC6006D9541 /* Filter_Noir.cisf in Resources */,
 				8D8744C61EFB8A4F00025AE4 /* MTSSettingViewController.xib in Resources */,
@@ -807,7 +811,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		1B98B6E712CBC28399074314 /* [CP] Copy Pods Resources */ = {
@@ -852,7 +856,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		686BAAE3382C0D5C7AAA5B82 /* [CP] Copy Pods Resources */ = {
@@ -897,7 +901,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D931D9CFB407333A27EEC1DD /* [CP] Embed Pods Frameworks */ = {
