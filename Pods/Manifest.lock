@@ -3,18 +3,23 @@ PODS:
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
   - JVTransitionAnimator (0.3)
+  - Mantle (2.1.0):
+    - Mantle/extobjc (= 2.1.0)
+  - Mantle/extobjc (2.1.0)
   - SCRecorder (2.7.0)
 
 DEPENDENCIES:
   - ChameleonFramework
   - JVTransitionAnimator
+  - Mantle
   - SCRecorder
 
 SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   JVTransitionAnimator: c6c36c53620bf46c8beaa6761bbfa978d5d878f0
+  Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   SCRecorder: bbb521dbc222908876ec9cd9156bbc8a893bed44
 
-PODFILE CHECKSUM: 1c12deb1ef246960ed41cebf9898c5715c99d965
+PODFILE CHECKSUM: f32d85310ed57fcab2650b11cef460c8b73aeca7
 
 COCOAPODS: 1.2.0

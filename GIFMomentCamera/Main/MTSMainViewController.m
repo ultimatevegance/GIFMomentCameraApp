@@ -60,7 +60,7 @@ const int videoDuration  = 5;
     [self prepareSession];
     // Configure recorder button
     _recordButton.buttonColor = [UIColor colorWithGradientStyle:UIGradientStyleLeftToRight withFrame:CGRectMake(0, 0,CGRectGetWidth(_recordButton.frame) ,CGRectGetHeight(_recordButton.frame)) andColors:@[PrimaryColororangish,PrimaryColorbarbiePink]];
-    _recordButton.progressColor = PrimaryColororangish ;
+    _recordButton.progressColor = PrimaryColorbarbiePink ;
     [_recordButton addTarget:self action:@selector(recording) forControlEvents:UIControlEventTouchDown];
     [_recordButton addTarget:self action:@selector(pausedRecording) forControlEvents:UIControlEventTouchUpInside];
     [_recordButton addTarget:self action:@selector(pausedRecording) forControlEvents:UIControlEventTouchUpOutside];

@@ -7,123 +7,160 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		024789C3AF3723DA71DE20F2A367C991 /* SCPhotoConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = C3DCAD45DDC243F2A185DB991A48805C /* SCPhotoConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02283147ED1C1A650D0BDFD24DD73C35 /* NSURL+SCSaveToCameraRoll.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAA3846B2E4CEBA03D32B960ECA7193 /* NSURL+SCSaveToCameraRoll.m */; };
+		035D907A1AB62CA43E9BB73B3BE38729 /* MTLModel+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBB4FF6954A3D68F78EC4E16DC98FA7 /* MTLModel+NSCoding.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		07FD15E7DCBC80A13A71A93828187239 /* SCVideoConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = F19F3824455CEB6AE9867AA23498D6DA /* SCVideoConfiguration.m */; };
 		0A2F3EFF019567E5F28EDDB6B486F3D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1772FBE9E80A6BCD5B6CCDC7C8AECF8 /* Foundation.framework */; };
-		0B1617AFC67A7DB90F783A040EA43927 /* SCRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 41CA8A8691383C0034E111AEA9B36259 /* SCRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0ED3006951E984B4DC2B0A0112CD6797 /* SCContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B6154C75A9184A2CD0B1EE812598C23 /* SCContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F328E37AA3BFBE41A9ACE9FFD8E71AA /* SCVideoPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4044638366BD9C3E4BBDBF9C67FA009E /* SCVideoPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F32CF3211159FAA0BF1B965953F05DB /* SCRecorderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E2C41F2760462E8A55F6E6BC49E8D27 /* SCRecorderDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		109F76CE26672E4206F914D0D5DAA680 /* SCRecorderHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 242DAC73184E6C82EA8ABE4A4E0686C9 /* SCRecorderHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12705987C5326465A302A076A47A3C1B /* SCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B588AE029EB464A1C3D59462C6F91F /* SCPlayer.m */; };
-		13A59D6C33480602468F796380DDCC68 /* SCFilter+VideoComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = C00F0440A0F99059B85392F2021A7207 /* SCFilter+VideoComposition.m */; };
-		13C91E80FFE6445334ED930478819D11 /* SCSwipeableFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D902EA84F8E657D5759E613D7C417FCF /* SCSwipeableFilterView.m */; };
+		0E36B79D91FCA01B9B1371B7C2E88B23 /* SCRecorderTools.m in Sources */ = {isa = PBXBuildFile; fileRef = EB911B047A99C254F0D973884468A969 /* SCRecorderTools.m */; };
+		0F8BC4F32DAF44B2979D14030416A084 /* NSValueTransformer+MTLInversionAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B38B0DC5108A11BF578F26F957827D86 /* NSValueTransformer+MTLInversionAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16C8929F2FFBC4B54117EC63FCE73E4C /* Pods-GIFMomentCameraUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA59E6F3DFBEBB29C162E531697E001 /* Pods-GIFMomentCameraUITests-dummy.m */; };
-		189D95130E0E34C7EFBD3F5680425DC4 /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 61659C2FFD1275E6493A357DB6BAA60A /* UIButton+Chameleon.m */; };
-		19B414A7BCEC677124DDE9CEEAA746F3 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 08E8A6DED44824155D30CE2585656FD9 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A74AF508170F5EBE728506B40658EF5 /* SCProcessingQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = FD426E52D0F0411EA333561CBF0184B3 /* SCProcessingQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1BB8D05BA75AF8EEBE684FB05A849CED /* SCFilter+VideoComposition.h in Headers */ = {isa = PBXBuildFile; fileRef = A6E62D1DB4D7383E483E8E91F896DD19 /* SCFilter+VideoComposition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C299F56263E52903267488FDD9C7A6E /* UIImage+SCSaveToCameraRoll.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E71DB447C64E486654EDE5D17EA4DC /* UIImage+SCSaveToCameraRoll.m */; };
-		1C8E49542CBC7F970D66954AC4961A5C /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E869F16E99ED9FD337B3587585A7F63 /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F8D0BBCF58101C8F334AD6C55FF50A2 /* SCVideoConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2394F2AC6A90C83027C3BACB0CB414 /* SCVideoConfiguration.m */; };
-		2295DC4E1F7BEDDCD5446D1D19E51194 /* SCRecorderTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 6969C6ED854A54B51B566E46D82E2F39 /* SCRecorderTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D6B446D45FF3892583CE454EA3C3338 /* SCWeakSelectorTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6B3F004A2EAA002112F64847530514 /* SCWeakSelectorTarget.m */; };
-		2F168587526A27F938F238FD13DC0C36 /* SCPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = F426F93CE140523FDCBF5622FF0D8FFB /* SCPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30B02AD1A73B38276D091B2FCFEBC365 /* SCVideoConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D9E1C68B3ACE0A95E700AE09B2AC6F /* SCVideoConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30BEC1918F7706FD0E1A642B9053A79E /* SCSampleBufferHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F598DD388465946C3915BA2D312B3E /* SCSampleBufferHolder.m */; };
-		3748655A81D2AEB5701D1A1BCAFB35D2 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF494D85B49F124D9228FED7ADEC19D4 /* UIView+ChameleonPrivate.m */; };
-		425DD892C4567BF4BFB75516E7773C86 /* SCRecorderToolsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 874BAAD994936F80A2A04D9E1241A27F /* SCRecorderToolsView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		450E197092253CC1C3CD32CDBC98F821 /* SCWeakSelectorTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 958A039DBF2E273DEEF46004843CC442 /* SCWeakSelectorTarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		458C8B2C0346386AA021AE2CB51C2C29 /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E823BDAA4B170203AB861434DE0CE4 /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47B181B78F57FAD82F110F5197D96DA8 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B82ACA85AD5542B9D4BBA40CF882413 /* Chameleon_.m */; };
-		487857079B7BF67244CE9010019CF1E5 /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = BE63ADC73ADD7288D7867AC70C78D15B /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48BB63C4BBB631037E93B4E025C0572D /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EE17432BBA08C9424B9C410364E9A46 /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4FE23AD4384D70EF257137A6770D10F9 /* SCAudioTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 804D89D6405C875BE535A947FE277B5F /* SCAudioTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4FEF467F95E94E2B67BF0D91287551F6 /* JVTransitionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E3538460D98CE28746303B37A7D46D8 /* JVTransitionAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		507A3B7458596834897E5E438DBB6986 /* SCFilterAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1446356C1771D16E495CE9686FDCF6 /* SCFilterAnimation.m */; };
-		524D92841814A4F208B03D157882858D /* SCIOPixelBuffers.m in Sources */ = {isa = PBXBuildFile; fileRef = D314F6B1B7E4AEC9F28ECDADC5D2D18F /* SCIOPixelBuffers.m */; };
-		535416D6DB3964B06EB47CD1504F0494 /* SCMediaTypeConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = A636E1B5F618F6C4832C2F710437D6C2 /* SCMediaTypeConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		189D95130E0E34C7EFBD3F5680425DC4 /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E8DEC61C655B2479C5FB0D3B486150 /* UIButton+Chameleon.m */; };
+		19B414A7BCEC677124DDE9CEEAA746F3 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5597B46BCFC671FD95ACC7F9C0AEF1 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A05BF934A67A1D58510863477450A6D /* Mantle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C48A3CA2F4F3C11E175456A8D005F149 /* Mantle-dummy.m */; };
+		1B67B20E4C66EF29A9F5B34229503452 /* SCFilterAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC50D6B9A354120B8B38C028AE08295 /* SCFilterAnimation.m */; };
+		1C8E49542CBC7F970D66954AC4961A5C /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BAE11B14C9767933EC7FA4BC05E9F58 /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F871B2B505D5C2E316DFA0618C43847 /* EXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 2259B9EE710EFCC3FC4141F4EBCC7F12 /* EXTKeyPathCoding.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1FD8C8B6A0ECBC58EEF106F0DA92DF75 /* SCFilter+VideoComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4D347FE3B177A8D0834059BDAE418 /* SCFilter+VideoComposition.m */; };
+		2018607C3D61886864802AF58E0DFC61 /* metamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 7789D19B94AE3A81140A002FF5F6FE84 /* metamacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		206FED9411A3D35E91EEE4769E584D38 /* MTLValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = D5758D472B99122783BBCC8947AE7BCC /* MTLValueTransformer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2075D57A4180D06B9BFC971287B201D2 /* SCRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = C1CC1237822B130D7887360B3B752205 /* SCRecorder.m */; };
+		26E3A1B8FDB50C719DACB2ED6772532C /* SCRecordSessionSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2178B79C99397E307A3363FE1341A711 /* SCRecordSessionSegment.m */; };
+		27C806DD37E3CC8EE961EE669FAE33FA /* NSObject+MTLComparisonAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E6F84244911829A5270D1779F1D3A65 /* NSObject+MTLComparisonAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		285324E81FBBA48613012E4DDEF68036 /* SCVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F85E77E0DE4AFC3CFC69CB8A1678F6E /* SCVideoPlayerView.m */; };
+		28A02359FBFECFF5CEC1CC8C78A7B1D4 /* SCMediaTypeConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = E1A9FFA660D3C0895D57F9AFABC9285A /* SCMediaTypeConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A0C164601ABC8BA083D05AADB9164AE /* NSDictionary+MTLJSONKeyPath.h in Headers */ = {isa = PBXBuildFile; fileRef = B8A45849442EB4E0CE7DD327648EF561 /* NSDictionary+MTLJSONKeyPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BEAF41DD04F27ABC0F27491C2DDA8FD /* SCSampleBufferHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F91B8FF3AD8404CDDC658358DAA2B65 /* SCSampleBufferHolder.m */; };
+		30E2F5735D03E0D865666939BC8FD7DD /* SCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A04FAE11EE52864A0CCB8D6526D6DE06 /* SCPlayer.m */; };
+		3748655A81D2AEB5701D1A1BCAFB35D2 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C9D9FE8AD6768767CE2D904C22D431 /* UIView+ChameleonPrivate.m */; };
+		3776420239ED0180EF58CFD77989B4A1 /* MTLReflection.h in Headers */ = {isa = PBXBuildFile; fileRef = 03BC89651FD573B649A493C64CF97BE2 /* MTLReflection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D1D290A462C8E5B34542C26D5D76711 /* SCProcessingQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = AE35E9ECB54C3885ECECF26957290E92 /* SCProcessingQueue.m */; };
+		3D80656482AAE2A4BF55FE29FDD8B5C5 /* SCWeakSelectorTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = E313A78463DE06732FDF49204CEAAEC9 /* SCWeakSelectorTarget.m */; };
+		411F1950BAB5FFE84D478E78388313F8 /* SCSaveToCameraRollOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCC9840183209417043C4D9C8F7E2BD /* SCSaveToCameraRollOperation.m */; };
+		427EF0D4385EDE71BAA66252E79B55BE /* SCPhotoConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8BA0C846CA6F1AFF1DF233C9870599 /* SCPhotoConfiguration.m */; };
+		429D3895CAAB0747BF4598D3FD8CD8AC /* SCFilterImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = E382EB16587C6AB3942F524478828E80 /* SCFilterImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43A3D1B26380B3F55D8D5156F28D9169 /* MTLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F3B9031E5187BCC64BB88189FEFDAB /* MTLModel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		458C8B2C0346386AA021AE2CB51C2C29 /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4ABD4E03AD0C1DDAADD189369A8803 /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47B181B78F57FAD82F110F5197D96DA8 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F26A60BB43BA6338EE9E36C676FB7C /* Chameleon_.m */; };
+		487857079B7BF67244CE9010019CF1E5 /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8096541F54AC3AB2CF7843A384A290 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48BB63C4BBB631037E93B4E025C0572D /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = A3EDDE9C5072F6E2973CD924866C71D0 /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D3DB6E1BB1780FC0E32D33E76933E96 /* SCFilterImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B922BBBD735DE7C60EFBBDD2B740797 /* SCFilterImageView.m */; };
+		4FEF467F95E94E2B67BF0D91287551F6 /* JVTransitionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 46D4DF8BB0C49BB30B7B9AEBC9FF160E /* JVTransitionAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		507387278346EC2D74910E150C5BE14A /* SCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A23ED26054726DD570D9D04595AB4A95 /* SCImageView.m */; };
+		5119FD722E1101AAC5CBD401B0553128 /* NSArray+MTLManipulationAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8287D992A323460B31C1F3E121388D49 /* NSArray+MTLManipulationAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51F6393F3755BC5153341BADBB8C48B9 /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C2ABB6E513FF21708BFED8F978361D66 /* EXTRuntimeExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		56147E0B31223C3654303A607C5573CC /* Pods-GIFMomentCameraTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA723E28FE54DA2E730EF1A120DF580F /* Pods-GIFMomentCameraTests-dummy.m */; };
-		588E21B5D4ABED5D19B4DBD32E7FBE3C /* SCSaveToCameraRollOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFA23530C19F65DB272BE2879FB5E9B /* SCSaveToCameraRollOperation.m */; };
-		5B08D6DF8D289D3535F6E777DDA95A08 /* SCAudioConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD5BEEF53FDF7B9B5A30D2954E5AA0B /* SCAudioConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5E29F3EF020DD27ED4B5BD05A15F16DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1772FBE9E80A6BCD5B6CCDC7C8AECF8 /* Foundation.framework */; };
-		66589991A334051744E018CBC8192F0E /* SCFilterAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = E6EE5E1670B123C7D9DA950E23220201 /* SCFilterAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DC01B65353E5E8624DE40A07034A8C6 /* SCRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 52551565EA71A90B10713F1781AFE172 /* SCRecorder.m */; };
-		6F2E783AC30E4B9D5F3B5C2FF69F1F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1772FBE9E80A6BCD5B6CCDC7C8AECF8 /* Foundation.framework */; };
-		70F91D1A08C2CAEF2AF893856DAA180C /* SCRecordSessionSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D55BEE3E233A490701F7D45554EE7C3 /* SCRecordSessionSegment.m */; };
-		717FAEB2CD065E6B71A08087886574C0 /* SCRecordSession.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE2BE1B9785E1F1D304D21CB296F7A2 /* SCRecordSession.m */; };
-		71E3E595173B056576070CFB364DB5DE /* SCIOPixelBuffers.h in Headers */ = {isa = PBXBuildFile; fileRef = DE04E07B86CF4D61909091E6C159A133 /* SCIOPixelBuffers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73F5A380DCDA2D3961E941B1E9B4320C /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E6F001ECD59136FD90CEE0DA2CD913C /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56B6F726EB214E49E4BAA6135FE157D5 /* NSArray+MTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A080466DF8CD53F6D71EB4DF5611FF7 /* NSArray+MTLManipulationAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		56E15D550EFFD6A8A8C48AEE062E592E /* SCRecorderToolsView.h in Headers */ = {isa = PBXBuildFile; fileRef = FDA19794D9FD09DE583455DD39BF1E71 /* SCRecorderToolsView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5741DD6D20B53BEEC0865588554936D3 /* NSError+MTLModelException.h in Headers */ = {isa = PBXBuildFile; fileRef = 554A9CFC64A4C462B74C96A4B5DA3C09 /* NSError+MTLModelException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5790E705A5E04C5F8ADB96CE6B884CAB /* SCFilter+UIImage.h in Headers */ = {isa = PBXBuildFile; fileRef = BBA5D4B8BFAE5644C4C4D55FAF26F96D /* SCFilter+UIImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A475D5AA530C87417C3BFD48A574E77 /* SCSwipeableFilterView.h in Headers */ = {isa = PBXBuildFile; fileRef = DCC7B6BFFB8CA035760C5A9AEDD7AC7A /* SCSwipeableFilterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B336B0EED24C2198467B48B0E33AA40 /* SCRecordSession_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 220F31B64F806D4F1686DBBAF87D73FD /* SCRecordSession_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BB3EC4FB31DC30DEE5FEE151554721D /* MTLTransformerErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = A275C6E0190185C37DE4387427C0CFC5 /* MTLTransformerErrorHandling.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5D1C187A3CC472F98EA3F1BACA399E34 /* MTLJSONAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = AEE8F747783FB59699C8D8E1293341D4 /* MTLJSONAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60346BDB74B30FBDD1ECAB0A6CCFA5C2 /* NSDictionary+MTLMappingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EBF42A390B1EC77961C8E9B09F33D23 /* NSDictionary+MTLMappingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		651F21111012DE9200B00D446CB6889D /* UIImage+SCSaveToCameraRoll.h in Headers */ = {isa = PBXBuildFile; fileRef = CC81068D5823DD835099F31791F9F7A9 /* UIImage+SCSaveToCameraRoll.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		666B6031046C9A7F5F8E513E007D043F /* SCAudioConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 1375064BFB107FB44069828E0AAD6440 /* SCAudioConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AF08F5E0A80A03415F2D46E141AE645 /* SCVideoConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 70143EABB2235F5BBEC448A33857203D /* SCVideoConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FC8CC1FDF9A53801CA6AF0852B98ED9 /* SCRecorderFocusTargetView.h in Headers */ = {isa = PBXBuildFile; fileRef = B04BCFBD9DBE5D309BE69D0B610EE398 /* SCRecorderFocusTargetView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70679C54F52BDD950107D5F81D68C783 /* SCRecordSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 752EDB82775CF41888AC61AA28B2B110 /* SCRecordSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		712AA019705C67E56ED06876BF905FED /* NSObject+MTLComparisonAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC371AFC66ACECA1301AA23E80E8CF8 /* NSObject+MTLComparisonAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7164137A9AF480BCA4DED7F35A37CBD9 /* SCVideoPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = F4D54C916A18E794AB7A8B7882912D7A /* SCVideoPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		734F89DD904873F163EC9939778D73CA /* SCFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A571E313CC27BA1C15C3CC30AD95417 /* SCFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73F5A380DCDA2D3961E941B1E9B4320C /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = B917A8551C04C049A229283B7D2E815F /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		746035219E92563228FC285B5AA763EF /* UIImage+SCSaveToCameraRoll.m in Sources */ = {isa = PBXBuildFile; fileRef = FB84E9F2D5DD8BC0AE9914EE51B5AB58 /* UIImage+SCSaveToCameraRoll.m */; };
+		7461C0190AE22F99B1C81A8EF335E872 /* MTLModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 32F5B0912788BE41B713FF8087359835 /* MTLModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74AC4DA902C4A093680E392DA9610FE8 /* NSValueTransformer+MTLInversionAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C12B867939A274F88C9513FDAD495F3 /* NSValueTransformer+MTLInversionAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		7646651962E88F9CB06617724E57F159 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6204F8C8B17AB73D7B4E9B3AAB45F43B /* UIKit.framework */; };
-		76A14BDF94501D1F6E7F04EAF00C910E /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = B889A0EEE517948480D277FA94AA71A7 /* UIColor+Chameleon.m */; };
-		778D38968DF590A631F203B5B260D987 /* SCFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = FF8167FFF93FAD39B5E78A5819B72EFE /* SCFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78BEDAD1EB62FB3E134412C91A99A856 /* SCAssetExportSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E83C78A812F9A0001C42F871854DB6 /* SCAssetExportSession.m */; };
-		7B3E3E404773B80255C516BA035E47B3 /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = F64A7D562E1CC27F0A9522F5893B1A54 /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		801DB4ED27C96EBAB4DEFA021F906686 /* SCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 785BB554E63CD7263EEB7493F27C7800 /* SCImageView.m */; };
-		827413499390D90A949E96155FD1FFAC /* SCRecorder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8451CED0AB7086950FECED0A432250A6 /* SCRecorder-dummy.m */; };
-		876053A734601FB4DA1F6C2DCB8D53DF /* JVTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C7217AC917E90309049B6804D58730C6 /* JVTransitionAnimator.m */; };
-		8854F330A9EF4E0632BEAB1D18DA6F5B /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 011FE9B0560E9E1935E34CC58E54353A /* ChameleonConstants.m */; };
-		8B7F22A8AF5E56A49D3F3DCD86C47071 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EB4B4629A10907C18F91295A22C48B /* UIColor+ChameleonPrivate.m */; };
-		8E274979AD94D6FAA0C32C66158C39FA /* Pods-GIFMomentCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FE68C0D76A516EFC3815FE257CBB46 /* Pods-GIFMomentCamera-dummy.m */; };
-		91035329B1C75713F72DAD2170BAE4E2 /* SCRecordSession_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 525ECDD77A01392EFA17D61D71A68921 /* SCRecordSession_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9381BA09A2DA15EEC5CF02AB083C3839 /* SCAudioTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F87DF8AC45614F92FB4B9EFCCEC26C49 /* SCAudioTools.m */; };
-		960DFDBC513E356857B63D42FF0933CB /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = A57DEA5679B42E7C45FC6F645B12F0CE /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98DE52ED56F29381A72098A75B5A4E08 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D878942ED2DCE0AC322ADAC003214E /* NSArray+Chameleon.m */; };
-		9A292300ABA66ADFBC69F7AB4CF440C9 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = E05303BA1E8851CCB75BAAEDBF2CA5EE /* UINavigationController+Chameleon.m */; };
-		9DD7780E908382B8A64268E50207E157 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = B35338A0186AA970E09B1555917DF8B6 /* UIViewController+Chameleon.m */; };
-		A61708282BB1628C28E22BA592B64742 /* SCVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CF9462677ABCACF29EEDB2BBA6F07F /* SCVideoPlayerView.m */; };
-		A6BE31B30301DD7AC7BB6F2D512648B8 /* SCProcessingQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DBEEFFC95D30AB211D5B48F4F39643 /* SCProcessingQueue.m */; };
+		76A14BDF94501D1F6E7F04EAF00C910E /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = F80F7BE13513B4E572255CBD846F3EA4 /* UIColor+Chameleon.m */; };
+		7786994F2F7D9F1CB44AB55AAAB6028E /* Mantle.h in Headers */ = {isa = PBXBuildFile; fileRef = 077E1FD31879DB706AECE0DF26DCEFF7 /* Mantle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		781277601C831DBEB14A4BA9551CE079 /* EXTRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = C354DD6CDEE665EC3BA67C028D74557E /* EXTRuntimeExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7B3E3E404773B80255C516BA035E47B3 /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = BB5901024A5E2953AF959B941256F9B0 /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CD2B4088DBDDF65A253748B7F04FEF3 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D509E8DB3DE6B2A96395DA3202B22 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		821436F082CE8B281A2978C101D7E9C4 /* NSError+MTLModelException.m in Sources */ = {isa = PBXBuildFile; fileRef = 976D4302F4C087B959BF7BA7B8245B92 /* NSError+MTLModelException.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		876053A734601FB4DA1F6C2DCB8D53DF /* JVTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 79601F0CBB62EFFD331D25AE941D1CB1 /* JVTransitionAnimator.m */; };
+		8854F330A9EF4E0632BEAB1D18DA6F5B /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC85557BE5D74C55DDF241DBF2190C7 /* ChameleonConstants.m */; };
+		8A91B7543954D90E86DCF89B9BC17965 /* SCSampleBufferHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DA6BA35E22FFB23162581DB0239B4BA /* SCSampleBufferHolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AC986175CC78E77894434D11FE49C54 /* NSDictionary+MTLMappingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EB88CB06206F4B02FA7A73CF6119CC39 /* NSDictionary+MTLMappingAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8B7F22A8AF5E56A49D3F3DCD86C47071 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BAA3AE824166EA9DF0C16E14ABC254 /* UIColor+ChameleonPrivate.m */; };
+		8BC8D02DF7F5E96E004A0458B708B055 /* SCRecordSessionSegment.h in Headers */ = {isa = PBXBuildFile; fileRef = CDFACADE378DEBA815D445FB2840B257 /* SCRecordSessionSegment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FE8B5CFBBB2FF4D4CCFFDFAFFD3CE5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1772FBE9E80A6BCD5B6CCDC7C8AECF8 /* Foundation.framework */; };
+		913E45D2159D0F30BB5EF796B2C297EF /* NSDictionary+MTLManipulationAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CB6DE9FBA60DA62D0F1B55AB4A326BC /* NSDictionary+MTLManipulationAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91C99E3CEC6725EB6E9847280756773B /* SCAudioTools.h in Headers */ = {isa = PBXBuildFile; fileRef = B7966F733250084A1DB1A780D45AF787 /* SCAudioTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92BA1D9E1ED47804B315BEB5A75B338F /* SCRecorderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9071AAB3F84FB43FA72E42FD87A2DDF3 /* SCRecorderDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		960C800AD27222CA08BC74C09A9FC01B /* SCProcessingQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = D2C78344987A5964D0401BACAC21570C /* SCProcessingQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		960DFDBC513E356857B63D42FF0933CB /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC99BC5A7749880C4CEDDB6701EBA1C /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		975A5DF19EBCF7C921369697F4ABB709 /* MTLModel+NSCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 7497013096E1B580F1ECEB2B1FEB3E41 /* MTLModel+NSCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9821632CBCC3D755FDFD143391230896 /* SCRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = D6ECEE52BEC3F2BE8E1A9291A1F3A1AE /* SCRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		983FFD674F09A0D91F27C64E882545B6 /* SCAudioTools.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2DBF835F0287B0A6E925B13FA8DE64 /* SCAudioTools.m */; };
+		98DE52ED56F29381A72098A75B5A4E08 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = A31D702F9C2FC8B10E36FBFF47940564 /* NSArray+Chameleon.m */; };
+		99D05AC62E0E83545D3BCF469D209E3A /* SCAudioConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DFB4FE71540F2CFB5157F263620BB0 /* SCAudioConfiguration.m */; };
+		9A292300ABA66ADFBC69F7AB4CF440C9 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 41414C70BB499CFC6F90FCBA784C0684 /* UINavigationController+Chameleon.m */; };
+		9AAE9A21FDA4E0A4ED85C5584E49DF58 /* NSDictionary+MTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F311E419519B6D0BC072CC65833FEC83 /* NSDictionary+MTLManipulationAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9C1DE6D7ED488FA779900D570210BA4C /* SCContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DDCD6680B214626C9C81871E4C9A96 /* SCContext.m */; };
+		9D63A30A4846A962F872F568C2B56D68 /* MTLReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC40010ADB9EB280FD6B4A5E9F79378 /* MTLReflection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9DD7780E908382B8A64268E50207E157 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = F712E07C8A10D4F57981B071F582280C /* UIViewController+Chameleon.m */; };
+		9E489FAE3883C6C28A277C1029EC0D28 /* SCIOPixelBuffers.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD42A58D3E3C5D71407167AB750D5C6 /* SCIOPixelBuffers.m */; };
+		9E67F5CC3B7BEC62A41F3CEC8A86B55B /* SCRecorderHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 322F02B60E1D0CE0D7B08917BC37E285 /* SCRecorderHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A47BBC6DB2129ED29E9F5EF94A5550F1 /* SCFilter+VideoComposition.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FD8357FEF1EBE4F13F9237D2D13A91D /* SCFilter+VideoComposition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5EF38D3E713ABD69F6A842A6FF39998 /* NSDictionary+MTLJSONKeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 299597EB8E30EC1808BC865636D7073A /* NSDictionary+MTLJSONKeyPath.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A61A3AAD4C70527DFCDEDB6DACB633C2 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = D117067131937347AD7B0F0B85D32C6C /* EXTScope.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A69D3FE7C23DEF1824371EC0817A08E4 /* MTLTransformerErrorHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CF005DFFBC7389738262C91D0D088C /* MTLTransformerErrorHandling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A99D00C50186853EB4A698ABB95AA039 /* EXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = 44BE2A910E0FCB79F75C03C3DA08DF81 /* EXTScope.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AA9F3FAD9F2FB51D78D3A2D6C8402E29 /* SCMediaTypeConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2569B12CD3983438C2A3E3E8D65B7441 /* SCMediaTypeConfiguration.m */; };
 		ABBCA248FE21E35B8238035F01C0F838 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1772FBE9E80A6BCD5B6CCDC7C8AECF8 /* Foundation.framework */; };
-		AC217BC992B5E2DF872CC066B6FAAD19 /* NSURL+SCSaveToCameraRoll.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E7A5CF2A865B02FE32BEACE2847EC4 /* NSURL+SCSaveToCameraRoll.m */; };
-		AC56C375EFB72644B29816D4F6230A62 /* SCRecorderTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 09624E2AC68D18587E4A1C7AF0F8A4D3 /* SCRecorderTools.m */; };
-		AFC1875260A92C3985684003978283E6 /* NSURL+SCSaveToCameraRoll.h in Headers */ = {isa = PBXBuildFile; fileRef = A6A3B61B5737E2F00A44C6F8593C91C4 /* NSURL+SCSaveToCameraRoll.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B0D1D186C9B10E7C4BD4CA2DE67062D5 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = E32BEED65CD34FCC15FD7041ECEA9A0C /* UILabel+Chameleon.m */; };
-		B334767497B12AF180DFBA91724F5F69 /* SCSwipeableFilterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 58C198880CFD8807BFD1638791C7FC54 /* SCSwipeableFilterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF2B96966AA52AD650A2B397967A8250 /* MTLJSONAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0576BDA2D80EA6100540C43296F731EE /* MTLJSONAdapter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AFA0E7524AF6ED96E138C8E512481FE5 /* MTLValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 45702E3D2B0F4E9EBCB8BF057A34DD53 /* MTLValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0D1D186C9B10E7C4BD4CA2DE67062D5 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 651DAD46149F1C39624DB19D956953A1 /* UILabel+Chameleon.m */; };
+		B2EA3684A32E8A86A583A0C7B7997ECC /* SCAssetExportSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E646AD02FE66CD9393F0E5D7448A75 /* SCAssetExportSession.m */; };
 		B35DB3E2FE26A8FCD22FA7D7F04489EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54994EADC0C551842AB2B866820E3E63 /* CoreGraphics.framework */; };
-		B636C8303611D1BAA26146ACD4E242B2 /* UIImage+SCSaveToCameraRoll.h in Headers */ = {isa = PBXBuildFile; fileRef = 30A199FCA65995058441E3B3756E3C67 /* UIImage+SCSaveToCameraRoll.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7911195E600D651D172A8C7A7D102A3 /* SCContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C085B6B3EC796151E08D4046BEB7FD42 /* SCContext.m */; };
-		B8D9EAFBEA50110F21821121F608EAF8 /* SCMediaTypeConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E142EE36A4D543F0E320CE33DD6E6502 /* SCMediaTypeConfiguration.m */; };
-		BBD42AF76472A79C3881088E62C8CA60 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = F921061EFCE67C054A0D4BAFC1BC096A /* UIImage+ChameleonPrivate.m */; };
-		BBDFE569C91BEF78191ED77D8B5C35D5 /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 5489E05C611D43BF1CE12AE7EC62989E /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BCA3C9B9730F0C1D9A30DCD29A4F16F3 /* SCRecorderFocusTargetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A7A24C1F523815C6BBDB4ADFD4437 /* SCRecorderFocusTargetView.m */; };
-		BF29958D64CA9B95A0900139A90E629F /* SCRecordSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B386E30A256B254AC8DD7FFEE89C25B /* SCRecordSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4269E957416B469CE80C2CC69025902 /* SCRecorderToolsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C6F90F837A82085967CAF32871EBCC /* SCRecorderToolsView.m */; };
+		BBD42AF76472A79C3881088E62C8CA60 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF4AA060B0D917D3BDD810926B210ED /* UIImage+ChameleonPrivate.m */; };
+		BBDFE569C91BEF78191ED77D8B5C35D5 /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9F4F09031CAAD31741F39A46E30F97 /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC295B6E943D628B92BECE831C0B60B5 /* SCPhotoConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AF93081DC73BD42B23C408925BB8B31 /* SCPhotoConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD13D51D3895787F6C7390F7D911E571 /* SCIOPixelBuffers.h in Headers */ = {isa = PBXBuildFile; fileRef = 669EB3AF58466B281EEC8D3E92C7D514 /* SCIOPixelBuffers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE4E234924E13E11EC58D1C59D6E3AD3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EC8BC868D1C3CA71056359C78A0B62 /* AVFoundation.framework */; };
+		C1BB147FDFE72135B257193C8B61B4F0 /* SCSwipeableFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 326EF804AF9744397FB00EB83B06C969 /* SCSwipeableFilterView.m */; };
 		C1CE01DA2C4B1997A9EECFEF53701E75 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9D0AF35B626926E9EEFB6F60318DBE /* QuartzCore.framework */; };
-		C58724487D229BCC7E02E692521FBA58 /* SCAudioConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CF9A68FC4609D4A7A61A891085B918 /* SCAudioConfiguration.m */; };
-		C943455B8160FC1A9FA9316F10A1A153 /* SCSampleBufferHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B4761E970FAD44803F7168953B0EB91 /* SCSampleBufferHolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C95178CC895456CE0C2472EB3FE8330B /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = BC0766A37B05D15E263F068F44F4324E /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB2F17D9AA0D5BF47119EF9A489683AE /* SCRecorderToolsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BE47CB8C345E66B3E334392B5DF798 /* SCRecorderToolsView.m */; };
+		C42C48535285450213F8AB7EBE0220B2 /* SCAssetExportSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 01650797A1C97F3F2B158F75C2B48E6E /* SCAssetExportSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C95178CC895456CE0C2472EB3FE8330B /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D0456D8D3DCEFE34FE814C0996D0747 /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CACDF49FE39B7B6A268C39DE7EF78C8E /* SCSaveToCameraRollOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E39DB6305B20508736C8DD34E39DDE /* SCSaveToCameraRollOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB950247A58D914AB3E4E078BCFBD6E8 /* SCRecorderFocusTargetView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BEC18B0AA8A39C834288EF06AC9DBB /* SCRecorderFocusTargetView.m */; };
 		CC9AFD03FACD81CAE8D9F15F0293092D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1772FBE9E80A6BCD5B6CCDC7C8AECF8 /* Foundation.framework */; };
-		CD178C6BC171A5D1FC4D3017015D3D8B /* SCRecordSessionSegment.h in Headers */ = {isa = PBXBuildFile; fileRef = B5BD924CB01C1990BE03E1A3129F9B65 /* SCRecordSessionSegment.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2EEF9446FE5C07C8024F4663876D4C0 /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = A7A76DB03EE2F588A4C809F0C9566886 /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D56BDE642CCDC6994B656D25A21909EF /* SCImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 58A55E2ECCA49563A401BF8F350AB2B6 /* SCImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D9F3430DA94CB631B7545F3F289B9AF7 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = E2589D752B8DC9E34C77AC3A19703F03 /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DAC640157E80AD4BDABC537B8C5D556F /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D61848013CE57B95287F5793B40433 /* ChameleonFramework-dummy.m */; };
-		DB83A9792E63B77453D6F5EA35DBBAAE /* JVTransitionAnimator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7F5C196D5C7967DBD5D3F18E1A806A /* JVTransitionAnimator-dummy.m */; };
-		DC177BA654144BED71721C83FB91624A /* SCSaveToCameraRollOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA63BEB357D18CA287C3DFB3AC752353 /* SCSaveToCameraRollOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD632ABDB70165C7A5398FE05B155E79 /* SCFilter+UIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CCBEB1F0211F7CD11FD13AE9FFF155 /* SCFilter+UIImage.m */; };
-		E5BF16209EAB243FDF571F307D219376 /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = FF357BE2EA4E0DBF140E0204803286FD /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E85B04CFD68ACC582EF3C13E5EBF95FA /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = FFE23F0BB8D223F20DB374815C15DBA1 /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB4D30980077179135DFC6A1A82B65EF /* SCAssetExportSession.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A939C44825C308C94B136CA82950A7 /* SCAssetExportSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB4F402521C0D72E4181C286A15BCE14 /* SCFilterImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FD7659826EF77960E1A8FF66F14D9D /* SCFilterImageView.m */; };
-		ED190CACC7D5043A39D010E26BB5A103 /* SCRecorderFocusTargetView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5376619ABC93411E7BDD321400B18E /* SCRecorderFocusTargetView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F11862556E6D4DE0AC55F02E93784569 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EC8BC868D1C3CA71056359C78A0B62 /* AVFoundation.framework */; };
-		F46E1A50A8F08769ADAAA5CF429457A1 /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C85E12E303AC421895B4317917ABB /* UIAppearance+Swift.m */; };
+		D2EEF9446FE5C07C8024F4663876D4C0 /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = F879CED575624F3369759650C2397C04 /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4A855FD717348508F5233A25F9EBE16 /* NSURL+SCSaveToCameraRoll.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EC7132A3E29562220906A25A26B984 /* NSURL+SCSaveToCameraRoll.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D880C9F4F23FCA3D24402EA1CC16F3FA /* SCFilterAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 71EFD9CFB795A246DD839A97E1AA5ABF /* SCFilterAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D897F194080B1CD36BAE56D810085C85 /* SCContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 18E4CD106DF5C518D2B945891BB71A83 /* SCContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9F3430DA94CB631B7545F3F289B9AF7 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E6FE55C86A86CC3E686849F2BDEEE6E /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAC640157E80AD4BDABC537B8C5D556F /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A624B2532C28D9059308B3E21E607BBD /* ChameleonFramework-dummy.m */; };
+		DB83A9792E63B77453D6F5EA35DBBAAE /* JVTransitionAnimator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AF43DE0D432859368F6CEF9BB41B6B /* JVTransitionAnimator-dummy.m */; };
+		DC0390B93FA122267D5DB14F6902F084 /* SCRecordSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F32FEFA04635670F06837B4E03BF8088 /* SCRecordSession.m */; };
+		E249255DAB7ED92849129BA7AC038A58 /* SCRecorderTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 18C7B901E43A7C97915754CBE48025CC /* SCRecorderTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4F080D0E5289DAAFE09459A24EA3253 /* Pods-GIFMomentCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FE68C0D76A516EFC3815FE257CBB46 /* Pods-GIFMomentCamera-dummy.m */; };
+		E5BF16209EAB243FDF571F307D219376 /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 193CE55E7FEF9D59BAB9BA39CE46C4E2 /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7542B2C536DB2C543894587075D1289 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4149065A78C4D3E6BFCE6B90D13081C6 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E85B04CFD68ACC582EF3C13E5EBF95FA /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = A888A075B465E54A0CF8C99C7CE5BC11 /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC1C1DAAF0373AF9CC3C93A2B0C3F2C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1772FBE9E80A6BCD5B6CCDC7C8AECF8 /* Foundation.framework */; };
+		ECFB8085E8ED4A1F7763757F1495F20A /* SCWeakSelectorTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = F37032647529995D17C86622CE91F31B /* SCWeakSelectorTarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED805080F63A57E67219118031C25621 /* SCPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 46C2FF81D135E01959EE0A5E7314F842 /* SCPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2313D8E010BD5DC47F8FDD833047CE6 /* SCFilter+UIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D7A79FA04AB618B869438915287378 /* SCFilter+UIImage.m */; };
+		F46E1A50A8F08769ADAAA5CF429457A1 /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = B495DBA50A4079CFCD879B4594D9762B /* UIAppearance+Swift.m */; };
 		F60A5BC0EC1CFF752440DEC8D7C8AE4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1772FBE9E80A6BCD5B6CCDC7C8AECF8 /* Foundation.framework */; };
-		F814C5DD950BA84B1CA766FBB6FF7AA2 /* SCPhotoConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E08A9BEB3A0DE410D6A18A35F781F805 /* SCPhotoConfiguration.m */; };
-		F9CD3BABD67E413C725B4A1B2E46804E /* SCFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 005CF0503C9BBE248E52C10301874B2C /* SCFilter.m */; };
-		FB7CBBE46DA01568155E3A72E227F5CA /* SCFilterImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F001ACB8CEFA4C3061D9C2A10C40DD /* SCFilterImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FCA27448C5BFF41AE30BB1CE01405ABB /* SCFilter+UIImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 01BCEACBA44F3CB45FCAC4558263E016 /* SCFilter+UIImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FEAAB03EA07B91C563BEAFAC737FE237 /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 938E6BB80FE74D57B564B69BEA18B199 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8E1A78EEEE84093E60B218CAF9B9631 /* SCImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 649D10B508359761CA4B614F5613D8B0 /* SCImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBA55C1D96EE29F82087714717671E2E /* SCFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF9A480BB3EE5A46FABA5F00380489F /* SCFilter.m */; };
+		FD0D0B822658EE19E1A26392B488F7B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1772FBE9E80A6BCD5B6CCDC7C8AECF8 /* Foundation.framework */; };
+		FEAAB03EA07B91C563BEAFAC737FE237 /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 32D42D4ADFBEFF88E6B64F84BF8D510E /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDCB377C4DF85CBDEEB92641C1FC013 /* SCRecorder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A36759ACD7E23ACE3984B2078971995D /* SCRecorder-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0D5FDE898AD02152A6506021933E07E8 /* PBXContainerItemProxy */ = {
+		03D0EE5B7DC71763B9A2A34FB5799571 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5024989252C8213005B015ECC1381C6D;
+			remoteGlobalIDString = 0D164C888BAFF15F850967A1492FB314;
 			remoteInfo = SCRecorder;
 		};
-		3D2D7708895A02AF0B09AB4FBEC53895 /* PBXContainerItemProxy */ = {
+		246A9E57649CCFD39E4A8F16B6F3EF54 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -137,7 +174,14 @@
 			remoteGlobalIDString = B56FC3390A52674F560F67EEB3EA590A;
 			remoteInfo = "JVTransitionAnimator-JVTransitionAnimator";
 		};
-		E505D626272F386A4D9FCD261E061A2D /* PBXContainerItemProxy */ = {
+		99E5889CFD49462FE3319FA69141F012 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E2F85A9EA167EFA71B3DCB5DF170059;
+			remoteInfo = Mantle;
+		};
+		CCD612D47615C858CF536D227594ABB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -147,152 +191,182 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		005CF0503C9BBE248E52C10301874B2C /* SCFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCFilter.m; path = Library/Sources/SCFilter.m; sourceTree = "<group>"; };
-		011FE9B0560E9E1935E34CC58E54353A /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
-		01BCEACBA44F3CB45FCAC4558263E016 /* SCFilter+UIImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SCFilter+UIImage.h"; path = "Library/Sources/SCFilter+UIImage.h"; sourceTree = "<group>"; };
-		0268360AA49F9CD57A644011F906059C /* libJVTransitionAnimator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJVTransitionAnimator.a; path = libJVTransitionAnimator.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		04D61848013CE57B95287F5793B40433 /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
-		08E8A6DED44824155D30CE2585656FD9 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
-		09624E2AC68D18587E4A1C7AF0F8A4D3 /* SCRecorderTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRecorderTools.m; path = Library/Sources/SCRecorderTools.m; sourceTree = "<group>"; };
+		01650797A1C97F3F2B158F75C2B48E6E /* SCAssetExportSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCAssetExportSession.h; path = Library/Sources/SCAssetExportSession.h; sourceTree = "<group>"; };
+		03BC89651FD573B649A493C64CF97BE2 /* MTLReflection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLReflection.h; path = Mantle/MTLReflection.h; sourceTree = "<group>"; };
+		03C9D9FE8AD6768767CE2D904C22D431 /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		0576BDA2D80EA6100540C43296F731EE /* MTLJSONAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLJSONAdapter.m; path = Mantle/MTLJSONAdapter.m; sourceTree = "<group>"; };
+		077E1FD31879DB706AECE0DF26DCEFF7 /* Mantle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Mantle.h; path = Mantle/Mantle.h; sourceTree = "<group>"; };
 		0C5FEC5564E068E07E173EBBF70D11F6 /* Pods-GIFMomentCameraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GIFMomentCameraTests.release.xcconfig"; sourceTree = "<group>"; };
-		0CD5BEEF53FDF7B9B5A30D2954E5AA0B /* SCAudioConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCAudioConfiguration.h; path = Library/Sources/SCAudioConfiguration.h; sourceTree = "<group>"; };
-		13F598DD388465946C3915BA2D312B3E /* SCSampleBufferHolder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCSampleBufferHolder.m; path = Library/Sources/SCSampleBufferHolder.m; sourceTree = "<group>"; };
-		15E3EF93B3BACC22160EDD65925C1B1A /* libPods-GIFMomentCameraUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GIFMomentCameraUITests.a"; path = "libPods-GIFMomentCameraUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		19E83C78A812F9A0001C42F871854DB6 /* SCAssetExportSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCAssetExportSession.m; path = Library/Sources/SCAssetExportSession.m; sourceTree = "<group>"; };
-		1D55BEE3E233A490701F7D45554EE7C3 /* SCRecordSessionSegment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRecordSessionSegment.m; path = Library/Sources/SCRecordSessionSegment.m; sourceTree = "<group>"; };
-		1E869F16E99ED9FD337B3587585A7F63 /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
-		1EB0F946072EA00C756D9D439D25B79C /* JVTransitionAnimator.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = JVTransitionAnimator.bundle; path = JVTransitionAnimator.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		23F001ACB8CEFA4C3061D9C2A10C40DD /* SCFilterImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCFilterImageView.h; path = Library/Sources/SCFilterImageView.h; sourceTree = "<group>"; };
-		242DAC73184E6C82EA8ABE4A4E0686C9 /* SCRecorderHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecorderHeader.h; path = Library/Sources/SCRecorderHeader.h; sourceTree = "<group>"; };
-		2582EA27BBF4F81BB2933797881224B7 /* SCRecorder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCRecorder.xcconfig; sourceTree = "<group>"; };
+		0E6FE55C86A86CC3E686849F2BDEEE6E /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		0FD8357FEF1EBE4F13F9237D2D13A91D /* SCFilter+VideoComposition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SCFilter+VideoComposition.h"; path = "Library/Sources/SCFilter+VideoComposition.h"; sourceTree = "<group>"; };
+		1375064BFB107FB44069828E0AAD6440 /* SCAudioConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCAudioConfiguration.h; path = Library/Sources/SCAudioConfiguration.h; sourceTree = "<group>"; };
+		13DFB4FE71540F2CFB5157F263620BB0 /* SCAudioConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCAudioConfiguration.m; path = Library/Sources/SCAudioConfiguration.m; sourceTree = "<group>"; };
+		18C7B901E43A7C97915754CBE48025CC /* SCRecorderTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecorderTools.h; path = Library/Sources/SCRecorderTools.h; sourceTree = "<group>"; };
+		18E4CD106DF5C518D2B945891BB71A83 /* SCContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCContext.h; path = Library/Sources/SCContext.h; sourceTree = "<group>"; };
+		193CE55E7FEF9D59BAB9BA39CE46C4E2 /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
+		1A080466DF8CD53F6D71EB4DF5611FF7 /* NSArray+MTLManipulationAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MTLManipulationAdditions.m"; path = "Mantle/NSArray+MTLManipulationAdditions.m"; sourceTree = "<group>"; };
+		1B922BBBD735DE7C60EFBBDD2B740797 /* SCFilterImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCFilterImageView.m; path = Library/Sources/SCFilterImageView.m; sourceTree = "<group>"; };
+		1B9F4F09031CAAD31741F39A46E30F97 /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
+		1D0456D8D3DCEFE34FE814C0996D0747 /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
+		1F85E77E0DE4AFC3CFC69CB8A1678F6E /* SCVideoPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCVideoPlayerView.m; path = Library/Sources/SCVideoPlayerView.m; sourceTree = "<group>"; };
+		1F8BA0C846CA6F1AFF1DF233C9870599 /* SCPhotoConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCPhotoConfiguration.m; path = Library/Sources/SCPhotoConfiguration.m; sourceTree = "<group>"; };
+		2178B79C99397E307A3363FE1341A711 /* SCRecordSessionSegment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRecordSessionSegment.m; path = Library/Sources/SCRecordSessionSegment.m; sourceTree = "<group>"; };
+		220F31B64F806D4F1686DBBAF87D73FD /* SCRecordSession_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecordSession_Internal.h; path = Library/Sources/SCRecordSession_Internal.h; sourceTree = "<group>"; };
+		2259B9EE710EFCC3FC4141F4EBCC7F12 /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTKeyPathCoding.h; path = Mantle/extobjc/EXTKeyPathCoding.h; sourceTree = "<group>"; };
+		2569B12CD3983438C2A3E3E8D65B7441 /* SCMediaTypeConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCMediaTypeConfiguration.m; path = Library/Sources/SCMediaTypeConfiguration.m; sourceTree = "<group>"; };
 		2627C72FB63CDC793C6390A68D67824B /* Pods-GIFMomentCameraUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GIFMomentCameraUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		26FE68C0D76A516EFC3815FE257CBB46 /* Pods-GIFMomentCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GIFMomentCamera-dummy.m"; sourceTree = "<group>"; };
-		2B386E30A256B254AC8DD7FFEE89C25B /* SCRecordSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecordSession.h; path = Library/Sources/SCRecordSession.h; sourceTree = "<group>"; };
-		2EE17432BBA08C9424B9C410364E9A46 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
-		30A199FCA65995058441E3B3756E3C67 /* UIImage+SCSaveToCameraRoll.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+SCSaveToCameraRoll.h"; path = "Library/Sources/UIImage+SCSaveToCameraRoll.h"; sourceTree = "<group>"; };
+		28BAA3AE824166EA9DF0C16E14ABC254 /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		299597EB8E30EC1808BC865636D7073A /* NSDictionary+MTLJSONKeyPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MTLJSONKeyPath.m"; path = "Mantle/NSDictionary+MTLJSONKeyPath.m"; sourceTree = "<group>"; };
+		29E39DB6305B20508736C8DD34E39DDE /* SCSaveToCameraRollOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCSaveToCameraRollOperation.h; path = Library/Sources/SCSaveToCameraRollOperation.h; sourceTree = "<group>"; };
+		2CC371AFC66ACECA1301AA23E80E8CF8 /* NSObject+MTLComparisonAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MTLComparisonAdditions.m"; path = "Mantle/NSObject+MTLComparisonAdditions.m"; sourceTree = "<group>"; };
+		2D5D509E8DB3DE6B2A96395DA3202B22 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValueTransformer+MTLPredefinedTransformerAdditions.m"; path = "Mantle/NSValueTransformer+MTLPredefinedTransformerAdditions.m"; sourceTree = "<group>"; };
+		322F02B60E1D0CE0D7B08917BC37E285 /* SCRecorderHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecorderHeader.h; path = Library/Sources/SCRecorderHeader.h; sourceTree = "<group>"; };
+		326EF804AF9744397FB00EB83B06C969 /* SCSwipeableFilterView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCSwipeableFilterView.m; path = Library/Sources/SCSwipeableFilterView.m; sourceTree = "<group>"; };
 		32B74FC2603CB34B8D42289B2C791460 /* Pods-GIFMomentCameraTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GIFMomentCameraTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		32D42D4ADFBEFF88E6B64F84BF8D510E /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
+		32F5B0912788BE41B713FF8087359835 /* MTLModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLModel.h; path = Mantle/MTLModel.h; sourceTree = "<group>"; };
+		35DDCD6680B214626C9C81871E4C9A96 /* SCContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCContext.m; path = Library/Sources/SCContext.m; sourceTree = "<group>"; };
 		378B4791DDF8C571097C6D73EC5D5B89 /* Pods-GIFMomentCameraTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GIFMomentCameraTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3A1A7A24C1F523815C6BBDB4ADFD4437 /* SCRecorderFocusTargetView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRecorderFocusTargetView.m; path = Library/Sources/SCRecorderFocusTargetView.m; sourceTree = "<group>"; };
-		3B5376619ABC93411E7BDD321400B18E /* SCRecorderFocusTargetView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecorderFocusTargetView.h; path = Library/Sources/SCRecorderFocusTargetView.h; sourceTree = "<group>"; };
-		3B6154C75A9184A2CD0B1EE812598C23 /* SCContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCContext.h; path = Library/Sources/SCContext.h; sourceTree = "<group>"; };
-		3E6F001ECD59136FD90CEE0DA2CD913C /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
+		3C12B867939A274F88C9513FDAD495F3 /* NSValueTransformer+MTLInversionAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValueTransformer+MTLInversionAdditions.m"; path = "Mantle/NSValueTransformer+MTLInversionAdditions.m"; sourceTree = "<group>"; };
 		4031D66DD29561F933B4095865E1B5A4 /* Pods-GIFMomentCameraUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GIFMomentCameraUITests-frameworks.sh"; sourceTree = "<group>"; };
-		4044638366BD9C3E4BBDBF9C67FA009E /* SCVideoPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCVideoPlayerView.h; path = Library/Sources/SCVideoPlayerView.h; sourceTree = "<group>"; };
+		41414C70BB499CFC6F90FCBA784C0684 /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
+		4149065A78C4D3E6BFCE6B90D13081C6 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+MTLPredefinedTransformerAdditions.h"; path = "Mantle/NSValueTransformer+MTLPredefinedTransformerAdditions.h"; sourceTree = "<group>"; };
 		41AA7FFA371E13DFDF32070A378BE22B /* Pods-GIFMomentCamera-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GIFMomentCamera-acknowledgements.plist"; sourceTree = "<group>"; };
-		41CA8A8691383C0034E111AEA9B36259 /* SCRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecorder.h; path = Library/Sources/SCRecorder.h; sourceTree = "<group>"; };
-		45BE47CB8C345E66B3E334392B5DF798 /* SCRecorderToolsView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRecorderToolsView.m; path = Library/Sources/SCRecorderToolsView.m; sourceTree = "<group>"; };
-		49CF9462677ABCACF29EEDB2BBA6F07F /* SCVideoPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCVideoPlayerView.m; path = Library/Sources/SCVideoPlayerView.m; sourceTree = "<group>"; };
-		49E7A5CF2A865B02FE32BEACE2847EC4 /* NSURL+SCSaveToCameraRoll.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURL+SCSaveToCameraRoll.m"; path = "Library/Sources/NSURL+SCSaveToCameraRoll.m"; sourceTree = "<group>"; };
-		4A9C85E12E303AC421895B4317917ABB /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
-		4B4761E970FAD44803F7168953B0EB91 /* SCSampleBufferHolder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCSampleBufferHolder.h; path = Library/Sources/SCSampleBufferHolder.h; sourceTree = "<group>"; };
-		52551565EA71A90B10713F1781AFE172 /* SCRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRecorder.m; path = Library/Sources/SCRecorder.m; sourceTree = "<group>"; };
-		525ECDD77A01392EFA17D61D71A68921 /* SCRecordSession_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecordSession_Internal.h; path = Library/Sources/SCRecordSession_Internal.h; sourceTree = "<group>"; };
-		5489E05C611D43BF1CE12AE7EC62989E /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
+		44BE2A910E0FCB79F75C03C3DA08DF81 /* EXTScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTScope.h; path = Mantle/extobjc/EXTScope.h; sourceTree = "<group>"; };
+		45402278F5CAB2673C08ECCDC4B30A42 /* libSCRecorder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSCRecorder.a; path = libSCRecorder.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		45702E3D2B0F4E9EBCB8BF057A34DD53 /* MTLValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLValueTransformer.h; path = Mantle/MTLValueTransformer.h; sourceTree = "<group>"; };
+		46C2FF81D135E01959EE0A5E7314F842 /* SCPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCPlayer.h; path = Library/Sources/SCPlayer.h; sourceTree = "<group>"; };
+		46D4DF8BB0C49BB30B7B9AEBC9FF160E /* JVTransitionAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JVTransitionAnimator.h; path = Pod/Classes/JVTransitionAnimator.h; sourceTree = "<group>"; };
+		46EC7132A3E29562220906A25A26B984 /* NSURL+SCSaveToCameraRoll.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURL+SCSaveToCameraRoll.h"; path = "Library/Sources/NSURL+SCSaveToCameraRoll.h"; sourceTree = "<group>"; };
+		4835BC752909933DAA5EB4C3EE5E5323 /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
+		4B5597B46BCFC671FD95ACC7F9C0AEF1 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		51A331FCE10020A835A1ED7AC7156F57 /* libChameleonFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libChameleonFramework.a; path = libChameleonFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		54994EADC0C551842AB2B866820E3E63 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		554A9CFC64A4C462B74C96A4B5DA3C09 /* NSError+MTLModelException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+MTLModelException.h"; path = "Mantle/NSError+MTLModelException.h"; sourceTree = "<group>"; };
 		56F34660410782BF2836112ED113F7C8 /* Pods-GIFMomentCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GIFMomentCamera.release.xcconfig"; sourceTree = "<group>"; };
+		5771DBF348AFAB46CCB8B4745343BE81 /* SCRecorder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCRecorder-prefix.pch"; sourceTree = "<group>"; };
+		57C6987D5538662A4FA631D520452387 /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
 		58237F5D604E518B65972803B38B3551 /* Pods-GIFMomentCamera-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GIFMomentCamera-frameworks.sh"; sourceTree = "<group>"; };
-		58A55E2ECCA49563A401BF8F350AB2B6 /* SCImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCImageView.h; path = Library/Sources/SCImageView.h; sourceTree = "<group>"; };
-		58C198880CFD8807BFD1638791C7FC54 /* SCSwipeableFilterView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCSwipeableFilterView.h; path = Library/Sources/SCSwipeableFilterView.h; sourceTree = "<group>"; };
-		5E3538460D98CE28746303B37A7D46D8 /* JVTransitionAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JVTransitionAnimator.h; path = Pod/Classes/JVTransitionAnimator.h; sourceTree = "<group>"; };
-		5EAB02990062384063659CAFB868D086 /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
-		61659C2FFD1275E6493A357DB6BAA60A /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
+		58F26A60BB43BA6338EE9E36C676FB7C /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
+		5A571E313CC27BA1C15C3CC30AD95417 /* SCFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCFilter.h; path = Library/Sources/SCFilter.h; sourceTree = "<group>"; };
+		5AF93081DC73BD42B23C408925BB8B31 /* SCPhotoConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCPhotoConfiguration.h; path = Library/Sources/SCPhotoConfiguration.h; sourceTree = "<group>"; };
+		5BF4D347FE3B177A8D0834059BDAE418 /* SCFilter+VideoComposition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SCFilter+VideoComposition.m"; path = "Library/Sources/SCFilter+VideoComposition.m"; sourceTree = "<group>"; };
+		5E6F84244911829A5270D1779F1D3A65 /* NSObject+MTLComparisonAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MTLComparisonAdditions.h"; path = "Mantle/NSObject+MTLComparisonAdditions.h"; sourceTree = "<group>"; };
+		5F91B8FF3AD8404CDDC658358DAA2B65 /* SCSampleBufferHolder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCSampleBufferHolder.m; path = Library/Sources/SCSampleBufferHolder.m; sourceTree = "<group>"; };
 		6204F8C8B17AB73D7B4E9B3AAB45F43B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		63E823BDAA4B170203AB861434DE0CE4 /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
-		64FD7659826EF77960E1A8FF66F14D9D /* SCFilterImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCFilterImageView.m; path = Library/Sources/SCFilterImageView.m; sourceTree = "<group>"; };
-		6969C6ED854A54B51B566E46D82E2F39 /* SCRecorderTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecorderTools.h; path = Library/Sources/SCRecorderTools.h; sourceTree = "<group>"; };
-		785BB554E63CD7263EEB7493F27C7800 /* SCImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCImageView.m; path = Library/Sources/SCImageView.m; sourceTree = "<group>"; };
-		798953E5AB2615CCFB57083E8A2DAB36 /* ResourceBundle-JVTransitionAnimator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-JVTransitionAnimator-Info.plist"; sourceTree = "<group>"; };
+		649D10B508359761CA4B614F5613D8B0 /* SCImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCImageView.h; path = Library/Sources/SCImageView.h; sourceTree = "<group>"; };
+		64DDC7CFA7E295D07B243DE89EDBA419 /* JVTransitionAnimator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JVTransitionAnimator.xcconfig; sourceTree = "<group>"; };
+		651DAD46149F1C39624DB19D956953A1 /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
+		669EB3AF58466B281EEC8D3E92C7D514 /* SCIOPixelBuffers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCIOPixelBuffers.h; path = Library/Sources/SCIOPixelBuffers.h; sourceTree = "<group>"; };
+		67E6501B9D87753C88E31CF93A800D35 /* libMantle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMantle.a; path = libMantle.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FD42A58D3E3C5D71407167AB750D5C6 /* SCIOPixelBuffers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCIOPixelBuffers.m; path = Library/Sources/SCIOPixelBuffers.m; sourceTree = "<group>"; };
+		70143EABB2235F5BBEC448A33857203D /* SCVideoConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCVideoConfiguration.h; path = Library/Sources/SCVideoConfiguration.h; sourceTree = "<group>"; };
+		71EFD9CFB795A246DD839A97E1AA5ABF /* SCFilterAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCFilterAnimation.h; path = Library/Sources/SCFilterAnimation.h; sourceTree = "<group>"; };
+		7497013096E1B580F1ECEB2B1FEB3E41 /* MTLModel+NSCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MTLModel+NSCoding.h"; path = "Mantle/MTLModel+NSCoding.h"; sourceTree = "<group>"; };
+		74E646AD02FE66CD9393F0E5D7448A75 /* SCAssetExportSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCAssetExportSession.m; path = Library/Sources/SCAssetExportSession.m; sourceTree = "<group>"; };
+		752EDB82775CF41888AC61AA28B2B110 /* SCRecordSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecordSession.h; path = Library/Sources/SCRecordSession.h; sourceTree = "<group>"; };
+		7789D19B94AE3A81140A002FF5F6FE84 /* metamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = metamacros.h; path = Mantle/extobjc/metamacros.h; sourceTree = "<group>"; };
+		79601F0CBB62EFFD331D25AE941D1CB1 /* JVTransitionAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JVTransitionAnimator.m; path = Pod/Classes/JVTransitionAnimator.m; sourceTree = "<group>"; };
+		7BAE11B14C9767933EC7FA4BC05E9F58 /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
 		7D0DA246C991D590E3557FC376A3B665 /* Pods-GIFMomentCameraUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GIFMomentCameraUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7DFA23530C19F65DB272BE2879FB5E9B /* SCSaveToCameraRollOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCSaveToCameraRollOperation.m; path = Library/Sources/SCSaveToCameraRollOperation.m; sourceTree = "<group>"; };
+		7DA6BA35E22FFB23162581DB0239B4BA /* SCSampleBufferHolder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCSampleBufferHolder.h; path = Library/Sources/SCSampleBufferHolder.h; sourceTree = "<group>"; };
 		7EA59E6F3DFBEBB29C162E531697E001 /* Pods-GIFMomentCameraUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GIFMomentCameraUITests-dummy.m"; sourceTree = "<group>"; };
-		804D89D6405C875BE535A947FE277B5F /* SCAudioTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCAudioTools.h; path = Library/Sources/SCAudioTools.h; sourceTree = "<group>"; };
-		80D878942ED2DCE0AC322ADAC003214E /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
-		82D6E1ADBCE1B7BA46C6F211F20D335D /* JVTransitionAnimator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JVTransitionAnimator-prefix.pch"; sourceTree = "<group>"; };
-		8451CED0AB7086950FECED0A432250A6 /* SCRecorder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCRecorder-dummy.m"; sourceTree = "<group>"; };
+		8287D992A323460B31C1F3E121388D49 /* NSArray+MTLManipulationAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MTLManipulationAdditions.h"; path = "Mantle/NSArray+MTLManipulationAdditions.h"; sourceTree = "<group>"; };
 		85E544B241C2A915CE67C7A746A7AFFA /* Pods-GIFMomentCameraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GIFMomentCameraTests.debug.xcconfig"; sourceTree = "<group>"; };
-		874BAAD994936F80A2A04D9E1241A27F /* SCRecorderToolsView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecorderToolsView.h; path = Library/Sources/SCRecorderToolsView.h; sourceTree = "<group>"; };
-		890FBD445EA8211DC37FC4A64836519F /* libSCRecorder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSCRecorder.a; path = libSCRecorder.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		89CF005DFFBC7389738262C91D0D088C /* MTLTransformerErrorHandling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLTransformerErrorHandling.h; path = Mantle/MTLTransformerErrorHandling.h; sourceTree = "<group>"; };
 		8B8B4083F418CBA1068E4EF7ED2EA17F /* Pods-GIFMomentCameraUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GIFMomentCameraUITests-resources.sh"; sourceTree = "<group>"; };
 		8BBA8942C0D840EB7DD6D3EDCBB39C05 /* Pods-GIFMomentCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GIFMomentCamera.debug.xcconfig"; sourceTree = "<group>"; };
-		92403373748DF80D9E8F810D1F6643F7 /* JVTransitionAnimator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JVTransitionAnimator.xcconfig; sourceTree = "<group>"; };
-		92E71DB447C64E486654EDE5D17EA4DC /* UIImage+SCSaveToCameraRoll.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+SCSaveToCameraRoll.m"; path = "Library/Sources/UIImage+SCSaveToCameraRoll.m"; sourceTree = "<group>"; };
-		938E6BB80FE74D57B564B69BEA18B199 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
+		9071AAB3F84FB43FA72E42FD87A2DDF3 /* SCRecorderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecorderDelegate.h; path = Library/Sources/SCRecorderDelegate.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94A13D0685DF2EFD2F9CE11984CC2D52 /* Pods-GIFMomentCameraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GIFMomentCameraUITests.release.xcconfig"; sourceTree = "<group>"; };
-		958A039DBF2E273DEEF46004843CC442 /* SCWeakSelectorTarget.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCWeakSelectorTarget.h; path = Library/Sources/SCWeakSelectorTarget.h; sourceTree = "<group>"; };
-		96DBEEFFC95D30AB211D5B48F4F39643 /* SCProcessingQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCProcessingQueue.m; path = Library/Sources/SCProcessingQueue.m; sourceTree = "<group>"; };
-		9B1446356C1771D16E495CE9686FDCF6 /* SCFilterAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCFilterAnimation.m; path = Library/Sources/SCFilterAnimation.m; sourceTree = "<group>"; };
-		9B82ACA85AD5542B9D4BBA40CF882413 /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
-		9E2C41F2760462E8A55F6E6BC49E8D27 /* SCRecorderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecorderDelegate.h; path = Library/Sources/SCRecorderDelegate.h; sourceTree = "<group>"; };
-		9F9963F246AC3A7AD4E6605C170A254C /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
-		A177BC246207351DD8E7B9A86E4DE769 /* libChameleonFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libChameleonFramework.a; path = libChameleonFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1D9E1C68B3ACE0A95E700AE09B2AC6F /* SCVideoConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCVideoConfiguration.h; path = Library/Sources/SCVideoConfiguration.h; sourceTree = "<group>"; };
+		94F3B9031E5187BCC64BB88189FEFDAB /* MTLModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLModel.m; path = Mantle/MTLModel.m; sourceTree = "<group>"; };
+		96C6F90F837A82085967CAF32871EBCC /* SCRecorderToolsView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRecorderToolsView.m; path = Library/Sources/SCRecorderToolsView.m; sourceTree = "<group>"; };
+		976D4302F4C087B959BF7BA7B8245B92 /* NSError+MTLModelException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+MTLModelException.m"; path = "Mantle/NSError+MTLModelException.m"; sourceTree = "<group>"; };
+		99041EE9F3F98044CB2463AECF4311C3 /* Mantle-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Mantle-prefix.pch"; sourceTree = "<group>"; };
+		9A8096541F54AC3AB2CF7843A384A290 /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		9CB6DE9FBA60DA62D0F1B55AB4A326BC /* NSDictionary+MTLManipulationAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLManipulationAdditions.h"; path = "Mantle/NSDictionary+MTLManipulationAdditions.h"; sourceTree = "<group>"; };
+		9CCC9840183209417043C4D9C8F7E2BD /* SCSaveToCameraRollOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCSaveToCameraRollOperation.m; path = Library/Sources/SCSaveToCameraRollOperation.m; sourceTree = "<group>"; };
+		9DC99BC5A7749880C4CEDDB6701EBA1C /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
+		9EBF42A390B1EC77961C8E9B09F33D23 /* NSDictionary+MTLMappingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLMappingAdditions.h"; path = "Mantle/NSDictionary+MTLMappingAdditions.h"; sourceTree = "<group>"; };
+		A04FAE11EE52864A0CCB8D6526D6DE06 /* SCPlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCPlayer.m; path = Library/Sources/SCPlayer.m; sourceTree = "<group>"; };
+		A23AF04D69368E9C64DE3AD627557994 /* libJVTransitionAnimator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJVTransitionAnimator.a; path = libJVTransitionAnimator.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23ED26054726DD570D9D04595AB4A95 /* SCImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCImageView.m; path = Library/Sources/SCImageView.m; sourceTree = "<group>"; };
+		A275C6E0190185C37DE4387427C0CFC5 /* MTLTransformerErrorHandling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLTransformerErrorHandling.m; path = Mantle/MTLTransformerErrorHandling.m; sourceTree = "<group>"; };
 		A2F6D06BB45FF43A028B4CBD8A6CB4FF /* Pods-GIFMomentCameraTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GIFMomentCameraTests-frameworks.sh"; sourceTree = "<group>"; };
-		A57DEA5679B42E7C45FC6F645B12F0CE /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
+		A31D702F9C2FC8B10E36FBFF47940564 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
+		A36759ACD7E23ACE3984B2078971995D /* SCRecorder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCRecorder-dummy.m"; sourceTree = "<group>"; };
+		A3EDDE9C5072F6E2973CD924866C71D0 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		A4CF510BBE3273160C100DAD493EE600 /* libPods-GIFMomentCameraUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GIFMomentCameraUITests.a"; path = "libPods-GIFMomentCameraUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E8DEC61C655B2479C5FB0D3B486150 /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
 		A5EC8BC868D1C3CA71056359C78A0B62 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		A636E1B5F618F6C4832C2F710437D6C2 /* SCMediaTypeConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCMediaTypeConfiguration.h; path = Library/Sources/SCMediaTypeConfiguration.h; sourceTree = "<group>"; };
-		A6A3B61B5737E2F00A44C6F8593C91C4 /* NSURL+SCSaveToCameraRoll.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURL+SCSaveToCameraRoll.h"; path = "Library/Sources/NSURL+SCSaveToCameraRoll.h"; sourceTree = "<group>"; };
-		A6E62D1DB4D7383E483E8E91F896DD19 /* SCFilter+VideoComposition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SCFilter+VideoComposition.h"; path = "Library/Sources/SCFilter+VideoComposition.h"; sourceTree = "<group>"; };
-		A7A76DB03EE2F588A4C809F0C9566886 /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		AB6B3F004A2EAA002112F64847530514 /* SCWeakSelectorTarget.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCWeakSelectorTarget.m; path = Library/Sources/SCWeakSelectorTarget.m; sourceTree = "<group>"; };
+		A624B2532C28D9059308B3E21E607BBD /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
+		A851D9AE05E76922C60E1A6140016F90 /* libPods-GIFMomentCameraTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GIFMomentCameraTests.a"; path = "libPods-GIFMomentCameraTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A888A075B465E54A0CF8C99C7CE5BC11 /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
+		ACF9A480BB3EE5A46FABA5F00380489F /* SCFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCFilter.m; path = Library/Sources/SCFilter.m; sourceTree = "<group>"; };
+		AE35E9ECB54C3885ECECF26957290E92 /* SCProcessingQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCProcessingQueue.m; path = Library/Sources/SCProcessingQueue.m; sourceTree = "<group>"; };
+		AEE8F747783FB59699C8D8E1293341D4 /* MTLJSONAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLJSONAdapter.h; path = Mantle/MTLJSONAdapter.h; sourceTree = "<group>"; };
 		AF9D0AF35B626926E9EEFB6F60318DBE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		B35338A0186AA970E09B1555917DF8B6 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
-		B5BD924CB01C1990BE03E1A3129F9B65 /* SCRecordSessionSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecordSessionSegment.h; path = Library/Sources/SCRecordSessionSegment.h; sourceTree = "<group>"; };
-		B889A0EEE517948480D277FA94AA71A7 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
+		B04BCFBD9DBE5D309BE69D0B610EE398 /* SCRecorderFocusTargetView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecorderFocusTargetView.h; path = Library/Sources/SCRecorderFocusTargetView.h; sourceTree = "<group>"; };
+		B38B0DC5108A11BF578F26F957827D86 /* NSValueTransformer+MTLInversionAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+MTLInversionAdditions.h"; path = "Mantle/NSValueTransformer+MTLInversionAdditions.h"; sourceTree = "<group>"; };
+		B495DBA50A4079CFCD879B4594D9762B /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
+		B693DC496B56ABAE4F0F090E1A5E0122 /* JVTransitionAnimator.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = JVTransitionAnimator.bundle; path = JVTransitionAnimator.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7966F733250084A1DB1A780D45AF787 /* SCAudioTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCAudioTools.h; path = Library/Sources/SCAudioTools.h; sourceTree = "<group>"; };
+		B8A45849442EB4E0CE7DD327648EF561 /* NSDictionary+MTLJSONKeyPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLJSONKeyPath.h"; path = "Mantle/NSDictionary+MTLJSONKeyPath.h"; sourceTree = "<group>"; };
+		B917A8551C04C049A229283B7D2E815F /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
 		BA723E28FE54DA2E730EF1A120DF580F /* Pods-GIFMomentCameraTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GIFMomentCameraTests-dummy.m"; sourceTree = "<group>"; };
-		BC0766A37B05D15E263F068F44F4324E /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
-		BC2394F2AC6A90C83027C3BACB0CB414 /* SCVideoConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCVideoConfiguration.m; path = Library/Sources/SCVideoConfiguration.m; sourceTree = "<group>"; };
-		BE63ADC73ADD7288D7867AC70C78D15B /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		BFE2BE1B9785E1F1D304D21CB296F7A2 /* SCRecordSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRecordSession.m; path = Library/Sources/SCRecordSession.m; sourceTree = "<group>"; };
-		C00F0440A0F99059B85392F2021A7207 /* SCFilter+VideoComposition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SCFilter+VideoComposition.m"; path = "Library/Sources/SCFilter+VideoComposition.m"; sourceTree = "<group>"; };
-		C085B6B3EC796151E08D4046BEB7FD42 /* SCContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCContext.m; path = Library/Sources/SCContext.m; sourceTree = "<group>"; };
-		C3DCAD45DDC243F2A185DB991A48805C /* SCPhotoConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCPhotoConfiguration.h; path = Library/Sources/SCPhotoConfiguration.h; sourceTree = "<group>"; };
-		C6EB4B4629A10907C18F91295A22C48B /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		C7217AC917E90309049B6804D58730C6 /* JVTransitionAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JVTransitionAnimator.m; path = Pod/Classes/JVTransitionAnimator.m; sourceTree = "<group>"; };
-		D1D5A6FB7090A166AFDAC5B4DCD55ADB /* SCRecorder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCRecorder-prefix.pch"; sourceTree = "<group>"; };
-		D314F6B1B7E4AEC9F28ECDADC5D2D18F /* SCIOPixelBuffers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCIOPixelBuffers.m; path = Library/Sources/SCIOPixelBuffers.m; sourceTree = "<group>"; };
+		BAEC6F0765ED083B9D2FA77FA83D9979 /* Mantle.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Mantle.xcconfig; sourceTree = "<group>"; };
+		BB5901024A5E2953AF959B941256F9B0 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
+		BB932C5A5AFBCA455CBC9AF166E56908 /* ResourceBundle-JVTransitionAnimator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-JVTransitionAnimator-Info.plist"; sourceTree = "<group>"; };
+		BBA5D4B8BFAE5644C4C4D55FAF26F96D /* SCFilter+UIImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SCFilter+UIImage.h"; path = "Library/Sources/SCFilter+UIImage.h"; sourceTree = "<group>"; };
+		BFC50D6B9A354120B8B38C028AE08295 /* SCFilterAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCFilterAnimation.m; path = Library/Sources/SCFilterAnimation.m; sourceTree = "<group>"; };
+		C1CC1237822B130D7887360B3B752205 /* SCRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRecorder.m; path = Library/Sources/SCRecorder.m; sourceTree = "<group>"; };
+		C2ABB6E513FF21708BFED8F978361D66 /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTRuntimeExtensions.m; path = Mantle/extobjc/EXTRuntimeExtensions.m; sourceTree = "<group>"; };
+		C354DD6CDEE665EC3BA67C028D74557E /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTRuntimeExtensions.h; path = Mantle/extobjc/EXTRuntimeExtensions.h; sourceTree = "<group>"; };
+		C48A3CA2F4F3C11E175456A8D005F149 /* Mantle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Mantle-dummy.m"; sourceTree = "<group>"; };
+		CAAA3846B2E4CEBA03D32B960ECA7193 /* NSURL+SCSaveToCameraRoll.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURL+SCSaveToCameraRoll.m"; path = "Library/Sources/NSURL+SCSaveToCameraRoll.m"; sourceTree = "<group>"; };
+		CC81068D5823DD835099F31791F9F7A9 /* UIImage+SCSaveToCameraRoll.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+SCSaveToCameraRoll.h"; path = "Library/Sources/UIImage+SCSaveToCameraRoll.h"; sourceTree = "<group>"; };
+		CDBB4FF6954A3D68F78EC4E16DC98FA7 /* MTLModel+NSCoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MTLModel+NSCoding.m"; path = "Mantle/MTLModel+NSCoding.m"; sourceTree = "<group>"; };
+		CDC40010ADB9EB280FD6B4A5E9F79378 /* MTLReflection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLReflection.m; path = Mantle/MTLReflection.m; sourceTree = "<group>"; };
+		CDFACADE378DEBA815D445FB2840B257 /* SCRecordSessionSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecordSessionSegment.h; path = Library/Sources/SCRecordSessionSegment.h; sourceTree = "<group>"; };
+		D0AF43DE0D432859368F6CEF9BB41B6B /* JVTransitionAnimator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JVTransitionAnimator-dummy.m"; sourceTree = "<group>"; };
+		D117067131937347AD7B0F0B85D32C6C /* EXTScope.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTScope.m; path = Mantle/extobjc/EXTScope.m; sourceTree = "<group>"; };
+		D2420CF9259B42BCD2FBC5B19D20FD36 /* SCRecorder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCRecorder.xcconfig; sourceTree = "<group>"; };
+		D2C78344987A5964D0401BACAC21570C /* SCProcessingQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCProcessingQueue.h; path = Library/Sources/SCProcessingQueue.h; sourceTree = "<group>"; };
+		D4D7A79FA04AB618B869438915287378 /* SCFilter+UIImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SCFilter+UIImage.m"; path = "Library/Sources/SCFilter+UIImage.m"; sourceTree = "<group>"; };
+		D5758D472B99122783BBCC8947AE7BCC /* MTLValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLValueTransformer.m; path = Mantle/MTLValueTransformer.m; sourceTree = "<group>"; };
+		D6ECEE52BEC3F2BE8E1A9291A1F3A1AE /* SCRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecorder.h; path = Library/Sources/SCRecorder.h; sourceTree = "<group>"; };
 		D8166E2FD3759FEC69EE8B19A98E407D /* Pods-GIFMomentCamera-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GIFMomentCamera-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D8B588AE029EB464A1C3D59462C6F91F /* SCPlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCPlayer.m; path = Library/Sources/SCPlayer.m; sourceTree = "<group>"; };
-		D902EA84F8E657D5759E613D7C417FCF /* SCSwipeableFilterView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCSwipeableFilterView.m; path = Library/Sources/SCSwipeableFilterView.m; sourceTree = "<group>"; };
-		DE04E07B86CF4D61909091E6C159A133 /* SCIOPixelBuffers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCIOPixelBuffers.h; path = Library/Sources/SCIOPixelBuffers.h; sourceTree = "<group>"; };
-		DF494D85B49F124D9228FED7ADEC19D4 /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		E05303BA1E8851CCB75BAAEDBF2CA5EE /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
-		E08A9BEB3A0DE410D6A18A35F781F805 /* SCPhotoConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCPhotoConfiguration.m; path = Library/Sources/SCPhotoConfiguration.m; sourceTree = "<group>"; };
-		E142EE36A4D543F0E320CE33DD6E6502 /* SCMediaTypeConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCMediaTypeConfiguration.m; path = Library/Sources/SCMediaTypeConfiguration.m; sourceTree = "<group>"; };
-		E2589D752B8DC9E34C77AC3A19703F03 /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		E2A939C44825C308C94B136CA82950A7 /* SCAssetExportSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCAssetExportSession.h; path = Library/Sources/SCAssetExportSession.h; sourceTree = "<group>"; };
-		E32BEED65CD34FCC15FD7041ECEA9A0C /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
+		DB2DBF835F0287B0A6E925B13FA8DE64 /* SCAudioTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCAudioTools.m; path = Library/Sources/SCAudioTools.m; sourceTree = "<group>"; };
+		DCC7B6BFFB8CA035760C5A9AEDD7AC7A /* SCSwipeableFilterView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCSwipeableFilterView.h; path = Library/Sources/SCSwipeableFilterView.h; sourceTree = "<group>"; };
+		DEF4AA060B0D917D3BDD810926B210ED /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		E1A9FFA660D3C0895D57F9AFABC9285A /* SCMediaTypeConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCMediaTypeConfiguration.h; path = Library/Sources/SCMediaTypeConfiguration.h; sourceTree = "<group>"; };
+		E313A78463DE06732FDF49204CEAAEC9 /* SCWeakSelectorTarget.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCWeakSelectorTarget.m; path = Library/Sources/SCWeakSelectorTarget.m; sourceTree = "<group>"; };
+		E382EB16587C6AB3942F524478828E80 /* SCFilterImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCFilterImageView.h; path = Library/Sources/SCFilterImageView.h; sourceTree = "<group>"; };
 		E6C5C1322B439284A805D527EF57EC22 /* Pods-GIFMomentCameraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GIFMomentCameraUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E6EE5E1670B123C7D9DA950E23220201 /* SCFilterAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCFilterAnimation.h; path = Library/Sources/SCFilterAnimation.h; sourceTree = "<group>"; };
-		E8CCBEB1F0211F7CD11FD13AE9FFF155 /* SCFilter+UIImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SCFilter+UIImage.m"; path = "Library/Sources/SCFilter+UIImage.m"; sourceTree = "<group>"; };
-		EE7F5C196D5C7967DBD5D3F18E1A806A /* JVTransitionAnimator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JVTransitionAnimator-dummy.m"; sourceTree = "<group>"; };
-		EED890F841996330538C807B46242C23 /* libPods-GIFMomentCameraTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GIFMomentCameraTests.a"; path = "libPods-GIFMomentCameraTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E986AF53E17EF8F8E3CFADDC4923B937 /* libPods-GIFMomentCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GIFMomentCamera.a"; path = "libPods-GIFMomentCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB88CB06206F4B02FA7A73CF6119CC39 /* NSDictionary+MTLMappingAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MTLMappingAdditions.m"; path = "Mantle/NSDictionary+MTLMappingAdditions.m"; sourceTree = "<group>"; };
+		EB911B047A99C254F0D973884468A969 /* SCRecorderTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRecorderTools.m; path = Library/Sources/SCRecorderTools.m; sourceTree = "<group>"; };
+		EE4ABD4E03AD0C1DDAADD189369A8803 /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
 		F1772FBE9E80A6BCD5B6CCDC7C8AECF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F178DD132E94F51CC377FAE8F763BCA8 /* Pods-GIFMomentCamera-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GIFMomentCamera-resources.sh"; sourceTree = "<group>"; };
+		F19F3824455CEB6AE9867AA23498D6DA /* SCVideoConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCVideoConfiguration.m; path = Library/Sources/SCVideoConfiguration.m; sourceTree = "<group>"; };
+		F311E419519B6D0BC072CC65833FEC83 /* NSDictionary+MTLManipulationAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MTLManipulationAdditions.m"; path = "Mantle/NSDictionary+MTLManipulationAdditions.m"; sourceTree = "<group>"; };
+		F32FEFA04635670F06837B4E03BF8088 /* SCRecordSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRecordSession.m; path = Library/Sources/SCRecordSession.m; sourceTree = "<group>"; };
+		F37032647529995D17C86622CE91F31B /* SCWeakSelectorTarget.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCWeakSelectorTarget.h; path = Library/Sources/SCWeakSelectorTarget.h; sourceTree = "<group>"; };
 		F38B2E8AAEAA0F6D40E89677A77F0BDD /* Pods-GIFMomentCameraTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GIFMomentCameraTests-resources.sh"; sourceTree = "<group>"; };
-		F426F93CE140523FDCBF5622FF0D8FFB /* SCPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCPlayer.h; path = Library/Sources/SCPlayer.h; sourceTree = "<group>"; };
-		F64A7D562E1CC27F0A9522F5893B1A54 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
-		F7CF9A68FC4609D4A7A61A891085B918 /* SCAudioConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCAudioConfiguration.m; path = Library/Sources/SCAudioConfiguration.m; sourceTree = "<group>"; };
-		F87DF8AC45614F92FB4B9EFCCEC26C49 /* SCAudioTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCAudioTools.m; path = Library/Sources/SCAudioTools.m; sourceTree = "<group>"; };
-		F921061EFCE67C054A0D4BAFC1BC096A /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		FA63BEB357D18CA287C3DFB3AC752353 /* SCSaveToCameraRollOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCSaveToCameraRollOperation.h; path = Library/Sources/SCSaveToCameraRollOperation.h; sourceTree = "<group>"; };
-		FD426E52D0F0411EA333561CBF0184B3 /* SCProcessingQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCProcessingQueue.h; path = Library/Sources/SCProcessingQueue.h; sourceTree = "<group>"; };
-		FF34F5AC1EB15C14B506687C6C1CC8A9 /* libPods-GIFMomentCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GIFMomentCamera.a"; path = "libPods-GIFMomentCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF357BE2EA4E0DBF140E0204803286FD /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
-		FF8167FFF93FAD39B5E78A5819B72EFE /* SCFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCFilter.h; path = Library/Sources/SCFilter.h; sourceTree = "<group>"; };
-		FFE23F0BB8D223F20DB374815C15DBA1 /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
+		F4BEC18B0AA8A39C834288EF06AC9DBB /* SCRecorderFocusTargetView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRecorderFocusTargetView.m; path = Library/Sources/SCRecorderFocusTargetView.m; sourceTree = "<group>"; };
+		F4D54C916A18E794AB7A8B7882912D7A /* SCVideoPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCVideoPlayerView.h; path = Library/Sources/SCVideoPlayerView.h; sourceTree = "<group>"; };
+		F712E07C8A10D4F57981B071F582280C /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
+		F80F7BE13513B4E572255CBD846F3EA4 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
+		F879CED575624F3369759650C2397C04 /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		FB84E9F2D5DD8BC0AE9914EE51B5AB58 /* UIImage+SCSaveToCameraRoll.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+SCSaveToCameraRoll.m"; path = "Library/Sources/UIImage+SCSaveToCameraRoll.m"; sourceTree = "<group>"; };
+		FBE83E526C6B53A28EBD9CAEB7F66E54 /* JVTransitionAnimator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JVTransitionAnimator-prefix.pch"; sourceTree = "<group>"; };
+		FDA19794D9FD09DE583455DD39BF1E71 /* SCRecorderToolsView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecorderToolsView.h; path = Library/Sources/SCRecorderToolsView.h; sourceTree = "<group>"; };
+		FEC85557BE5D74C55DDF241DBF2190C7 /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		03C118D14EF13E8C5CDB2876A47ED3E3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F11862556E6D4DE0AC55F02E93784569 /* AVFoundation.framework in Frameworks */,
-				6F2E783AC30E4B9D5F3B5C2FF69F1F55 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1592A50CC530204382078C4A98621B4E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -316,6 +390,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		500B7F685341FD76D41854966EB2A6C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4E234924E13E11EC58D1C59D6E3AD3 /* AVFoundation.framework in Frameworks */,
+				FD0D0B822658EE19E1A26392B488F7B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75DD72EF4CAA2B262B0A96C9CA0FFE6A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,6 +410,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		82E23767320A4061102738EBA133175B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE8B5CFBBB2FF4D4CCFFDFAFFD3CE5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8CCC7ACF8C926EA6B5393F374C362E8C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,25 +426,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFC20B27A3A31772A1FA3BCA1355067B /* Frameworks */ = {
+		8F5D50D7CCC61E7E4BD8F6661E30D86A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E29F3EF020DD27ED4B5BD05A15F16DD /* Foundation.framework in Frameworks */,
+				EC1C1DAAF0373AF9CC3C93A2B0C3F2C0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B17F9D5F3AF402E3141ABA8B412E7ED /* ChameleonFramework */ = {
+		0AA7D66159E7EAF87A63E03D806058D5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8C96A2708BD2C474D088C83147D3A877 /* Default */,
-				EA1201C7EBF5F49740A3F1439E392E65 /* Support Files */,
+				57C6987D5538662A4FA631D520452387 /* ChameleonFramework.xcconfig */,
+				A624B2532C28D9059308B3E21E607BBD /* ChameleonFramework-dummy.m */,
+				4835BC752909933DAA5EB4C3EE5E5323 /* ChameleonFramework-prefix.pch */,
 			);
-			name = ChameleonFramework;
-			path = ChameleonFramework;
+			name = "Support Files";
+			path = "../Target Support Files/ChameleonFramework";
+			sourceTree = "<group>";
+		};
+		0DD69B184F83A377C1CDD42141FF878F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B693DC496B56ABAE4F0F090E1A5E0122 /* JVTransitionAnimator.bundle */,
+				51A331FCE10020A835A1ED7AC7156F57 /* libChameleonFramework.a */,
+				A23AF04D69368E9C64DE3AD627557994 /* libJVTransitionAnimator.a */,
+				67E6501B9D87753C88E31CF93A800D35 /* libMantle.a */,
+				E986AF53E17EF8F8E3CFADDC4923B937 /* libPods-GIFMomentCamera.a */,
+				A851D9AE05E76922C60E1A6140016F90 /* libPods-GIFMomentCameraTests.a */,
+				A4CF510BBE3273160C100DAD493EE600 /* libPods-GIFMomentCameraUITests.a */,
+				45402278F5CAB2673C08ECCDC4B30A42 /* libSCRecorder.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		194BECAB369E933B33CD5A1B6E02612E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2420CF9259B42BCD2FBC5B19D20FD36 /* SCRecorder.xcconfig */,
+				A36759ACD7E23ACE3984B2078971995D /* SCRecorder-dummy.m */,
+				5771DBF348AFAB46CCB8B4745343BE81 /* SCRecorder-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SCRecorder";
 			sourceTree = "<group>";
 		};
 		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
@@ -364,15 +482,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3BCA98A0E0B50FBE62C084BAC59C23C9 /* Support Files */ = {
+		20B6947A5626F8C5C17FA90B8412504D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2582EA27BBF4F81BB2933797881224B7 /* SCRecorder.xcconfig */,
-				8451CED0AB7086950FECED0A432250A6 /* SCRecorder-dummy.m */,
-				D1D5A6FB7090A166AFDAC5B4DCD55ADB /* SCRecorder-prefix.pch */,
+				64DDC7CFA7E295D07B243DE89EDBA419 /* JVTransitionAnimator.xcconfig */,
+				D0AF43DE0D432859368F6CEF9BB41B6B /* JVTransitionAnimator-dummy.m */,
+				FBE83E526C6B53A28EBD9CAEB7F66E54 /* JVTransitionAnimator-prefix.pch */,
+				BB932C5A5AFBCA455CBC9AF166E56908 /* ResourceBundle-JVTransitionAnimator-Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SCRecorder";
+			path = "../Target Support Files/JVTransitionAnimator";
+			sourceTree = "<group>";
+		};
+		242B0B8A20D988AE3F7A20EB6286D28D /* extobjc */ = {
+			isa = PBXGroup;
+			children = (
+				2259B9EE710EFCC3FC4141F4EBCC7F12 /* EXTKeyPathCoding.h */,
+				C354DD6CDEE665EC3BA67C028D74557E /* EXTRuntimeExtensions.h */,
+				C2ABB6E513FF21708BFED8F978361D66 /* EXTRuntimeExtensions.m */,
+				44BE2A910E0FCB79F75C03C3DA08DF81 /* EXTScope.h */,
+				D117067131937347AD7B0F0B85D32C6C /* EXTScope.m */,
+				7789D19B94AE3A81140A002FF5F6FE84 /* metamacros.h */,
+			);
+			name = extobjc;
+			sourceTree = "<group>";
+		};
+		3924D9B11E31107B767D560621EC02BA /* ChameleonFramework */ = {
+			isa = PBXGroup;
+			children = (
+				51FC1CBE2F94F4A4961AD0C2E29AFFDD /* Default */,
+				0AA7D66159E7EAF87A63E03D806058D5 /* Support Files */,
+			);
+			name = ChameleonFramework;
+			path = ChameleonFramework;
 			sourceTree = "<group>";
 		};
 		44C3575C27C0F17EE1E4DD62E56129A1 /* Pods-GIFMomentCameraUITests */ = {
@@ -400,84 +542,38 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		51C3E22FE2E320BE0BE67E299A99D1B0 /* SCRecorder */ = {
+		51FC1CBE2F94F4A4961AD0C2E29AFFDD /* Default */ = {
 			isa = PBXGroup;
 			children = (
-				A6A3B61B5737E2F00A44C6F8593C91C4 /* NSURL+SCSaveToCameraRoll.h */,
-				49E7A5CF2A865B02FE32BEACE2847EC4 /* NSURL+SCSaveToCameraRoll.m */,
-				E2A939C44825C308C94B136CA82950A7 /* SCAssetExportSession.h */,
-				19E83C78A812F9A0001C42F871854DB6 /* SCAssetExportSession.m */,
-				0CD5BEEF53FDF7B9B5A30D2954E5AA0B /* SCAudioConfiguration.h */,
-				F7CF9A68FC4609D4A7A61A891085B918 /* SCAudioConfiguration.m */,
-				804D89D6405C875BE535A947FE277B5F /* SCAudioTools.h */,
-				F87DF8AC45614F92FB4B9EFCCEC26C49 /* SCAudioTools.m */,
-				3B6154C75A9184A2CD0B1EE812598C23 /* SCContext.h */,
-				C085B6B3EC796151E08D4046BEB7FD42 /* SCContext.m */,
-				FF8167FFF93FAD39B5E78A5819B72EFE /* SCFilter.h */,
-				005CF0503C9BBE248E52C10301874B2C /* SCFilter.m */,
-				01BCEACBA44F3CB45FCAC4558263E016 /* SCFilter+UIImage.h */,
-				E8CCBEB1F0211F7CD11FD13AE9FFF155 /* SCFilter+UIImage.m */,
-				A6E62D1DB4D7383E483E8E91F896DD19 /* SCFilter+VideoComposition.h */,
-				C00F0440A0F99059B85392F2021A7207 /* SCFilter+VideoComposition.m */,
-				E6EE5E1670B123C7D9DA950E23220201 /* SCFilterAnimation.h */,
-				9B1446356C1771D16E495CE9686FDCF6 /* SCFilterAnimation.m */,
-				23F001ACB8CEFA4C3061D9C2A10C40DD /* SCFilterImageView.h */,
-				64FD7659826EF77960E1A8FF66F14D9D /* SCFilterImageView.m */,
-				58A55E2ECCA49563A401BF8F350AB2B6 /* SCImageView.h */,
-				785BB554E63CD7263EEB7493F27C7800 /* SCImageView.m */,
-				DE04E07B86CF4D61909091E6C159A133 /* SCIOPixelBuffers.h */,
-				D314F6B1B7E4AEC9F28ECDADC5D2D18F /* SCIOPixelBuffers.m */,
-				A636E1B5F618F6C4832C2F710437D6C2 /* SCMediaTypeConfiguration.h */,
-				E142EE36A4D543F0E320CE33DD6E6502 /* SCMediaTypeConfiguration.m */,
-				C3DCAD45DDC243F2A185DB991A48805C /* SCPhotoConfiguration.h */,
-				E08A9BEB3A0DE410D6A18A35F781F805 /* SCPhotoConfiguration.m */,
-				F426F93CE140523FDCBF5622FF0D8FFB /* SCPlayer.h */,
-				D8B588AE029EB464A1C3D59462C6F91F /* SCPlayer.m */,
-				FD426E52D0F0411EA333561CBF0184B3 /* SCProcessingQueue.h */,
-				96DBEEFFC95D30AB211D5B48F4F39643 /* SCProcessingQueue.m */,
-				41CA8A8691383C0034E111AEA9B36259 /* SCRecorder.h */,
-				52551565EA71A90B10713F1781AFE172 /* SCRecorder.m */,
-				9E2C41F2760462E8A55F6E6BC49E8D27 /* SCRecorderDelegate.h */,
-				3B5376619ABC93411E7BDD321400B18E /* SCRecorderFocusTargetView.h */,
-				3A1A7A24C1F523815C6BBDB4ADFD4437 /* SCRecorderFocusTargetView.m */,
-				242DAC73184E6C82EA8ABE4A4E0686C9 /* SCRecorderHeader.h */,
-				6969C6ED854A54B51B566E46D82E2F39 /* SCRecorderTools.h */,
-				09624E2AC68D18587E4A1C7AF0F8A4D3 /* SCRecorderTools.m */,
-				874BAAD994936F80A2A04D9E1241A27F /* SCRecorderToolsView.h */,
-				45BE47CB8C345E66B3E334392B5DF798 /* SCRecorderToolsView.m */,
-				2B386E30A256B254AC8DD7FFEE89C25B /* SCRecordSession.h */,
-				BFE2BE1B9785E1F1D304D21CB296F7A2 /* SCRecordSession.m */,
-				525ECDD77A01392EFA17D61D71A68921 /* SCRecordSession_Internal.h */,
-				B5BD924CB01C1990BE03E1A3129F9B65 /* SCRecordSessionSegment.h */,
-				1D55BEE3E233A490701F7D45554EE7C3 /* SCRecordSessionSegment.m */,
-				4B4761E970FAD44803F7168953B0EB91 /* SCSampleBufferHolder.h */,
-				13F598DD388465946C3915BA2D312B3E /* SCSampleBufferHolder.m */,
-				FA63BEB357D18CA287C3DFB3AC752353 /* SCSaveToCameraRollOperation.h */,
-				7DFA23530C19F65DB272BE2879FB5E9B /* SCSaveToCameraRollOperation.m */,
-				58C198880CFD8807BFD1638791C7FC54 /* SCSwipeableFilterView.h */,
-				D902EA84F8E657D5759E613D7C417FCF /* SCSwipeableFilterView.m */,
-				A1D9E1C68B3ACE0A95E700AE09B2AC6F /* SCVideoConfiguration.h */,
-				BC2394F2AC6A90C83027C3BACB0CB414 /* SCVideoConfiguration.m */,
-				4044638366BD9C3E4BBDBF9C67FA009E /* SCVideoPlayerView.h */,
-				49CF9462677ABCACF29EEDB2BBA6F07F /* SCVideoPlayerView.m */,
-				958A039DBF2E273DEEF46004843CC442 /* SCWeakSelectorTarget.h */,
-				AB6B3F004A2EAA002112F64847530514 /* SCWeakSelectorTarget.m */,
-				30A199FCA65995058441E3B3756E3C67 /* UIImage+SCSaveToCameraRoll.h */,
-				92E71DB447C64E486654EDE5D17EA4DC /* UIImage+SCSaveToCameraRoll.m */,
-				3BCA98A0E0B50FBE62C084BAC59C23C9 /* Support Files */,
+				32D42D4ADFBEFF88E6B64F84BF8D510E /* Chameleon.h */,
+				1D0456D8D3DCEFE34FE814C0996D0747 /* Chameleon_.h */,
+				58F26A60BB43BA6338EE9E36C676FB7C /* Chameleon_.m */,
+				193CE55E7FEF9D59BAB9BA39CE46C4E2 /* ChameleonConstants.h */,
+				FEC85557BE5D74C55DDF241DBF2190C7 /* ChameleonConstants.m */,
+				EE4ABD4E03AD0C1DDAADD189369A8803 /* ChameleonEnums.h */,
+				1B9F4F09031CAAD31741F39A46E30F97 /* ChameleonMacros.h */,
+				4B5597B46BCFC671FD95ACC7F9C0AEF1 /* NSArray+Chameleon.h */,
+				A31D702F9C2FC8B10E36FBFF47940564 /* NSArray+Chameleon.m */,
+				BB5901024A5E2953AF959B941256F9B0 /* UIAppearance+Swift.h */,
+				B495DBA50A4079CFCD879B4594D9762B /* UIAppearance+Swift.m */,
+				B917A8551C04C049A229283B7D2E815F /* UIButton+Chameleon.h */,
+				A5E8DEC61C655B2479C5FB0D3B486150 /* UIButton+Chameleon.m */,
+				A888A075B465E54A0CF8C99C7CE5BC11 /* UIColor+Chameleon.h */,
+				F80F7BE13513B4E572255CBD846F3EA4 /* UIColor+Chameleon.m */,
+				0E6FE55C86A86CC3E686849F2BDEEE6E /* UIColor+ChameleonPrivate.h */,
+				28BAA3AE824166EA9DF0C16E14ABC254 /* UIColor+ChameleonPrivate.m */,
+				9A8096541F54AC3AB2CF7843A384A290 /* UIImage+ChameleonPrivate.h */,
+				DEF4AA060B0D917D3BDD810926B210ED /* UIImage+ChameleonPrivate.m */,
+				7BAE11B14C9767933EC7FA4BC05E9F58 /* UILabel+Chameleon.h */,
+				651DAD46149F1C39624DB19D956953A1 /* UILabel+Chameleon.m */,
+				9DC99BC5A7749880C4CEDDB6701EBA1C /* UINavigationController+Chameleon.h */,
+				41414C70BB499CFC6F90FCBA784C0684 /* UINavigationController+Chameleon.m */,
+				F879CED575624F3369759650C2397C04 /* UIView+ChameleonPrivate.h */,
+				03C9D9FE8AD6768767CE2D904C22D431 /* UIView+ChameleonPrivate.m */,
+				A3EDDE9C5072F6E2973CD924866C71D0 /* UIViewController+Chameleon.h */,
+				F712E07C8A10D4F57981B071F582280C /* UIViewController+Chameleon.m */,
 			);
-			name = SCRecorder;
-			path = SCRecorder;
-			sourceTree = "<group>";
-		};
-		61099AE4D6055AD7D938520C25AEE175 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1B17F9D5F3AF402E3141ABA8B412E7ED /* ChameleonFramework */,
-				8FFAC93EC17F642C9F87F9EA35AA6D0D /* JVTransitionAnimator */,
-				51C3E22FE2E320BE0BE67E299A99D1B0 /* SCRecorder */,
-			);
-			name = Pods;
+			name = Default;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -485,69 +581,10 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
-				61099AE4D6055AD7D938520C25AEE175 /* Pods */,
-				945F36749D79E4867837310F4214F8AD /* Products */,
+				D8071A75C10353267D8B015385684030 /* Pods */,
+				0DD69B184F83A377C1CDD42141FF878F /* Products */,
 				4A0B49DCDBD71C80B07C1B12C3E55DAE /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8C96A2708BD2C474D088C83147D3A877 /* Default */ = {
-			isa = PBXGroup;
-			children = (
-				938E6BB80FE74D57B564B69BEA18B199 /* Chameleon.h */,
-				BC0766A37B05D15E263F068F44F4324E /* Chameleon_.h */,
-				9B82ACA85AD5542B9D4BBA40CF882413 /* Chameleon_.m */,
-				FF357BE2EA4E0DBF140E0204803286FD /* ChameleonConstants.h */,
-				011FE9B0560E9E1935E34CC58E54353A /* ChameleonConstants.m */,
-				63E823BDAA4B170203AB861434DE0CE4 /* ChameleonEnums.h */,
-				5489E05C611D43BF1CE12AE7EC62989E /* ChameleonMacros.h */,
-				08E8A6DED44824155D30CE2585656FD9 /* NSArray+Chameleon.h */,
-				80D878942ED2DCE0AC322ADAC003214E /* NSArray+Chameleon.m */,
-				F64A7D562E1CC27F0A9522F5893B1A54 /* UIAppearance+Swift.h */,
-				4A9C85E12E303AC421895B4317917ABB /* UIAppearance+Swift.m */,
-				3E6F001ECD59136FD90CEE0DA2CD913C /* UIButton+Chameleon.h */,
-				61659C2FFD1275E6493A357DB6BAA60A /* UIButton+Chameleon.m */,
-				FFE23F0BB8D223F20DB374815C15DBA1 /* UIColor+Chameleon.h */,
-				B889A0EEE517948480D277FA94AA71A7 /* UIColor+Chameleon.m */,
-				E2589D752B8DC9E34C77AC3A19703F03 /* UIColor+ChameleonPrivate.h */,
-				C6EB4B4629A10907C18F91295A22C48B /* UIColor+ChameleonPrivate.m */,
-				BE63ADC73ADD7288D7867AC70C78D15B /* UIImage+ChameleonPrivate.h */,
-				F921061EFCE67C054A0D4BAFC1BC096A /* UIImage+ChameleonPrivate.m */,
-				1E869F16E99ED9FD337B3587585A7F63 /* UILabel+Chameleon.h */,
-				E32BEED65CD34FCC15FD7041ECEA9A0C /* UILabel+Chameleon.m */,
-				A57DEA5679B42E7C45FC6F645B12F0CE /* UINavigationController+Chameleon.h */,
-				E05303BA1E8851CCB75BAAEDBF2CA5EE /* UINavigationController+Chameleon.m */,
-				A7A76DB03EE2F588A4C809F0C9566886 /* UIView+ChameleonPrivate.h */,
-				DF494D85B49F124D9228FED7ADEC19D4 /* UIView+ChameleonPrivate.m */,
-				2EE17432BBA08C9424B9C410364E9A46 /* UIViewController+Chameleon.h */,
-				B35338A0186AA970E09B1555917DF8B6 /* UIViewController+Chameleon.m */,
-			);
-			name = Default;
-			sourceTree = "<group>";
-		};
-		8FFAC93EC17F642C9F87F9EA35AA6D0D /* JVTransitionAnimator */ = {
-			isa = PBXGroup;
-			children = (
-				5E3538460D98CE28746303B37A7D46D8 /* JVTransitionAnimator.h */,
-				C7217AC917E90309049B6804D58730C6 /* JVTransitionAnimator.m */,
-				A128F6BBBEB07F90AB34606E83EC3676 /* Support Files */,
-			);
-			name = JVTransitionAnimator;
-			path = JVTransitionAnimator;
-			sourceTree = "<group>";
-		};
-		945F36749D79E4867837310F4214F8AD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1EB0F946072EA00C756D9D439D25B79C /* JVTransitionAnimator.bundle */,
-				A177BC246207351DD8E7B9A86E4DE769 /* libChameleonFramework.a */,
-				0268360AA49F9CD57A644011F906059C /* libJVTransitionAnimator.a */,
-				FF34F5AC1EB15C14B506687C6C1CC8A9 /* libPods-GIFMomentCamera.a */,
-				EED890F841996330538C807B46242C23 /* libPods-GIFMomentCameraTests.a */,
-				15E3EF93B3BACC22160EDD65925C1B1A /* libPods-GIFMomentCameraUITests.a */,
-				890FBD445EA8211DC37FC4A64836519F /* libSCRecorder.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		9E9ADB46D6B7BC1B647C96D25BE13F8C /* iOS */ = {
@@ -560,18 +597,6 @@
 				6204F8C8B17AB73D7B4E9B3AAB45F43B /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		A128F6BBBEB07F90AB34606E83EC3676 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				92403373748DF80D9E8F810D1F6643F7 /* JVTransitionAnimator.xcconfig */,
-				EE7F5C196D5C7967DBD5D3F18E1A806A /* JVTransitionAnimator-dummy.m */,
-				82D6E1ADBCE1B7BA46C6F211F20D335D /* JVTransitionAnimator-prefix.pch */,
-				798953E5AB2615CCFB57083E8A2DAB36 /* ResourceBundle-JVTransitionAnimator-Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/JVTransitionAnimator";
 			sourceTree = "<group>";
 		};
 		A281CA5BEB7CCF5BCEC1EE8014F05941 /* Pods-GIFMomentCameraTests */ = {
@@ -589,6 +614,148 @@
 			path = "Target Support Files/Pods-GIFMomentCameraTests";
 			sourceTree = "<group>";
 		};
+		B37F7AF5F620A05D5B6D6D3D398CAAF3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAEC6F0765ED083B9D2FA77FA83D9979 /* Mantle.xcconfig */,
+				C48A3CA2F4F3C11E175456A8D005F149 /* Mantle-dummy.m */,
+				99041EE9F3F98044CB2463AECF4311C3 /* Mantle-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Mantle";
+			sourceTree = "<group>";
+		};
+		CE5A4C9590591FF774AF089DD3FB2663 /* SCRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				46EC7132A3E29562220906A25A26B984 /* NSURL+SCSaveToCameraRoll.h */,
+				CAAA3846B2E4CEBA03D32B960ECA7193 /* NSURL+SCSaveToCameraRoll.m */,
+				01650797A1C97F3F2B158F75C2B48E6E /* SCAssetExportSession.h */,
+				74E646AD02FE66CD9393F0E5D7448A75 /* SCAssetExportSession.m */,
+				1375064BFB107FB44069828E0AAD6440 /* SCAudioConfiguration.h */,
+				13DFB4FE71540F2CFB5157F263620BB0 /* SCAudioConfiguration.m */,
+				B7966F733250084A1DB1A780D45AF787 /* SCAudioTools.h */,
+				DB2DBF835F0287B0A6E925B13FA8DE64 /* SCAudioTools.m */,
+				18E4CD106DF5C518D2B945891BB71A83 /* SCContext.h */,
+				35DDCD6680B214626C9C81871E4C9A96 /* SCContext.m */,
+				5A571E313CC27BA1C15C3CC30AD95417 /* SCFilter.h */,
+				ACF9A480BB3EE5A46FABA5F00380489F /* SCFilter.m */,
+				BBA5D4B8BFAE5644C4C4D55FAF26F96D /* SCFilter+UIImage.h */,
+				D4D7A79FA04AB618B869438915287378 /* SCFilter+UIImage.m */,
+				0FD8357FEF1EBE4F13F9237D2D13A91D /* SCFilter+VideoComposition.h */,
+				5BF4D347FE3B177A8D0834059BDAE418 /* SCFilter+VideoComposition.m */,
+				71EFD9CFB795A246DD839A97E1AA5ABF /* SCFilterAnimation.h */,
+				BFC50D6B9A354120B8B38C028AE08295 /* SCFilterAnimation.m */,
+				E382EB16587C6AB3942F524478828E80 /* SCFilterImageView.h */,
+				1B922BBBD735DE7C60EFBBDD2B740797 /* SCFilterImageView.m */,
+				649D10B508359761CA4B614F5613D8B0 /* SCImageView.h */,
+				A23ED26054726DD570D9D04595AB4A95 /* SCImageView.m */,
+				669EB3AF58466B281EEC8D3E92C7D514 /* SCIOPixelBuffers.h */,
+				6FD42A58D3E3C5D71407167AB750D5C6 /* SCIOPixelBuffers.m */,
+				E1A9FFA660D3C0895D57F9AFABC9285A /* SCMediaTypeConfiguration.h */,
+				2569B12CD3983438C2A3E3E8D65B7441 /* SCMediaTypeConfiguration.m */,
+				5AF93081DC73BD42B23C408925BB8B31 /* SCPhotoConfiguration.h */,
+				1F8BA0C846CA6F1AFF1DF233C9870599 /* SCPhotoConfiguration.m */,
+				46C2FF81D135E01959EE0A5E7314F842 /* SCPlayer.h */,
+				A04FAE11EE52864A0CCB8D6526D6DE06 /* SCPlayer.m */,
+				D2C78344987A5964D0401BACAC21570C /* SCProcessingQueue.h */,
+				AE35E9ECB54C3885ECECF26957290E92 /* SCProcessingQueue.m */,
+				D6ECEE52BEC3F2BE8E1A9291A1F3A1AE /* SCRecorder.h */,
+				C1CC1237822B130D7887360B3B752205 /* SCRecorder.m */,
+				9071AAB3F84FB43FA72E42FD87A2DDF3 /* SCRecorderDelegate.h */,
+				B04BCFBD9DBE5D309BE69D0B610EE398 /* SCRecorderFocusTargetView.h */,
+				F4BEC18B0AA8A39C834288EF06AC9DBB /* SCRecorderFocusTargetView.m */,
+				322F02B60E1D0CE0D7B08917BC37E285 /* SCRecorderHeader.h */,
+				18C7B901E43A7C97915754CBE48025CC /* SCRecorderTools.h */,
+				EB911B047A99C254F0D973884468A969 /* SCRecorderTools.m */,
+				FDA19794D9FD09DE583455DD39BF1E71 /* SCRecorderToolsView.h */,
+				96C6F90F837A82085967CAF32871EBCC /* SCRecorderToolsView.m */,
+				752EDB82775CF41888AC61AA28B2B110 /* SCRecordSession.h */,
+				F32FEFA04635670F06837B4E03BF8088 /* SCRecordSession.m */,
+				220F31B64F806D4F1686DBBAF87D73FD /* SCRecordSession_Internal.h */,
+				CDFACADE378DEBA815D445FB2840B257 /* SCRecordSessionSegment.h */,
+				2178B79C99397E307A3363FE1341A711 /* SCRecordSessionSegment.m */,
+				7DA6BA35E22FFB23162581DB0239B4BA /* SCSampleBufferHolder.h */,
+				5F91B8FF3AD8404CDDC658358DAA2B65 /* SCSampleBufferHolder.m */,
+				29E39DB6305B20508736C8DD34E39DDE /* SCSaveToCameraRollOperation.h */,
+				9CCC9840183209417043C4D9C8F7E2BD /* SCSaveToCameraRollOperation.m */,
+				DCC7B6BFFB8CA035760C5A9AEDD7AC7A /* SCSwipeableFilterView.h */,
+				326EF804AF9744397FB00EB83B06C969 /* SCSwipeableFilterView.m */,
+				70143EABB2235F5BBEC448A33857203D /* SCVideoConfiguration.h */,
+				F19F3824455CEB6AE9867AA23498D6DA /* SCVideoConfiguration.m */,
+				F4D54C916A18E794AB7A8B7882912D7A /* SCVideoPlayerView.h */,
+				1F85E77E0DE4AFC3CFC69CB8A1678F6E /* SCVideoPlayerView.m */,
+				F37032647529995D17C86622CE91F31B /* SCWeakSelectorTarget.h */,
+				E313A78463DE06732FDF49204CEAAEC9 /* SCWeakSelectorTarget.m */,
+				CC81068D5823DD835099F31791F9F7A9 /* UIImage+SCSaveToCameraRoll.h */,
+				FB84E9F2D5DD8BC0AE9914EE51B5AB58 /* UIImage+SCSaveToCameraRoll.m */,
+				194BECAB369E933B33CD5A1B6E02612E /* Support Files */,
+			);
+			name = SCRecorder;
+			path = SCRecorder;
+			sourceTree = "<group>";
+		};
+		D7D0CBC7B0964647D8767370BB379167 /* JVTransitionAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				46D4DF8BB0C49BB30B7B9AEBC9FF160E /* JVTransitionAnimator.h */,
+				79601F0CBB62EFFD331D25AE941D1CB1 /* JVTransitionAnimator.m */,
+				20B6947A5626F8C5C17FA90B8412504D /* Support Files */,
+			);
+			name = JVTransitionAnimator;
+			path = JVTransitionAnimator;
+			sourceTree = "<group>";
+		};
+		D8071A75C10353267D8B015385684030 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3924D9B11E31107B767D560621EC02BA /* ChameleonFramework */,
+				D7D0CBC7B0964647D8767370BB379167 /* JVTransitionAnimator */,
+				DD30FD4FA297BB9827647105EF6FB374 /* Mantle */,
+				CE5A4C9590591FF774AF089DD3FB2663 /* SCRecorder */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD30FD4FA297BB9827647105EF6FB374 /* Mantle */ = {
+			isa = PBXGroup;
+			children = (
+				077E1FD31879DB706AECE0DF26DCEFF7 /* Mantle.h */,
+				AEE8F747783FB59699C8D8E1293341D4 /* MTLJSONAdapter.h */,
+				0576BDA2D80EA6100540C43296F731EE /* MTLJSONAdapter.m */,
+				32F5B0912788BE41B713FF8087359835 /* MTLModel.h */,
+				94F3B9031E5187BCC64BB88189FEFDAB /* MTLModel.m */,
+				7497013096E1B580F1ECEB2B1FEB3E41 /* MTLModel+NSCoding.h */,
+				CDBB4FF6954A3D68F78EC4E16DC98FA7 /* MTLModel+NSCoding.m */,
+				03BC89651FD573B649A493C64CF97BE2 /* MTLReflection.h */,
+				CDC40010ADB9EB280FD6B4A5E9F79378 /* MTLReflection.m */,
+				89CF005DFFBC7389738262C91D0D088C /* MTLTransformerErrorHandling.h */,
+				A275C6E0190185C37DE4387427C0CFC5 /* MTLTransformerErrorHandling.m */,
+				45702E3D2B0F4E9EBCB8BF057A34DD53 /* MTLValueTransformer.h */,
+				D5758D472B99122783BBCC8947AE7BCC /* MTLValueTransformer.m */,
+				8287D992A323460B31C1F3E121388D49 /* NSArray+MTLManipulationAdditions.h */,
+				1A080466DF8CD53F6D71EB4DF5611FF7 /* NSArray+MTLManipulationAdditions.m */,
+				B8A45849442EB4E0CE7DD327648EF561 /* NSDictionary+MTLJSONKeyPath.h */,
+				299597EB8E30EC1808BC865636D7073A /* NSDictionary+MTLJSONKeyPath.m */,
+				9CB6DE9FBA60DA62D0F1B55AB4A326BC /* NSDictionary+MTLManipulationAdditions.h */,
+				F311E419519B6D0BC072CC65833FEC83 /* NSDictionary+MTLManipulationAdditions.m */,
+				9EBF42A390B1EC77961C8E9B09F33D23 /* NSDictionary+MTLMappingAdditions.h */,
+				EB88CB06206F4B02FA7A73CF6119CC39 /* NSDictionary+MTLMappingAdditions.m */,
+				554A9CFC64A4C462B74C96A4B5DA3C09 /* NSError+MTLModelException.h */,
+				976D4302F4C087B959BF7BA7B8245B92 /* NSError+MTLModelException.m */,
+				5E6F84244911829A5270D1779F1D3A65 /* NSObject+MTLComparisonAdditions.h */,
+				2CC371AFC66ACECA1301AA23E80E8CF8 /* NSObject+MTLComparisonAdditions.m */,
+				B38B0DC5108A11BF578F26F957827D86 /* NSValueTransformer+MTLInversionAdditions.h */,
+				3C12B867939A274F88C9513FDAD495F3 /* NSValueTransformer+MTLInversionAdditions.m */,
+				4149065A78C4D3E6BFCE6B90D13081C6 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */,
+				2D5D509E8DB3DE6B2A96395DA3202B22 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */,
+				242B0B8A20D988AE3F7A20EB6286D28D /* extobjc */,
+				B37F7AF5F620A05D5B6D6D3D398CAAF3 /* Support Files */,
+			);
+			name = Mantle;
+			path = Mantle;
+			sourceTree = "<group>";
+		};
 		E410F6776D2D0F27F76FB8C4DA1312D1 /* Pods-GIFMomentCamera */ = {
 			isa = PBXGroup;
 			children = (
@@ -604,20 +771,35 @@
 			path = "Target Support Files/Pods-GIFMomentCamera";
 			sourceTree = "<group>";
 		};
-		EA1201C7EBF5F49740A3F1439E392E65 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5EAB02990062384063659CAFB868D086 /* ChameleonFramework.xcconfig */,
-				04D61848013CE57B95287F5793B40433 /* ChameleonFramework-dummy.m */,
-				9F9963F246AC3A7AD4E6605C170A254C /* ChameleonFramework-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ChameleonFramework";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2025915E8FF7C0DCED7596AFBD1D477C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F871B2B505D5C2E316DFA0618C43847 /* EXTKeyPathCoding.h in Headers */,
+				781277601C831DBEB14A4BA9551CE079 /* EXTRuntimeExtensions.h in Headers */,
+				A99D00C50186853EB4A698ABB95AA039 /* EXTScope.h in Headers */,
+				7786994F2F7D9F1CB44AB55AAAB6028E /* Mantle.h in Headers */,
+				2018607C3D61886864802AF58E0DFC61 /* metamacros.h in Headers */,
+				5D1C187A3CC472F98EA3F1BACA399E34 /* MTLJSONAdapter.h in Headers */,
+				975A5DF19EBCF7C921369697F4ABB709 /* MTLModel+NSCoding.h in Headers */,
+				7461C0190AE22F99B1C81A8EF335E872 /* MTLModel.h in Headers */,
+				3776420239ED0180EF58CFD77989B4A1 /* MTLReflection.h in Headers */,
+				A69D3FE7C23DEF1824371EC0817A08E4 /* MTLTransformerErrorHandling.h in Headers */,
+				AFA0E7524AF6ED96E138C8E512481FE5 /* MTLValueTransformer.h in Headers */,
+				5119FD722E1101AAC5CBD401B0553128 /* NSArray+MTLManipulationAdditions.h in Headers */,
+				2A0C164601ABC8BA083D05AADB9164AE /* NSDictionary+MTLJSONKeyPath.h in Headers */,
+				913E45D2159D0F30BB5EF796B2C297EF /* NSDictionary+MTLManipulationAdditions.h in Headers */,
+				60346BDB74B30FBDD1ECAB0A6CCFA5C2 /* NSDictionary+MTLMappingAdditions.h in Headers */,
+				5741DD6D20B53BEEC0865588554936D3 /* NSError+MTLModelException.h in Headers */,
+				27C806DD37E3CC8EE961EE669FAE33FA /* NSObject+MTLComparisonAdditions.h in Headers */,
+				0F8BC4F32DAF44B2979D14030416A084 /* NSValueTransformer+MTLInversionAdditions.h in Headers */,
+				E7542B2C536DB2C543894587075D1289 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42D77042A3C91E61B45A6E8BBFA82E9E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -640,45 +822,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62A8A440364F5B09C5F3F62AFFE9A240 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AFC1875260A92C3985684003978283E6 /* NSURL+SCSaveToCameraRoll.h in Headers */,
-				EB4D30980077179135DFC6A1A82B65EF /* SCAssetExportSession.h in Headers */,
-				5B08D6DF8D289D3535F6E777DDA95A08 /* SCAudioConfiguration.h in Headers */,
-				4FE23AD4384D70EF257137A6770D10F9 /* SCAudioTools.h in Headers */,
-				0ED3006951E984B4DC2B0A0112CD6797 /* SCContext.h in Headers */,
-				FCA27448C5BFF41AE30BB1CE01405ABB /* SCFilter+UIImage.h in Headers */,
-				1BB8D05BA75AF8EEBE684FB05A849CED /* SCFilter+VideoComposition.h in Headers */,
-				778D38968DF590A631F203B5B260D987 /* SCFilter.h in Headers */,
-				66589991A334051744E018CBC8192F0E /* SCFilterAnimation.h in Headers */,
-				FB7CBBE46DA01568155E3A72E227F5CA /* SCFilterImageView.h in Headers */,
-				D56BDE642CCDC6994B656D25A21909EF /* SCImageView.h in Headers */,
-				71E3E595173B056576070CFB364DB5DE /* SCIOPixelBuffers.h in Headers */,
-				535416D6DB3964B06EB47CD1504F0494 /* SCMediaTypeConfiguration.h in Headers */,
-				024789C3AF3723DA71DE20F2A367C991 /* SCPhotoConfiguration.h in Headers */,
-				2F168587526A27F938F238FD13DC0C36 /* SCPlayer.h in Headers */,
-				1A74AF508170F5EBE728506B40658EF5 /* SCProcessingQueue.h in Headers */,
-				0B1617AFC67A7DB90F783A040EA43927 /* SCRecorder.h in Headers */,
-				0F32CF3211159FAA0BF1B965953F05DB /* SCRecorderDelegate.h in Headers */,
-				ED190CACC7D5043A39D010E26BB5A103 /* SCRecorderFocusTargetView.h in Headers */,
-				109F76CE26672E4206F914D0D5DAA680 /* SCRecorderHeader.h in Headers */,
-				2295DC4E1F7BEDDCD5446D1D19E51194 /* SCRecorderTools.h in Headers */,
-				425DD892C4567BF4BFB75516E7773C86 /* SCRecorderToolsView.h in Headers */,
-				BF29958D64CA9B95A0900139A90E629F /* SCRecordSession.h in Headers */,
-				91035329B1C75713F72DAD2170BAE4E2 /* SCRecordSession_Internal.h in Headers */,
-				CD178C6BC171A5D1FC4D3017015D3D8B /* SCRecordSessionSegment.h in Headers */,
-				C943455B8160FC1A9FA9316F10A1A153 /* SCSampleBufferHolder.h in Headers */,
-				DC177BA654144BED71721C83FB91624A /* SCSaveToCameraRollOperation.h in Headers */,
-				B334767497B12AF180DFBA91724F5F69 /* SCSwipeableFilterView.h in Headers */,
-				30B02AD1A73B38276D091B2FCFEBC365 /* SCVideoConfiguration.h in Headers */,
-				0F328E37AA3BFBE41A9ACE9FFD8E71AA /* SCVideoPlayerView.h in Headers */,
-				450E197092253CC1C3CD32CDBC98F821 /* SCWeakSelectorTarget.h in Headers */,
-				B636C8303611D1BAA26146ACD4E242B2 /* UIImage+SCSaveToCameraRoll.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A22D18019E5C2C16DF4750B1232A97F4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -687,9 +830,65 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FBC80D0A4F31C89CE345F787B21D5741 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A855FD717348508F5233A25F9EBE16 /* NSURL+SCSaveToCameraRoll.h in Headers */,
+				C42C48535285450213F8AB7EBE0220B2 /* SCAssetExportSession.h in Headers */,
+				666B6031046C9A7F5F8E513E007D043F /* SCAudioConfiguration.h in Headers */,
+				91C99E3CEC6725EB6E9847280756773B /* SCAudioTools.h in Headers */,
+				D897F194080B1CD36BAE56D810085C85 /* SCContext.h in Headers */,
+				5790E705A5E04C5F8ADB96CE6B884CAB /* SCFilter+UIImage.h in Headers */,
+				A47BBC6DB2129ED29E9F5EF94A5550F1 /* SCFilter+VideoComposition.h in Headers */,
+				734F89DD904873F163EC9939778D73CA /* SCFilter.h in Headers */,
+				D880C9F4F23FCA3D24402EA1CC16F3FA /* SCFilterAnimation.h in Headers */,
+				429D3895CAAB0747BF4598D3FD8CD8AC /* SCFilterImageView.h in Headers */,
+				F8E1A78EEEE84093E60B218CAF9B9631 /* SCImageView.h in Headers */,
+				BD13D51D3895787F6C7390F7D911E571 /* SCIOPixelBuffers.h in Headers */,
+				28A02359FBFECFF5CEC1CC8C78A7B1D4 /* SCMediaTypeConfiguration.h in Headers */,
+				BC295B6E943D628B92BECE831C0B60B5 /* SCPhotoConfiguration.h in Headers */,
+				ED805080F63A57E67219118031C25621 /* SCPlayer.h in Headers */,
+				960C800AD27222CA08BC74C09A9FC01B /* SCProcessingQueue.h in Headers */,
+				9821632CBCC3D755FDFD143391230896 /* SCRecorder.h in Headers */,
+				92BA1D9E1ED47804B315BEB5A75B338F /* SCRecorderDelegate.h in Headers */,
+				6FC8CC1FDF9A53801CA6AF0852B98ED9 /* SCRecorderFocusTargetView.h in Headers */,
+				9E67F5CC3B7BEC62A41F3CEC8A86B55B /* SCRecorderHeader.h in Headers */,
+				E249255DAB7ED92849129BA7AC038A58 /* SCRecorderTools.h in Headers */,
+				56E15D550EFFD6A8A8C48AEE062E592E /* SCRecorderToolsView.h in Headers */,
+				70679C54F52BDD950107D5F81D68C783 /* SCRecordSession.h in Headers */,
+				5B336B0EED24C2198467B48B0E33AA40 /* SCRecordSession_Internal.h in Headers */,
+				8BC8D02DF7F5E96E004A0458B708B055 /* SCRecordSessionSegment.h in Headers */,
+				8A91B7543954D90E86DCF89B9BC17965 /* SCSampleBufferHolder.h in Headers */,
+				CACDF49FE39B7B6A268C39DE7EF78C8E /* SCSaveToCameraRollOperation.h in Headers */,
+				5A475D5AA530C87417C3BFD48A574E77 /* SCSwipeableFilterView.h in Headers */,
+				6AF08F5E0A80A03415F2D46E141AE645 /* SCVideoConfiguration.h in Headers */,
+				7164137A9AF480BCA4DED7F35A37CBD9 /* SCVideoPlayerView.h in Headers */,
+				ECFB8085E8ED4A1F7763757F1495F20A /* SCWeakSelectorTarget.h in Headers */,
+				651F21111012DE9200B00D446CB6889D /* UIImage+SCSaveToCameraRoll.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0D164C888BAFF15F850967A1492FB314 /* SCRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 059B2D907F42CB9154CA44AC28B923DA /* Build configuration list for PBXNativeTarget "SCRecorder" */;
+			buildPhases = (
+				BB588F6D5C8D2824EAA4BE46C016B897 /* Sources */,
+				500B7F685341FD76D41854966EB2A6C4 /* Frameworks */,
+				FBC80D0A4F31C89CE345F787B21D5741 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCRecorder;
+			productName = SCRecorder;
+			productReference = 45402278F5CAB2673C08ECCDC4B30A42 /* libSCRecorder.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		113CCFA9D942773703809CF415E26742 /* Pods-GIFMomentCameraTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16E86FA1396D7184B0A0A2B74DB386C3 /* Build configuration list for PBXNativeTarget "Pods-GIFMomentCameraTests" */;
@@ -703,26 +902,7 @@
 			);
 			name = "Pods-GIFMomentCameraTests";
 			productName = "Pods-GIFMomentCameraTests";
-			productReference = EED890F841996330538C807B46242C23 /* libPods-GIFMomentCameraTests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		1B079DE716D9E3229729F4EB0D80CFC6 /* Pods-GIFMomentCamera */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 804780536672904482FE9DB5354A6CC5 /* Build configuration list for PBXNativeTarget "Pods-GIFMomentCamera" */;
-			buildPhases = (
-				15C4C6538A033C7C0BD56B328BDEB6C5 /* Sources */,
-				BFC20B27A3A31772A1FA3BCA1355067B /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				75A4965A35996DF994042EA5AFE7A261 /* PBXTargetDependency */,
-				9F990195C2791C86FFB9F31AE01C031D /* PBXTargetDependency */,
-				1D320CE07AEF18F956728D8E38473C35 /* PBXTargetDependency */,
-			);
-			name = "Pods-GIFMomentCamera";
-			productName = "Pods-GIFMomentCamera";
-			productReference = FF34F5AC1EB15C14B506687C6C1CC8A9 /* libPods-GIFMomentCamera.a */;
+			productReference = A851D9AE05E76922C60E1A6140016F90 /* libPods-GIFMomentCameraTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		2385E0ED556F1138EACE7DC91C5ECBDB /* JVTransitionAnimator */ = {
@@ -740,24 +920,7 @@
 			);
 			name = JVTransitionAnimator;
 			productName = JVTransitionAnimator;
-			productReference = 0268360AA49F9CD57A644011F906059C /* libJVTransitionAnimator.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		5024989252C8213005B015ECC1381C6D /* SCRecorder */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 231BB5BA2709E0D5DBD7398D589E0A5D /* Build configuration list for PBXNativeTarget "SCRecorder" */;
-			buildPhases = (
-				5F482F40FA8B5A9377DC1D5EEDEC0116 /* Sources */,
-				03C118D14EF13E8C5CDB2876A47ED3E3 /* Frameworks */,
-				62A8A440364F5B09C5F3F62AFFE9A240 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SCRecorder;
-			productName = SCRecorder;
-			productReference = 890FBD445EA8211DC37FC4A64836519F /* libSCRecorder.a */;
+			productReference = A23AF04D69368E9C64DE3AD627557994 /* libJVTransitionAnimator.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		5A0EF997DC9C98853FE0B9B8F07641F8 /* Pods-GIFMomentCameraUITests */ = {
@@ -773,7 +936,24 @@
 			);
 			name = "Pods-GIFMomentCameraUITests";
 			productName = "Pods-GIFMomentCameraUITests";
-			productReference = 15E3EF93B3BACC22160EDD65925C1B1A /* libPods-GIFMomentCameraUITests.a */;
+			productReference = A4CF510BBE3273160C100DAD493EE600 /* libPods-GIFMomentCameraUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8E2F85A9EA167EFA71B3DCB5DF170059 /* Mantle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 697C5D321F145E584E7A44A336A8952E /* Build configuration list for PBXNativeTarget "Mantle" */;
+			buildPhases = (
+				0A2554079B309EEE6BA23649E401207F /* Sources */,
+				82E23767320A4061102738EBA133175B /* Frameworks */,
+				2025915E8FF7C0DCED7596AFBD1D477C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mantle;
+			productName = Mantle;
+			productReference = 67E6501B9D87753C88E31CF93A800D35 /* libMantle.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		B56FC3390A52674F560F67EEB3EA590A /* JVTransitionAnimator-JVTransitionAnimator */ = {
@@ -790,8 +970,28 @@
 			);
 			name = "JVTransitionAnimator-JVTransitionAnimator";
 			productName = "JVTransitionAnimator-JVTransitionAnimator";
-			productReference = 1EB0F946072EA00C756D9D439D25B79C /* JVTransitionAnimator.bundle */;
+			productReference = B693DC496B56ABAE4F0F090E1A5E0122 /* JVTransitionAnimator.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		BF05FE794DDBABE1858AAEBF28CADC88 /* Pods-GIFMomentCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25035742B5891B9D8CC29C6C3F8BA7FD /* Build configuration list for PBXNativeTarget "Pods-GIFMomentCamera" */;
+			buildPhases = (
+				F6866D229082CA3DC7E8E5B39C7EFFCD /* Sources */,
+				8F5D50D7CCC61E7E4BD8F6661E30D86A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1A26E10F005BA8CB5AE7954011BCA82 /* PBXTargetDependency */,
+				3F339DF497F191C6ADAEE2EF1679A2F3 /* PBXTargetDependency */,
+				6596F8FF9446C25D46543E9C0B793BC2 /* PBXTargetDependency */,
+				BD607E9F720FE8CE86A93E4692A69916 /* PBXTargetDependency */,
+			);
+			name = "Pods-GIFMomentCamera";
+			productName = "Pods-GIFMomentCamera";
+			productReference = E986AF53E17EF8F8E3CFADDC4923B937 /* libPods-GIFMomentCamera.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		D57F6DD7CBDE11E457971075B0805982 /* ChameleonFramework */ = {
 			isa = PBXNativeTarget;
@@ -807,7 +1007,7 @@
 			);
 			name = ChameleonFramework;
 			productName = ChameleonFramework;
-			productReference = A177BC246207351DD8E7B9A86E4DE769 /* libChameleonFramework.a */;
+			productReference = 51A331FCE10020A835A1ED7AC7156F57 /* libChameleonFramework.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -827,17 +1027,18 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 945F36749D79E4867837310F4214F8AD /* Products */;
+			productRefGroup = 0DD69B184F83A377C1CDD42141FF878F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D57F6DD7CBDE11E457971075B0805982 /* ChameleonFramework */,
 				2385E0ED556F1138EACE7DC91C5ECBDB /* JVTransitionAnimator */,
 				B56FC3390A52674F560F67EEB3EA590A /* JVTransitionAnimator-JVTransitionAnimator */,
-				1B079DE716D9E3229729F4EB0D80CFC6 /* Pods-GIFMomentCamera */,
+				8E2F85A9EA167EFA71B3DCB5DF170059 /* Mantle */,
+				BF05FE794DDBABE1858AAEBF28CADC88 /* Pods-GIFMomentCamera */,
 				113CCFA9D942773703809CF415E26742 /* Pods-GIFMomentCameraTests */,
 				5A0EF997DC9C98853FE0B9B8F07641F8 /* Pods-GIFMomentCameraUITests */,
-				5024989252C8213005B015ECC1381C6D /* SCRecorder */,
+				0D164C888BAFF15F850967A1492FB314 /* SCRecorder */,
 			);
 		};
 /* End PBXProject section */
@@ -853,11 +1054,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		15C4C6538A033C7C0BD56B328BDEB6C5 /* Sources */ = {
+		0A2554079B309EEE6BA23649E401207F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E274979AD94D6FAA0C32C66158C39FA /* Pods-GIFMomentCamera-dummy.m in Sources */,
+				51F6393F3755BC5153341BADBB8C48B9 /* EXTRuntimeExtensions.m in Sources */,
+				A61A3AAD4C70527DFCDEDB6DACB633C2 /* EXTScope.m in Sources */,
+				1A05BF934A67A1D58510863477450A6D /* Mantle-dummy.m in Sources */,
+				AF2B96966AA52AD650A2B397967A8250 /* MTLJSONAdapter.m in Sources */,
+				035D907A1AB62CA43E9BB73B3BE38729 /* MTLModel+NSCoding.m in Sources */,
+				43A3D1B26380B3F55D8D5156F28D9169 /* MTLModel.m in Sources */,
+				9D63A30A4846A962F872F568C2B56D68 /* MTLReflection.m in Sources */,
+				5BB3EC4FB31DC30DEE5FEE151554721D /* MTLTransformerErrorHandling.m in Sources */,
+				206FED9411A3D35E91EEE4769E584D38 /* MTLValueTransformer.m in Sources */,
+				56B6F726EB214E49E4BAA6135FE157D5 /* NSArray+MTLManipulationAdditions.m in Sources */,
+				A5EF38D3E713ABD69F6A842A6FF39998 /* NSDictionary+MTLJSONKeyPath.m in Sources */,
+				9AAE9A21FDA4E0A4ED85C5584E49DF58 /* NSDictionary+MTLManipulationAdditions.m in Sources */,
+				8AC986175CC78E77894434D11FE49C54 /* NSDictionary+MTLMappingAdditions.m in Sources */,
+				821436F082CE8B281A2978C101D7E9C4 /* NSError+MTLModelException.m in Sources */,
+				712AA019705C67E56ED06876BF905FED /* NSObject+MTLComparisonAdditions.m in Sources */,
+				74AC4DA902C4A093680E392DA9610FE8 /* NSValueTransformer+MTLInversionAdditions.m in Sources */,
+				7CD2B4088DBDDF65A253748B7F04FEF3 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -867,43 +1084,6 @@
 			files = (
 				DB83A9792E63B77453D6F5EA35DBBAAE /* JVTransitionAnimator-dummy.m in Sources */,
 				876053A734601FB4DA1F6C2DCB8D53DF /* JVTransitionAnimator.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5F482F40FA8B5A9377DC1D5EEDEC0116 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC217BC992B5E2DF872CC066B6FAAD19 /* NSURL+SCSaveToCameraRoll.m in Sources */,
-				78BEDAD1EB62FB3E134412C91A99A856 /* SCAssetExportSession.m in Sources */,
-				C58724487D229BCC7E02E692521FBA58 /* SCAudioConfiguration.m in Sources */,
-				9381BA09A2DA15EEC5CF02AB083C3839 /* SCAudioTools.m in Sources */,
-				B7911195E600D651D172A8C7A7D102A3 /* SCContext.m in Sources */,
-				DD632ABDB70165C7A5398FE05B155E79 /* SCFilter+UIImage.m in Sources */,
-				13A59D6C33480602468F796380DDCC68 /* SCFilter+VideoComposition.m in Sources */,
-				F9CD3BABD67E413C725B4A1B2E46804E /* SCFilter.m in Sources */,
-				507A3B7458596834897E5E438DBB6986 /* SCFilterAnimation.m in Sources */,
-				EB4F402521C0D72E4181C286A15BCE14 /* SCFilterImageView.m in Sources */,
-				801DB4ED27C96EBAB4DEFA021F906686 /* SCImageView.m in Sources */,
-				524D92841814A4F208B03D157882858D /* SCIOPixelBuffers.m in Sources */,
-				B8D9EAFBEA50110F21821121F608EAF8 /* SCMediaTypeConfiguration.m in Sources */,
-				F814C5DD950BA84B1CA766FBB6FF7AA2 /* SCPhotoConfiguration.m in Sources */,
-				12705987C5326465A302A076A47A3C1B /* SCPlayer.m in Sources */,
-				A6BE31B30301DD7AC7BB6F2D512648B8 /* SCProcessingQueue.m in Sources */,
-				827413499390D90A949E96155FD1FFAC /* SCRecorder-dummy.m in Sources */,
-				6DC01B65353E5E8624DE40A07034A8C6 /* SCRecorder.m in Sources */,
-				BCA3C9B9730F0C1D9A30DCD29A4F16F3 /* SCRecorderFocusTargetView.m in Sources */,
-				AC56C375EFB72644B29816D4F6230A62 /* SCRecorderTools.m in Sources */,
-				CB2F17D9AA0D5BF47119EF9A489683AE /* SCRecorderToolsView.m in Sources */,
-				717FAEB2CD065E6B71A08087886574C0 /* SCRecordSession.m in Sources */,
-				70F91D1A08C2CAEF2AF893856DAA180C /* SCRecordSessionSegment.m in Sources */,
-				30BEC1918F7706FD0E1A642B9053A79E /* SCSampleBufferHolder.m in Sources */,
-				588E21B5D4ABED5D19B4DBD32E7FBE3C /* SCSaveToCameraRollOperation.m in Sources */,
-				13C91E80FFE6445334ED930478819D11 /* SCSwipeableFilterView.m in Sources */,
-				1F8D0BBCF58101C8F334AD6C55FF50A2 /* SCVideoConfiguration.m in Sources */,
-				A61708282BB1628C28E22BA592B64742 /* SCVideoPlayerView.m in Sources */,
-				2D6B446D45FF3892583CE454EA3C3338 /* SCWeakSelectorTarget.m in Sources */,
-				1C299F56263E52903267488FDD9C7A6E /* UIImage+SCSaveToCameraRoll.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -943,6 +1123,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB588F6D5C8D2824EAA4BE46C016B897 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02283147ED1C1A650D0BDFD24DD73C35 /* NSURL+SCSaveToCameraRoll.m in Sources */,
+				B2EA3684A32E8A86A583A0C7B7997ECC /* SCAssetExportSession.m in Sources */,
+				99D05AC62E0E83545D3BCF469D209E3A /* SCAudioConfiguration.m in Sources */,
+				983FFD674F09A0D91F27C64E882545B6 /* SCAudioTools.m in Sources */,
+				9C1DE6D7ED488FA779900D570210BA4C /* SCContext.m in Sources */,
+				F2313D8E010BD5DC47F8FDD833047CE6 /* SCFilter+UIImage.m in Sources */,
+				1FD8C8B6A0ECBC58EEF106F0DA92DF75 /* SCFilter+VideoComposition.m in Sources */,
+				FBA55C1D96EE29F82087714717671E2E /* SCFilter.m in Sources */,
+				1B67B20E4C66EF29A9F5B34229503452 /* SCFilterAnimation.m in Sources */,
+				4D3DB6E1BB1780FC0E32D33E76933E96 /* SCFilterImageView.m in Sources */,
+				507387278346EC2D74910E150C5BE14A /* SCImageView.m in Sources */,
+				9E489FAE3883C6C28A277C1029EC0D28 /* SCIOPixelBuffers.m in Sources */,
+				AA9F3FAD9F2FB51D78D3A2D6C8402E29 /* SCMediaTypeConfiguration.m in Sources */,
+				427EF0D4385EDE71BAA66252E79B55BE /* SCPhotoConfiguration.m in Sources */,
+				30E2F5735D03E0D865666939BC8FD7DD /* SCPlayer.m in Sources */,
+				3D1D290A462C8E5B34542C26D5D76711 /* SCProcessingQueue.m in Sources */,
+				FFDCB377C4DF85CBDEEB92641C1FC013 /* SCRecorder-dummy.m in Sources */,
+				2075D57A4180D06B9BFC971287B201D2 /* SCRecorder.m in Sources */,
+				CB950247A58D914AB3E4E078BCFBD6E8 /* SCRecorderFocusTargetView.m in Sources */,
+				0E36B79D91FCA01B9B1371B7C2E88B23 /* SCRecorderTools.m in Sources */,
+				B4269E957416B469CE80C2CC69025902 /* SCRecorderToolsView.m in Sources */,
+				DC0390B93FA122267D5DB14F6902F084 /* SCRecordSession.m in Sources */,
+				26E3A1B8FDB50C719DACB2ED6772532C /* SCRecordSessionSegment.m in Sources */,
+				2BEAF41DD04F27ABC0F27491C2DDA8FD /* SCSampleBufferHolder.m in Sources */,
+				411F1950BAB5FFE84D478E78388313F8 /* SCSaveToCameraRollOperation.m in Sources */,
+				C1BB147FDFE72135B257193C8B61B4F0 /* SCSwipeableFilterView.m in Sources */,
+				07FD15E7DCBC80A13A71A93828187239 /* SCVideoConfiguration.m in Sources */,
+				285324E81FBBA48613012E4DDEF68036 /* SCVideoPlayerView.m in Sources */,
+				3D80656482AAE2A4BF55FE29FDD8B5C5 /* SCWeakSelectorTarget.m in Sources */,
+				746035219E92563228FC285B5AA763EF /* UIImage+SCSaveToCameraRoll.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E8FEC61636F372890B540AB74E792A83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -950,14 +1167,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F6866D229082CA3DC7E8E5B39C7EFFCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4F080D0E5289DAAFE09459A24EA3253 /* Pods-GIFMomentCamera-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1D320CE07AEF18F956728D8E38473C35 /* PBXTargetDependency */ = {
+		3F339DF497F191C6ADAEE2EF1679A2F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SCRecorder;
-			target = 5024989252C8213005B015ECC1381C6D /* SCRecorder */;
-			targetProxy = 0D5FDE898AD02152A6506021933E07E8 /* PBXContainerItemProxy */;
+			name = JVTransitionAnimator;
+			target = 2385E0ED556F1138EACE7DC91C5ECBDB /* JVTransitionAnimator */;
+			targetProxy = 246A9E57649CCFD39E4A8F16B6F3EF54 /* PBXContainerItemProxy */;
 		};
 		5B4EB676FE080A4B909E5C72EEA72CB9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -965,332 +1190,28 @@
 			target = B56FC3390A52674F560F67EEB3EA590A /* JVTransitionAnimator-JVTransitionAnimator */;
 			targetProxy = 68B7D6E210D85520A256AA74B929082F /* PBXContainerItemProxy */;
 		};
-		75A4965A35996DF994042EA5AFE7A261 /* PBXTargetDependency */ = {
+		6596F8FF9446C25D46543E9C0B793BC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Mantle;
+			target = 8E2F85A9EA167EFA71B3DCB5DF170059 /* Mantle */;
+			targetProxy = 99E5889CFD49462FE3319FA69141F012 /* PBXContainerItemProxy */;
+		};
+		BD607E9F720FE8CE86A93E4692A69916 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SCRecorder;
+			target = 0D164C888BAFF15F850967A1492FB314 /* SCRecorder */;
+			targetProxy = 03D0EE5B7DC71763B9A2A34FB5799571 /* PBXContainerItemProxy */;
+		};
+		C1A26E10F005BA8CB5AE7954011BCA82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ChameleonFramework;
 			target = D57F6DD7CBDE11E457971075B0805982 /* ChameleonFramework */;
-			targetProxy = E505D626272F386A4D9FCD261E061A2D /* PBXContainerItemProxy */;
-		};
-		9F990195C2791C86FFB9F31AE01C031D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JVTransitionAnimator;
-			target = 2385E0ED556F1138EACE7DC91C5ECBDB /* JVTransitionAnimator */;
-			targetProxy = 3D2D7708895A02AF0B09AB4FBEC53895 /* PBXContainerItemProxy */;
+			targetProxy = CCD612D47615C858CF536D227594ABB1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		13ACE1FEFECF190A4A3DA98F5FE26995 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92403373748DF80D9E8F810D1F6643F7 /* JVTransitionAnimator.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/JVTransitionAnimator/JVTransitionAnimator-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		2BA6AAF799FE56BCD42C383AAB54F823 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85E544B241C2A915CE67C7A746A7AFFA /* Pods-GIFMomentCameraTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		3799F46BDD6FF518BACD1BEDDD857051 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92403373748DF80D9E8F810D1F6643F7 /* JVTransitionAnimator.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/JVTransitionAnimator/JVTransitionAnimator-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		543C14F681CCF16F2E98572319E2C7EE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2582EA27BBF4F81BB2933797881224B7 /* SCRecorder.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SCRecorder/SCRecorder-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		584308C539D93E199BFC3687BF5389A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94A13D0685DF2EFD2F9CE11984CC2D52 /* Pods-GIFMomentCameraUITests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		5F74E106A172602D767DBF5C8D53AFBE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92403373748DF80D9E8F810D1F6643F7 /* JVTransitionAnimator.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/JVTransitionAnimator";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/JVTransitionAnimator/ResourceBundle-JVTransitionAnimator-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = JVTransitionAnimator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		6A8EDD7E8EF68250FE87EA50E0643539 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6C5C1322B439284A805D527EF57EC22 /* Pods-GIFMomentCameraUITests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		847B1B2C140128077C1E760359962AF0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56F34660410782BF2836112ED113F7C8 /* Pods-GIFMomentCamera.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		87F0891A0015D887EDABD4DAE26DAF46 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C5FEC5564E068E07E173EBBF70D11F6 /* Pods-GIFMomentCameraTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		9EE9D2D435242AC06C2B8F5B20B04D22 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EAB02990062384063659CAFB868D086 /* ChameleonFramework.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ChameleonFramework/ChameleonFramework-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		A377F70D1A0D85A0AC907BF9CC3C44BD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2582EA27BBF4F81BB2933797881224B7 /* SCRecorder.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SCRecorder/SCRecorder-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		BD4722E7E8CB33D0C8A84DBFE1794777 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EAB02990062384063659CAFB868D086 /* ChameleonFramework.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ChameleonFramework/ChameleonFramework-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		C382132BB6BF8CA1A911872A2062FD0D /* Debug */ = {
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1326,7 +1247,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1334,7 +1255,99 @@
 			};
 			name = Debug;
 		};
-		D279426F3D93BB4126750B6BC44743BA /* Debug */ = {
+		036770FE90998BF5D5941043C81286F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAEC6F0765ED083B9D2FA77FA83D9979 /* Mantle.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Mantle/Mantle-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		13ACE1FEFECF190A4A3DA98F5FE26995 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64DDC7CFA7E295D07B243DE89EDBA419 /* JVTransitionAnimator.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JVTransitionAnimator/JVTransitionAnimator-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		26C8FA682ADA4FC42D3206DF94440209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2420CF9259B42BCD2FBC5B19D20FD36 /* SCRecorder.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCRecorder/SCRecorder-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3799F46BDD6FF518BACD1BEDDD857051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64DDC7CFA7E295D07B243DE89EDBA419 /* JVTransitionAnimator.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JVTransitionAnimator/JVTransitionAnimator-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		386C038BE8C756936DB7F8DC52EDF09E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8BBA8942C0D840EB7DD6D3EDCBB39C05 /* Pods-GIFMomentCamera.debug.xcconfig */;
 			buildSettings = {
@@ -1344,7 +1357,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -1357,9 +1370,181 @@
 			};
 			name = Debug;
 		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5AAA8DD5F7CE0A3A96325DBFA7E87F7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56F34660410782BF2836112ED113F7C8 /* Pods-GIFMomentCamera.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5C84E800473C32DEAD361CBB7B0F96C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94A13D0685DF2EFD2F9CE11984CC2D52 /* Pods-GIFMomentCameraUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5F74E106A172602D767DBF5C8D53AFBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64DDC7CFA7E295D07B243DE89EDBA419 /* JVTransitionAnimator.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/JVTransitionAnimator";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/JVTransitionAnimator/ResourceBundle-JVTransitionAnimator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = JVTransitionAnimator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		9260F016D68AB559ACFAC4FF20615027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAEC6F0765ED083B9D2FA77FA83D9979 /* Mantle.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Mantle/Mantle-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9EE9D2D435242AC06C2B8F5B20B04D22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57C6987D5538662A4FA631D520452387 /* ChameleonFramework.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ChameleonFramework/ChameleonFramework-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BD4722E7E8CB33D0C8A84DBFE1794777 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57C6987D5538662A4FA631D520452387 /* ChameleonFramework.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ChameleonFramework/ChameleonFramework-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		DBF167FEC72CE3D36CEE45342AECC776 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92403373748DF80D9E8F810D1F6643F7 /* JVTransitionAnimator.xcconfig */;
+			baseConfigurationReference = 64DDC7CFA7E295D07B243DE89EDBA419 /* JVTransitionAnimator.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/JVTransitionAnimator";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1374,23 +1559,124 @@
 			};
 			name = Debug;
 		};
+		E0312AA7BDC9C0AC41AB3F1F66714DBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85E544B241C2A915CE67C7A746A7AFFA /* Pods-GIFMomentCameraTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F7C6AD9F706B6516A047193C7E736DCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6C5C1322B439284A805D527EF57EC22 /* Pods-GIFMomentCameraUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FB2D94AC9F69992C1F343659E3A6C5D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C5FEC5564E068E07E173EBBF70D11F6 /* Pods-GIFMomentCameraTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FD8B19B5EE4033AC383006D24AFF5A7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2420CF9259B42BCD2FBC5B19D20FD36 /* SCRecorder.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCRecorder/SCRecorder-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		16E86FA1396D7184B0A0A2B74DB386C3 /* Build configuration list for PBXNativeTarget "Pods-GIFMomentCameraTests" */ = {
+		059B2D907F42CB9154CA44AC28B923DA /* Build configuration list for PBXNativeTarget "SCRecorder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2BA6AAF799FE56BCD42C383AAB54F823 /* Debug */,
-				87F0891A0015D887EDABD4DAE26DAF46 /* Release */,
+				26C8FA682ADA4FC42D3206DF94440209 /* Debug */,
+				FD8B19B5EE4033AC383006D24AFF5A7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		231BB5BA2709E0D5DBD7398D589E0A5D /* Build configuration list for PBXNativeTarget "SCRecorder" */ = {
+		16E86FA1396D7184B0A0A2B74DB386C3 /* Build configuration list for PBXNativeTarget "Pods-GIFMomentCameraTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A377F70D1A0D85A0AC907BF9CC3C44BD /* Debug */,
-				543C14F681CCF16F2E98572319E2C7EE /* Release */,
+				E0312AA7BDC9C0AC41AB3F1F66714DBE /* Debug */,
+				FB2D94AC9F69992C1F343659E3A6C5D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25035742B5891B9D8CC29C6C3F8BA7FD /* Build configuration list for PBXNativeTarget "Pods-GIFMomentCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				386C038BE8C756936DB7F8DC52EDF09E /* Debug */,
+				5AAA8DD5F7CE0A3A96325DBFA7E87F7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1398,8 +1684,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C382132BB6BF8CA1A911872A2062FD0D /* Debug */,
-				156284431C64CB05C59BDA0595A1E95A /* Release */,
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1407,17 +1693,17 @@
 		416DADB98E79B74B735102806BD7FD40 /* Build configuration list for PBXNativeTarget "Pods-GIFMomentCameraUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6A8EDD7E8EF68250FE87EA50E0643539 /* Debug */,
-				584308C539D93E199BFC3687BF5389A9 /* Release */,
+				F7C6AD9F706B6516A047193C7E736DCB /* Debug */,
+				5C84E800473C32DEAD361CBB7B0F96C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		804780536672904482FE9DB5354A6CC5 /* Build configuration list for PBXNativeTarget "Pods-GIFMomentCamera" */ = {
+		697C5D321F145E584E7A44A336A8952E /* Build configuration list for PBXNativeTarget "Mantle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D279426F3D93BB4126750B6BC44743BA /* Debug */,
-				847B1B2C140128077C1E760359962AF0 /* Release */,
+				9260F016D68AB559ACFAC4FF20615027 /* Debug */,
+				036770FE90998BF5D5941043C81286F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

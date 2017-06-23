@@ -11,6 +11,7 @@ target 'GIFMomentCamera' do
   pod "JVTransitionAnimator"
   pod 'SCRecorder'
   pod 'ChameleonFramework'
+  pod 'Mantle'
 
   target 'GIFMomentCameraTests' do
     inherit! :search_paths

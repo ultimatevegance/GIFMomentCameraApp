@@ -13,7 +13,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MTSCustomizationViewController">
             <connections>
+                <outlet property="FiltersCollectionView" destination="xhS-31-CSk" id="DbC-59-8bV"/>
                 <outlet property="cancel" destination="m7q-6q-HoM" id="D8i-uw-evb"/>
+                <outlet property="customizationOptions" destination="Vts-CJ-td9" id="IBi-vK-hTC"/>
                 <outlet property="customizationOptionsView" destination="cWg-1g-UGR" id="axM-QQ-qf8"/>
                 <outlet property="playerView" destination="inS-iI-Oah" id="1q9-SI-y2D"/>
                 <outlet property="save" destination="Pw2-6J-uYg" id="htl-by-1bJ"/>
@@ -25,10 +27,10 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1Z-Ey-Sc8">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1Z-Ey-Sc8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50.5"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="F1Z-Ey-Sc8" secondAttribute="height" multiplier="375:44" id="1Rg-b9-gVo"/>
+                        <constraint firstAttribute="width" secondItem="F1Z-Ey-Sc8" secondAttribute="height" multiplier="379:51" id="1Rg-b9-gVo"/>
                     </constraints>
                     <items>
                         <barButtonItem image="Cancel" width="33" id="m7q-6q-HoM">
@@ -49,12 +51,43 @@
                     <color key="barTintColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </toolbar>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="inS-iI-Oah" customClass="SCVideoPlayerView">
-                    <rect key="frame" x="0.0" y="44" width="375" height="453.5"/>
+                    <rect key="frame" x="0.0" y="50.5" width="375" height="453.5"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWg-1g-UGR">
-                    <rect key="frame" x="0.0" y="497.5" width="375" height="169.5"/>
+                    <rect key="frame" x="0.0" y="504" width="375" height="163"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xhS-31-CSk">
+                            <rect key="frame" x="0.0" y="39" width="375" height="124.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MEE-II-070">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vts-CJ-td9">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="39"/>
+                            <color key="backgroundColor" red="0.20784313725490194" green="0.20392156862745098" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="39" id="nsi-zp-B0e"/>
+                            </constraints>
+                            <state key="normal" title="Filters">
+                                <color key="titleColor" red="0.99046224360000001" green="0.2946490645" blue="0.57909333709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="xhS-31-CSk" secondAttribute="trailing" id="5JO-yK-28X"/>
+                        <constraint firstItem="Vts-CJ-td9" firstAttribute="leading" secondItem="cWg-1g-UGR" secondAttribute="leading" id="G09-W3-H9A"/>
+                        <constraint firstItem="xhS-31-CSk" firstAttribute="leading" secondItem="cWg-1g-UGR" secondAttribute="leading" id="GpX-NX-shc"/>
+                        <constraint firstItem="Vts-CJ-td9" firstAttribute="top" secondItem="cWg-1g-UGR" secondAttribute="top" id="SsX-Hk-0Lk"/>
+                        <constraint firstItem="xhS-31-CSk" firstAttribute="top" secondItem="Vts-CJ-td9" secondAttribute="bottom" id="TDP-fV-YJF"/>
+                        <constraint firstAttribute="trailing" secondItem="Vts-CJ-td9" secondAttribute="trailing" id="fRA-XG-I6N"/>
+                        <constraint firstAttribute="bottom" secondItem="xhS-31-CSk" secondAttribute="bottom" id="tmB-Pa-N7D"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -1,0 +1,164 @@
+{
+    "Filters" :
+    [
+    {
+        "FilterName": "Normal",
+        "FilterCoverImagePath": "Filter_Normal",
+        "FilterPath": "Filter_Normal"
+     },
+    {
+        "FilterName": "Noir",
+        "FilterCoverImagePath": "Filter_Noir",
+        "FilterPath": "Filter_Noir"
+    },
+    {
+        "FilterName": "Bump",
+        "FilterCoverImagePath": "Filter_Bump",
+        "FilterPath": "Filter_Bump"
+    },
+    {
+        "FilterName": "Chrome",
+        "FilterCoverImagePath": "Filter_Chrome",
+        "FilterPath": "Filter_Chrome"
+    },    {
+        "FilterName": "Colorful",
+        "FilterCoverImagePath": "Filter_Colorful",
+        "FilterPath": "Filter_Colorful"
+    },
+    {
+        "FilterName": "Comic",
+        "FilterCoverImagePath": "Filter_Comic",
+        "FilterPath": "Filter_Comic"
+    },
+    {
+        "FilterName": "Dark",
+        "FilterCoverImagePath": "Filter_Dark",
+        "FilterPath": "Filter_Dark"
+    },
+    {
+        "FilterName": "Dot",
+        "FilterCoverImagePath": "Filter_Dot",
+        "FilterPath": "Filter_Dot"
+    },
+    {
+        "FilterName": "Droste",
+        "FilterCoverImagePath": "Filter_Droste",
+        "FilterPath": "Filter_Droste"
+    },
+    {
+        "FilterName": "Exposure",
+        "FilterCoverImagePath": "Filter_Exposure",
+        "FilterPath": "Filter_Exposure"
+    },
+    {
+        "FilterName": "Fade",
+        "FilterCoverImagePath": "Filter_Fade",
+        "FilterPath": "Filter_Fade"
+    },
+    {
+        "FilterName": "Ghost",
+        "FilterCoverImagePath": "Filter_Ghost",
+        "FilterPath": "Filter_Ghost"
+    },
+    {
+        "FilterName": "Glide Reflected Tile",
+        "FilterCoverImagePath": "Filter_GlideReflectedTile",
+        "FilterPath": "Filter_GlideReflectedTile"
+    },
+    {
+        "FilterName": "Gloom",
+        "FilterCoverImagePath": "Filter_Gloom",
+        "FilterPath": "Filter_Gloom"
+    },
+    {
+        "FilterName": "Halftone",
+        "FilterCoverImagePath": "Filter_Halftone",
+        "FilterPath": "Filter_Halftone"
+    },
+    {
+        "FilterName": "Hue Green",
+        "FilterCoverImagePath": "Filter_Hue_Green",
+        "FilterPath": "Filter_Hue_Green"
+    },
+    {
+        "FilterName": "Hue Rose",
+        "FilterCoverImagePath": "Filter_Hue_Rose",
+        "FilterPath": "Filter_Hue_Rose"
+    },
+    {
+        "FilterName": "Instant",
+        "FilterCoverImagePath": "Filter_Instant",
+        "FilterPath": "Filter_Instant"
+    },
+    {
+        "FilterName": "Kaleidoscope",
+        "FilterCoverImagePath": "Filter_Kaleidoscope",
+        "FilterPath": "Filter_Kaleidoscope"
+    },
+    {
+        "FilterName": "Lines",
+        "FilterCoverImagePath": "Filter_Lines",
+        "FilterPath": "Filter_Lines"
+    },
+    {
+        "FilterName": "Mono",
+        "FilterCoverImagePath": "Filter_Mono",
+        "FilterPath": "Filter_Mono"
+    },
+    {
+        "FilterName": "Sharp",
+        "FilterCoverImagePath": "Filter_Sharp",
+        "FilterPath": "Filter_Sharp"
+    },
+    {
+        "FilterName": "Parallelogram",
+        "FilterCoverImagePath": "Filter_Parallelogram",
+        "FilterPath": "Filter_Parallelogram"
+    },
+    {
+        "FilterName": "Pixellate",
+        "FilterCoverImagePath": "Filter_Pixellate",
+        "FilterPath": "Filter_Pixellate"
+    },
+    {
+        "FilterName": "Poster",
+        "FilterCoverImagePath": "Filter_Poster",
+        "FilterPath": "Filter_Poster"
+    },
+    {
+        "FilterName": "Process",
+        "FilterCoverImagePath": "Filter_Process",
+        "FilterPath": "Filter_Process"
+    },
+    {
+        "FilterName": "Sepia Tone",
+        "FilterCoverImagePath": "Filter_SepiaTone",
+        "FilterPath": "Filter_SepiaTone"
+    },
+    {
+        "FilterName": "Motion Blur",
+        "FilterCoverImagePath": "Filter_Motion_Blur",
+        "FilterPath": "Filter_Motion_Blur"
+    },
+    {
+        "FilterName": "Thermal",
+        "FilterCoverImagePath": "Filter_Thermal",
+        "FilterPath": "Filter_Thermal"
+    },
+    {
+        "FilterName": "Vortex",
+        "FilterCoverImagePath": "Filter_Vortex",
+        "FilterPath": "Filter_Vortex"
+    },
+    {
+        "FilterName": "Warm",
+        "FilterCoverImagePath": "Filter_Warm",
+        "FilterPath": "Filter_Warm"
+    },
+    {
+        "FilterName": "Zoom Blur",
+        "FilterCoverImagePath": "Filter_ZoomBlur",
+        "FilterPath": "Filter_ZoomBlur"
+    }
+]
+}
