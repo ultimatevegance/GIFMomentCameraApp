@@ -12,6 +12,7 @@
 		8D0FC0BE1EFBC136004B634E /* BlurMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0FC0BC1EFBC136004B634E /* BlurMenuItemCell.m */; };
 		8D0FC0C11EFBC1FD004B634E /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0FC0C01EFBC1FD004B634E /* UIImage+ImageEffects.m */; };
 		8D0FC0C31EFBCAFF004B634E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0FC0C21EFBCAFF004B634E /* CoreGraphics.framework */; };
+		8D0FC0CA1EFCAD8C004B634E /* SCRecordSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0FC0C91EFCAD8C004B634E /* SCRecordSessionManager.m */; };
 		8D87448A1EFB89A800025AE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8744891EFB89A800025AE4 /* main.m */; };
 		8D87448D1EFB89A800025AE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D87448C1EFB89A800025AE4 /* AppDelegate.m */; };
 		8D8744951EFB89A800025AE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D8744941EFB89A800025AE4 /* Assets.xcassets */; };
@@ -96,6 +97,8 @@
 		8D0FC0BF1EFBC1FD004B634E /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		8D0FC0C01EFBC1FD004B634E /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		8D0FC0C21EFBCAFF004B634E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8D0FC0C81EFCAD8C004B634E /* SCRecordSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRecordSessionManager.h; sourceTree = "<group>"; };
+		8D0FC0C91EFCAD8C004B634E /* SCRecordSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRecordSessionManager.m; sourceTree = "<group>"; };
 		8D8744851EFB89A800025AE4 /* GIFMomentCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFMomentCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8744891EFB89A800025AE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D87448B1EFB89A800025AE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -239,6 +242,15 @@
 			path = BlurMenu;
 			sourceTree = "<group>";
 		};
+		8D0FC0C71EFCAD6C004B634E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8D0FC0C81EFCAD8C004B634E /* SCRecordSessionManager.h */,
+				8D0FC0C91EFCAD8C004B634E /* SCRecordSessionManager.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		8D87447C1EFB89A800025AE4 = {
 			isa = PBXGroup;
 			children = (
@@ -316,15 +328,16 @@
 		8D8744BC1EFB8A0300025AE4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				8D0FC0C71EFCAD6C004B634E /* Util */,
+				8D9F46AF1EFB8FAD0015A94B /* MTSMainViewController.h */,
+				8D9F46B01EFB8FAD0015A94B /* MTSMainViewController.m */,
+				8D9F46B11EFB8FAD0015A94B /* MTSMainViewController.xib */,
 				8D8744C21EFB8A4F00025AE4 /* MTSSettingViewController.h */,
 				8D8744C31EFB8A4F00025AE4 /* MTSSettingViewController.m */,
 				8D8744C41EFB8A4F00025AE4 /* MTSSettingViewController.xib */,
 				8D8744C71EFB8A6E00025AE4 /* MTSCustomizationViewController.h */,
 				8D8744C81EFB8A6E00025AE4 /* MTSCustomizationViewController.m */,
 				8D8744C91EFB8A6E00025AE4 /* MTSCustomizationViewController.xib */,
-				8D9F46AF1EFB8FAD0015A94B /* MTSMainViewController.h */,
-				8D9F46B01EFB8FAD0015A94B /* MTSMainViewController.m */,
-				8D9F46B11EFB8FAD0015A94B /* MTSMainViewController.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -742,6 +755,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D9F47071EFB94C00015A94B /* DGActivityIndicatorBallScaleAnimation.m in Sources */,
+				8D0FC0CA1EFCAD8C004B634E /* SCRecordSessionManager.m in Sources */,
 				8D9F47021EFB94C00015A94B /* DGActivityIndicatorBallGridBeatAnimation.m in Sources */,
 				8D9F47031EFB94C00015A94B /* DGActivityIndicatorBallGridPulseAnimation.m in Sources */,
 				8D9F47171EFB94C00015A94B /* DGActivityIndicatorRotatingSandglassAnimation.m in Sources */,

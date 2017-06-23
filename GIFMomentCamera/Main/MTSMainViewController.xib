@@ -14,6 +14,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MTSMainViewController">
             <connections>
                 <outlet property="cameraChangeButton" destination="biQ-fg-Bhf" id="aCP-iK-Toy"/>
+                <outlet property="progressView" destination="rGo-oj-AIv" id="bp7-cz-Xcl"/>
                 <outlet property="recordButton" destination="ZLt-Oh-yVv" id="ila-y9-Z1S"/>
                 <outlet property="settingButton" destination="YbZ-Si-8sA" id="WEe-JR-k2r"/>
                 <outlet property="videoPreviewLayer" destination="nTJ-4m-P36" id="KfY-Ww-rZl"/>
@@ -29,6 +30,11 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="500.5"/>
                     <color key="backgroundColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rGo-oj-AIv">
+                    <rect key="frame" x="0.0" y="498.5" width="375" height="2"/>
+                    <color key="progressTintColor" red="0.99046224360000001" green="0.2946490645" blue="0.57909333709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="trackTintColor" red="0.12129447609186172" green="0.12922456860542297" blue="0.14169979095458984" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </progressView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLt-Oh-yVv" customClass="SDRecordButton">
                     <rect key="frame" x="144.5" y="547" width="86" height="86"/>
                     <constraints>
@@ -78,14 +84,17 @@
                 <constraint firstItem="biQ-fg-Bhf" firstAttribute="width" secondItem="nTJ-4m-P36" secondAttribute="width" multiplier="0.1" id="C4y-cD-szA"/>
                 <constraint firstItem="ZXk-u9-LS3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FTz-5E-6o7"/>
                 <constraint firstAttribute="trailing" secondItem="biQ-fg-Bhf" secondAttribute="trailing" constant="16" id="Jcg-1L-rAr"/>
+                <constraint firstAttribute="trailing" secondItem="rGo-oj-AIv" secondAttribute="trailing" id="MPf-wL-AaZ"/>
+                <constraint firstItem="rGo-oj-AIv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="X2p-UK-miz"/>
                 <constraint firstItem="nTJ-4m-P36" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.75" id="ZWN-WQ-iVp"/>
                 <constraint firstItem="YbZ-Si-8sA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="26" id="dPG-cf-gDp"/>
                 <constraint firstItem="ZLt-Oh-yVv" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.23" id="fhV-jH-SsO"/>
+                <constraint firstItem="rGo-oj-AIv" firstAttribute="bottom" secondItem="nTJ-4m-P36" secondAttribute="bottom" id="gWc-Z0-BEM"/>
                 <constraint firstItem="nTJ-4m-P36" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kAb-E8-X4Y"/>
                 <constraint firstAttribute="trailing" secondItem="nTJ-4m-P36" secondAttribute="trailing" id="mAY-NW-oBK"/>
                 <constraint firstItem="nTJ-4m-P36" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qlQ-JX-jot"/>
             </constraints>
-            <point key="canvasLocation" x="122" y="64"/>
+            <point key="canvasLocation" x="121.5" y="63.5"/>
         </view>
     </objects>
     <resources>

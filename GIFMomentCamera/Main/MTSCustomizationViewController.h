@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Common.h"
 @interface MTSCustomizationViewController : UIViewController
+
+@property (nonatomic, strong) SCRecordSession *recordSession;
 
 @end

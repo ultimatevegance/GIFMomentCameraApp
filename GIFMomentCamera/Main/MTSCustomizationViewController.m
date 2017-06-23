@@ -9,6 +9,11 @@
 #import "MTSCustomizationViewController.h"
 
 @interface MTSCustomizationViewController ()
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *cancel;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *save;
+@property (weak, nonatomic) IBOutlet SCVideoPlayerView *playerView;
+@property (weak, nonatomic) IBOutlet UIView *customizationOptionsView;
+@property (strong, nonatomic) SCPlayer *player;
 
 @end
 
@@ -16,7 +21,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    _player = [SCPlayer player];
+    _playerView.player = _player;
+    _playerView.playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+    _player.loopEnabled = YES;
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [_player setItemByAsset:_recordSession.assetRepresentingSegments];
+    [_player play];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    [_player pause];
+}
+
+- (IBAction)cancel:(UIBarButtonItem *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)save:(UIBarButtonItem *)sender {
 }
 
 - (void)didReceiveMemoryWarning {

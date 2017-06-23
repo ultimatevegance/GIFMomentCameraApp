@@ -1,12 +1,22 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MTSCustomizationViewController">
             <connections>
+                <outlet property="cancel" destination="m7q-6q-HoM" id="D8i-uw-evb"/>
+                <outlet property="customizationOptionsView" destination="cWg-1g-UGR" id="axM-QQ-qf8"/>
+                <outlet property="playerView" destination="inS-iI-Oah" id="1q9-SI-y2D"/>
+                <outlet property="save" destination="Pw2-6J-uYg" id="htl-by-1bJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +24,58 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1Z-Ey-Sc8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="F1Z-Ey-Sc8" secondAttribute="height" multiplier="375:44" id="1Rg-b9-gVo"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem image="Cancel" width="33" id="m7q-6q-HoM">
+                            <connections>
+                                <action selector="cancel:" destination="-1" id="8Gk-tb-5Nl"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="WLO-9h-SDz"/>
+                        <barButtonItem title="CUSTOMIZATION" id="feb-zW-cPy"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="eRB-u4-QDO"/>
+                        <barButtonItem title="SAVE" id="Pw2-6J-uYg">
+                            <connections>
+                                <action selector="save:" destination="-1" id="x33-yB-EgO"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                    <color key="tintColor" red="0.99046224360000001" green="0.2946490645" blue="0.57909333709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="barTintColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </toolbar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="inS-iI-Oah" customClass="SCVideoPlayerView">
+                    <rect key="frame" x="0.0" y="44" width="375" height="453.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWg-1g-UGR">
+                    <rect key="frame" x="0.0" y="497.5" width="375" height="169.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cWg-1g-UGR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5UQ-5d-sX6"/>
+                <constraint firstAttribute="bottom" secondItem="cWg-1g-UGR" secondAttribute="bottom" id="8cw-x3-C6X"/>
+                <constraint firstItem="inS-iI-Oah" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.68" id="IaV-jX-yUq"/>
+                <constraint firstItem="F1Z-Ey-Sc8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Iu7-dN-t0e"/>
+                <constraint firstAttribute="trailing" secondItem="inS-iI-Oah" secondAttribute="trailing" id="Q3l-Rw-uK0"/>
+                <constraint firstAttribute="trailing" secondItem="cWg-1g-UGR" secondAttribute="trailing" id="WN1-Ed-rhY"/>
+                <constraint firstItem="inS-iI-Oah" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YQV-Sf-Hgf"/>
+                <constraint firstItem="cWg-1g-UGR" firstAttribute="top" secondItem="inS-iI-Oah" secondAttribute="bottom" id="fiI-nQ-xsq"/>
+                <constraint firstAttribute="trailing" secondItem="F1Z-Ey-Sc8" secondAttribute="trailing" id="jHg-IF-Qqp"/>
+                <constraint firstItem="F1Z-Ey-Sc8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="o6a-Nm-O8s"/>
+                <constraint firstItem="inS-iI-Oah" firstAttribute="top" secondItem="F1Z-Ey-Sc8" secondAttribute="bottom" id="yFQ-GG-EeJ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="Cancel" width="21" height="21"/>
+    </resources>
 </document>

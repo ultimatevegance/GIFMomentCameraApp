@@ -22,6 +22,8 @@
     [self.window makeKeyAndVisible];
     self.window.rootViewController = [[MTSMainViewController alloc] init];
     [NSThread sleepForTimeInterval:3];//延长3秒}
+    //appearance
+    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSFontAttributeName :[UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:20]} forState:UIControlStateNormal];
     return YES;
 }
 
