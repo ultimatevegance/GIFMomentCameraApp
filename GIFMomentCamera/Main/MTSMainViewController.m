@@ -49,6 +49,9 @@ const int videoDuration  = 5;
     // Get the audio configuration object
     SCAudioConfiguration *audio = _recorder.audioConfiguration;
     audio.enabled = NO;
+    // Get the video configuration object
+    SCVideoConfiguration *video = _recorder.videoConfiguration;
+    video.scalingMode = AVVideoScalingModeResizeAspectFill;
     NSError *error;
     if (![_recorder prepare:&error]) {
         NSLog(@"Prepare error: %@", error.localizedDescription);

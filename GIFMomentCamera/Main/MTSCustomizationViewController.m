@@ -14,13 +14,15 @@ static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
 @interface MTSCustomizationViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *cancel;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *save;
-@property (weak, nonatomic) IBOutlet SCVideoPlayerView *playerView;
+@property (weak, nonatomic) IBOutlet SCSwipeableFilterView *swipeableFilterView;
+
 @property (weak, nonatomic) IBOutlet UIView *customizationOptionsView;
 @property (strong, nonatomic) SCPlayer *player;
 @property (weak, nonatomic) IBOutlet UIButton *customizationOptions;
 @property (weak, nonatomic) IBOutlet UICollectionView *FiltersCollectionView;
 @property (strong, nonatomic) NSArray *filtersData;
 @property (strong, nonatomic) NSMutableArray *filters;
+
 @end
 
 @implementation MTSCustomizationViewController
@@ -29,11 +31,6 @@ static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _player = [SCPlayer player];
-    _playerView.player = _player;
-    _playerView.playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-    _player.loopEnabled = YES;
-    
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     _FiltersCollectionView.collectionViewLayout = layout;
@@ -42,11 +39,15 @@ static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
     [_FiltersCollectionView registerNib:[UINib nibWithNibName:mFilterCellID bundle:nil] forCellWithReuseIdentifier:mFilterCellID];
     [self loadFiltersData];
     
+    _player = [SCPlayer player];
+    _player.loopEnabled = YES;
+    _swipeableFilterView.contentMode = UIViewContentModeScaleAspectFill;
+    _player.SCImageView = self.swipeableFilterView;
+    _swipeableFilterView.filters = _filters;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
     [_player setItemByAsset:_recordSession.assetRepresentingSegments];
     [_player play];
 }
@@ -87,7 +88,7 @@ static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
 }
 #pragma mark - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
+    [_swipeableFilterView setSelectedFilter:_filters[indexPath.row]];
 }
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
 }

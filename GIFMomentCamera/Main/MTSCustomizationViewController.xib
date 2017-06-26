@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,8 +22,8 @@
                 <outlet property="cancel" destination="m7q-6q-HoM" id="D8i-uw-evb"/>
                 <outlet property="customizationOptions" destination="Vts-CJ-td9" id="IBi-vK-hTC"/>
                 <outlet property="customizationOptionsView" destination="cWg-1g-UGR" id="axM-QQ-qf8"/>
-                <outlet property="playerView" destination="inS-iI-Oah" id="1q9-SI-y2D"/>
                 <outlet property="save" destination="Pw2-6J-uYg" id="htl-by-1bJ"/>
+                <outlet property="swipeableFilterView" destination="inS-iI-Oah" id="mWE-RD-zzV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -55,9 +55,8 @@
                     <color key="tintColor" red="0.99046224360000001" green="0.2946490645" blue="0.57909333709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <color key="barTintColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </toolbar>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="inS-iI-Oah" customClass="SCVideoPlayerView">
+                <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="inS-iI-Oah" customClass="SCSwipeableFilterView">
                     <rect key="frame" x="0.0" y="50.5" width="375" height="453.5"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWg-1g-UGR">
                     <rect key="frame" x="0.0" y="504" width="375" height="163"/>

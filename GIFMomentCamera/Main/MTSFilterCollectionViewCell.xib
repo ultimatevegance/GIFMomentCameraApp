@@ -20,7 +20,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="128" height="147"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Filter_Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Qpl-8N-QgU">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qpl-8N-QgU">
                         <rect key="frame" x="6.5" y="4" width="115.5" height="115.5"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="Qpl-8N-QgU" secondAttribute="height" multiplier="1:1" id="Cam-1y-Xzg"/>
@@ -51,7 +51,4 @@
             <point key="canvasLocation" x="-5" y="113.5"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="Filter_Placeholder" width="77" height="72"/>
-    </resources>
 </document>
