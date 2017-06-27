@@ -18,6 +18,14 @@
 		8D84765B1EFD685B00A18A09 /* Filter_Motion_Blur.cisf in Resources */ = {isa = PBXBuildFile; fileRef = 8D84765A1EFD685B00A18A09 /* Filter_Motion_Blur.cisf */; };
 		8D84765D1EFD6ACC00A18A09 /* Filter_Sharp.cisf in Resources */ = {isa = PBXBuildFile; fileRef = 8D84765C1EFD6ACC00A18A09 /* Filter_Sharp.cisf */; };
 		8D84765F1EFD6DBE00A18A09 /* Filter_Normal.cisf in Resources */ = {isa = PBXBuildFile; fileRef = 8D84765E1EFD6DBE00A18A09 /* Filter_Normal.cisf */; };
+		8D8476701F010A9D00A18A09 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 8D8476661F010A9D00A18A09 /* .gitkeep */; };
+		8D8476711F010A9D00A18A09 /* alert-round.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D8476671F010A9D00A18A09 /* alert-round.png */; };
+		8D8476721F010A9D00A18A09 /* checkmark-round.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D8476681F010A9D00A18A09 /* checkmark-round.png */; };
+		8D8476731F010A9D00A18A09 /* close-round.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D8476691F010A9D00A18A09 /* close-round.png */; };
+		8D8476741F010A9D00A18A09 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D84766A1F010A9D00A18A09 /* heart.png */; };
+		8D8476751F010A9D00A18A09 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D84766B1F010A9D00A18A09 /* star.png */; };
+		8D8476761F010A9D00A18A09 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 8D84766D1F010A9D00A18A09 /* .gitkeep */; };
+		8D8476771F010A9D00A18A09 /* FCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D84766F1F010A9D00A18A09 /* FCAlertView.m */; };
 		8D87448A1EFB89A800025AE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8744891EFB89A800025AE4 /* main.m */; };
 		8D87448D1EFB89A800025AE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D87448C1EFB89A800025AE4 /* AppDelegate.m */; };
 		8D8744951EFB89A800025AE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D8744941EFB89A800025AE4 /* Assets.xcassets */; };
@@ -143,6 +151,15 @@
 		8D84765A1EFD685B00A18A09 /* Filter_Motion_Blur.cisf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Filter_Motion_Blur.cisf; sourceTree = "<group>"; };
 		8D84765C1EFD6ACC00A18A09 /* Filter_Sharp.cisf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Filter_Sharp.cisf; sourceTree = "<group>"; };
 		8D84765E1EFD6DBE00A18A09 /* Filter_Normal.cisf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Filter_Normal.cisf; sourceTree = "<group>"; };
+		8D8476661F010A9D00A18A09 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8D8476671F010A9D00A18A09 /* alert-round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-round.png"; sourceTree = "<group>"; };
+		8D8476681F010A9D00A18A09 /* checkmark-round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark-round.png"; sourceTree = "<group>"; };
+		8D8476691F010A9D00A18A09 /* close-round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-round.png"; sourceTree = "<group>"; };
+		8D84766A1F010A9D00A18A09 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		8D84766B1F010A9D00A18A09 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		8D84766D1F010A9D00A18A09 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8D84766E1F010A9D00A18A09 /* FCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCAlertView.h; sourceTree = "<group>"; };
+		8D84766F1F010A9D00A18A09 /* FCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCAlertView.m; sourceTree = "<group>"; };
 		8D8744851EFB89A800025AE4 /* GIFMomentCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFMomentCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8744891EFB89A800025AE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D87448B1EFB89A800025AE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -339,6 +356,38 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		8D8476641F010A9D00A18A09 /* FCAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				8D8476651F010A9D00A18A09 /* Assets */,
+				8D84766C1F010A9D00A18A09 /* Classes */,
+			);
+			path = FCAlertView;
+			sourceTree = "<group>";
+		};
+		8D8476651F010A9D00A18A09 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8D8476661F010A9D00A18A09 /* .gitkeep */,
+				8D8476671F010A9D00A18A09 /* alert-round.png */,
+				8D8476681F010A9D00A18A09 /* checkmark-round.png */,
+				8D8476691F010A9D00A18A09 /* close-round.png */,
+				8D84766A1F010A9D00A18A09 /* heart.png */,
+				8D84766B1F010A9D00A18A09 /* star.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8D84766C1F010A9D00A18A09 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8D84766D1F010A9D00A18A09 /* .gitkeep */,
+				8D84766E1F010A9D00A18A09 /* FCAlertView.h */,
+				8D84766F1F010A9D00A18A09 /* FCAlertView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		8D87447C1EFB89A800025AE4 = {
 			isa = PBXGroup;
 			children = (
@@ -409,6 +458,7 @@
 		8D8744BB1EFB89EB00025AE4 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				8D8476641F010A9D00A18A09 /* FCAlertView */,
 				8D0FC0B81EFBC10F004B634E /* BlurMenu */,
 				8D9F46B41EFB94BF0015A94B /* DGActivityIndicatorView */,
 				8D8744D01EFB8ADE00025AE4 /* SDRecordButton */,
@@ -743,12 +793,14 @@
 				8D84765D1EFD6ACC00A18A09 /* Filter_Sharp.cisf in Resources */,
 				8D9F46B31EFB8FAD0015A94B /* MTSMainViewController.xib in Resources */,
 				8D9E4EE41EFCDD94006D9541 /* Filter_Comic.cisf in Resources */,
+				8D8476701F010A9D00A18A09 /* .gitkeep in Resources */,
 				8D9E4EF11EFCDD94006D9541 /* Filter_Kaleidoscope.cisf in Resources */,
 				8D9E4EEA1EFCDD94006D9541 /* Filter_Ghost.cisf in Resources */,
 				8D84765F1EFD6DBE00A18A09 /* Filter_Normal.cisf in Resources */,
 				8D9E4EEC1EFCDD94006D9541 /* Filter_Gloom.cisf in Resources */,
 				8D9E4EE31EFCDD94006D9541 /* Filter_Colorful.cisf in Resources */,
 				8D9E4EF71EFCDD94006D9541 /* Filter_Poster.cisf in Resources */,
+				8D8476751F010A9D00A18A09 /* star.png in Resources */,
 				728226381EFD76CA0014DCAC /* Phosphate.ttc in Resources */,
 				8D9E4EF91EFCDD94006D9541 /* Filter_SepiaTone.cisf in Resources */,
 				8D9E4F091EFD0CC6006D9541 /* Filter_Noir.cisf in Resources */,
@@ -765,7 +817,9 @@
 				8D9E4EE71EFCDD94006D9541 /* Filter_Droste.cisf in Resources */,
 				8D9E4EFC1EFCDD94006D9541 /* Filter_Vortex.cisf in Resources */,
 				8D9E4EFE1EFCDD94006D9541 /* Filter_ZoomBlur.cisf in Resources */,
+				8D8476711F010A9D00A18A09 /* alert-round.png in Resources */,
 				8D8744CB1EFB8A6E00025AE4 /* MTSCustomizationViewController.xib in Resources */,
+				8D8476731F010A9D00A18A09 /* close-round.png in Resources */,
 				8D9E4EED1EFCDD94006D9541 /* Filter_Halftone.cisf in Resources */,
 				8D9E4EF41EFCDD94006D9541 /* Filter_MotionBlur.cisf in Resources */,
 				8D9E4EF31EFCDD94006D9541 /* Filter_Mono.cisf in Resources */,
@@ -773,12 +827,15 @@
 				8D9E4EFD1EFCDD94006D9541 /* Filter_Warm.cisf in Resources */,
 				8D9E4EFB1EFCDD94006D9541 /* Filter_Thermal.cisf in Resources */,
 				8D9E4EF81EFCDD94006D9541 /* Filter_Process.cisf in Resources */,
+				8D8476741F010A9D00A18A09 /* heart.png in Resources */,
 				8D9E4F051EFCEF10006D9541 /* MTSFilterCollectionViewCell.xib in Resources */,
 				8D9E4EE51EFCDD94006D9541 /* Filter_Dark.cisf in Resources */,
 				8D9E4EE61EFCDD94006D9541 /* Filter_Dot.cisf in Resources */,
+				8D8476761F010A9D00A18A09 /* .gitkeep in Resources */,
 				8D9E4EE91EFCDD94006D9541 /* Filter_Fade.cisf in Resources */,
 				8D9E4EEF1EFCDD94006D9541 /* Filter_Hue_Rose.cisf in Resources */,
 				8D9E4EE21EFCDD94006D9541 /* Filter_Chrome.cisf in Resources */,
+				8D8476721F010A9D00A18A09 /* checkmark-round.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -955,6 +1012,7 @@
 				8D9F471B1EFB94C00015A94B /* DGActivityIndicatorTriangleSkewSpinAnimation.m in Sources */,
 				8D9F47141EFB94C00015A94B /* DGActivityIndicatorLineScalePulseOutAnimation.m in Sources */,
 				8D9F47001EFB94C00015A94B /* DGActivityIndicatorBallClipRotateMultipleAnimation.m in Sources */,
+				8D8476771F010A9D00A18A09 /* FCAlertView.m in Sources */,
 				8D9F46FF1EFB94C00015A94B /* DGActivityIndicatorBallClipRotateAnimation.m in Sources */,
 				8D9F471E1EFB94C00015A94B /* DGActivityIndicatorTwoDotsAnimation.m in Sources */,
 				8D9F47041EFB94C00015A94B /* DGActivityIndicatorBallPulseAnimation.m in Sources */,

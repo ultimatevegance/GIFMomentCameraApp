@@ -13,6 +13,7 @@
 #import <JVTransitionAnimator.h>
 #import "DGActivityIndicatorView.h"
 #import <Mantle.h>
+#import "FCAlertView.h"
 //Constants
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
@@ -21,5 +22,8 @@
 #define PrimaryColorbarbiePink [UIColor colorWithRed:255.0f / 255.0f green:76.0f / 255.0f blue:161.0f / 255.0f alpha:1.0f]
 #define ShotButtonColor [UIColor colorWithGradientStyle:UIGradientStyleLeftToRight withFrame:CGRectMake(0, 0,300 ,300) andColors:@[PrimaryColororangish,PrimaryColorbarbiePink]]
 #define MSPrimaryBGColor  [UIColor colorWithHexString:@"2E2E2E"]
+#define MSOrganish  [UIColor colorWithHexString:@"fb804a"]
+#define MSBarbiePink  [UIColor colorWithHexString:@"fc50a1"]
+
 #define SelectedBGColor  [UIColor colorWithHexString:@"353435"]
 #endif /* Common_h */

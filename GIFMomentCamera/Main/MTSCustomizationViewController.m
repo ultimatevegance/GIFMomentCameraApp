@@ -22,6 +22,7 @@ static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
 @property (weak, nonatomic) IBOutlet UICollectionView *FiltersCollectionView;
 @property (strong, nonatomic) NSArray *filtersData;
 @property (strong, nonatomic) NSMutableArray *filters;
+@property (strong, nonatomic) FCAlertView *alert;
 
 @end
 
@@ -44,6 +45,10 @@ static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
     _swipeableFilterView.contentMode = UIViewContentModeScaleAspectFill;
     _player.SCImageView = self.swipeableFilterView;
     _swipeableFilterView.filters = _filters;
+}
+
+- (void)configAppearance {
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -96,9 +101,27 @@ static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
 #pragma mark - ACTIONS
 
 - (IBAction)cancel:(UIBarButtonItem *)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    _alert = [[FCAlertView alloc] init];
+    _alert.colorScheme = [UIColor colorWithGradientStyle:UIGradientStyleLeftToRight withFrame:_alert.frame andColors:@[MSOrganish,MSBarbiePink]];
+    _alert.customImageScale = 2;
+    _alert.darkTheme = YES;
+    _alert.bounceAnimations = YES;
+    _alert.avoidCustomImageTint = YES;
+    _alert.animateAlertInFromTop = YES;
+    _alert.animateAlertOutToBottom = YES;
+    [_alert showAlertInView:self withTitle:@"Quit Recording?" withSubtitle:@"All the data will not be saved" withCustomImage:[UIImage imageNamed:@"Logo_small"] withDoneButtonTitle:@"YES" andButtons:nil];
+    [_alert doneActionBlock:^{
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }];
+    __weak typeof(self) weakSelf = self;
+    [_alert addButton:@"Nope" withActionBlock:^{
+        [weakSelf dismissAlert];
+    }];
 }
 
+- (void)dismissAlert {
+    [_alert dismissAlertView];
+}
 - (IBAction)save:(UIBarButtonItem *)sender {
     
 }
