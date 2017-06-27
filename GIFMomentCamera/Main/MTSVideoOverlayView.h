@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "SCVideoConfiguration.h"
+#import "IQLabelView.h"
+
 @interface MTSVideoOverlayView : UIView <SCVideoOverlay>
 
 @property (copy,nonatomic)NSString *textContent;
+@property(strong, nonatomic)IQLabelView *labelView;
 
 @end

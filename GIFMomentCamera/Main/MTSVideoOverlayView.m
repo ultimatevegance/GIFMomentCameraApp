@@ -7,11 +7,9 @@
 //
 
 #import "MTSVideoOverlayView.h"
-#import "IQLabelView.h"
 @interface MTSVideoOverlayView ()
 
 @property(strong, nonatomic)UIImageView *waterMarkImageView;
-@property(strong, nonatomic)IQLabelView *labelView;
 
 @end
 

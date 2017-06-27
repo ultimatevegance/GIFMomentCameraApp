@@ -30,6 +30,8 @@
 		8D84767F1F02049600A18A09 /* IQLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D84767B1F02049600A18A09 /* IQLabelView.m */; };
 		8D8476801F02049600A18A09 /* UITextField+DynamicFontSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D84767D1F02049600A18A09 /* UITextField+DynamicFontSize.m */; };
 		8D8476891F023A2B00A18A09 /* MTSVideoOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8476881F023A2B00A18A09 /* MTSVideoOverlayView.m */; };
+		8D84768D1F024EB400A18A09 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D84768C1F024EB400A18A09 /* HMSegmentedControl.m */; };
+		8D84768F1F02577A00A18A09 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D84768E1F02577A00A18A09 /* QuartzCore.framework */; };
 		8D87448A1EFB89A800025AE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8744891EFB89A800025AE4 /* main.m */; };
 		8D87448D1EFB89A800025AE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D87448C1EFB89A800025AE4 /* AppDelegate.m */; };
 		8D8744951EFB89A800025AE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D8744941EFB89A800025AE4 /* Assets.xcassets */; };
@@ -171,6 +173,9 @@
 		8D84767D1F02049600A18A09 /* UITextField+DynamicFontSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+DynamicFontSize.m"; sourceTree = "<group>"; };
 		8D8476871F023A2B00A18A09 /* MTSVideoOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSVideoOverlayView.h; sourceTree = "<group>"; };
 		8D8476881F023A2B00A18A09 /* MTSVideoOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSVideoOverlayView.m; sourceTree = "<group>"; };
+		8D84768B1F024EB400A18A09 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
+		8D84768C1F024EB400A18A09 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
+		8D84768E1F02577A00A18A09 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8D8744851EFB89A800025AE4 /* GIFMomentCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFMomentCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8744891EFB89A800025AE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D87448B1EFB89A800025AE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -311,6 +316,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D84768F1F02577A00A18A09 /* QuartzCore.framework in Frameworks */,
 				8D0FC0C31EFBCAFF004B634E /* CoreGraphics.framework in Frameworks */,
 				F2865D39F0953A1A0F5F2530 /* libPods-GIFMomentCamera.a in Frameworks */,
 			);
@@ -411,6 +417,15 @@
 			path = IQLabelView;
 			sourceTree = "<group>";
 		};
+		8D84768A1F024EB400A18A09 /* HMSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				8D84768B1F024EB400A18A09 /* HMSegmentedControl.h */,
+				8D84768C1F024EB400A18A09 /* HMSegmentedControl.m */,
+			);
+			path = HMSegmentedControl;
+			sourceTree = "<group>";
+		};
 		8D87447C1EFB89A800025AE4 = {
 			isa = PBXGroup;
 			children = (
@@ -481,6 +496,7 @@
 		8D8744BB1EFB89EB00025AE4 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				8D84768A1F024EB400A18A09 /* HMSegmentedControl */,
 				8D8476781F02049600A18A09 /* IQLabelView */,
 				8D8476641F010A9D00A18A09 /* FCAlertView */,
 				8D0FC0B81EFBC10F004B634E /* BlurMenu */,
@@ -689,6 +705,7 @@
 		F063D98B36600979485BAEC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D84768E1F02577A00A18A09 /* QuartzCore.framework */,
 				8D0FC0C21EFBCAFF004B634E /* CoreGraphics.framework */,
 				82606728FD787B359AC59042 /* libPods-GIFMomentCamera.a */,
 				4F4FD8A7DBECECDAA346E8B4 /* libPods-GIFMomentCameraTests.a */,
@@ -1061,6 +1078,7 @@
 				8D8744C51EFB8A4F00025AE4 /* MTSSettingViewController.m in Sources */,
 				8D9F47191EFB94C00015A94B /* DGActivityIndicatorRotatingTrigonAnimation.m in Sources */,
 				8D9F470E1EFB94C00015A94B /* DGActivityIndicatorBallZigZagDeflectAnimation.m in Sources */,
+				8D84768D1F024EB400A18A09 /* HMSegmentedControl.m in Sources */,
 				8D9F470D1EFB94C00015A94B /* DGActivityIndicatorBallZigZagAnimation.m in Sources */,
 				8D9E4F041EFCEF10006D9541 /* MTSFilterCollectionViewCell.m in Sources */,
 				8D8744CA1EFB8A6E00025AE4 /* MTSCustomizationViewController.m in Sources */,

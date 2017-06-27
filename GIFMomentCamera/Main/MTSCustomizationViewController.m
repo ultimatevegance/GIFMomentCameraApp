@@ -10,12 +10,14 @@
 #import "MTSFilterCollectionViewCell.h"
 #import "MTSFilterDataModel.h"
 #import "MTSVideoOverlayView.h"
+#import "HMSegmentedControl.h"
 static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
 
 @interface MTSCustomizationViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UIButton *cancel;
 @property (weak, nonatomic) IBOutlet UIButton *save;
 @property (weak, nonatomic) IBOutlet SCSwipeableFilterView *swipeableFilterView;
+@property (weak, nonatomic) IBOutlet UIView *segmentCtrl;
 
 @property (weak, nonatomic) IBOutlet UIView *customizationOptionsView;
 @property (strong, nonatomic) SCPlayer *player;
@@ -40,6 +42,16 @@ static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
     _FiltersCollectionView.dataSource = self;
     [_FiltersCollectionView registerNib:[UINib nibWithNibName:mFilterCellID bundle:nil] forCellWithReuseIdentifier:mFilterCellID];
     [self loadFiltersData];
+    
+    NSArray *sectionImages = @[[UIImage imageNamed:@"Filters"],[UIImage imageNamed:@"Text"]];
+    
+    HMSegmentedControl *segCtrl = [[HMSegmentedControl alloc] initWithSectionImages:sectionImages sectionSelectedImages:sectionImages];
+    segCtrl.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown;
+    segCtrl.selectionIndicatorColor = [UIColor colorWithGradientStyle:UIGradientStyleLeftToRight withFrame:CGRectMake(0, 400, 200, 5) andColors:@[MSOrganish,MSBarbiePink]];
+    segCtrl.selectionIndicatorHeight = 3;
+    segCtrl.backgroundColor = [UIColor clearColor];
+    segCtrl.frame = _segmentCtrl.frame;
+    [_segmentCtrl addSubview:segCtrl];
     
     _player = [SCPlayer player];
     _player.loopEnabled = YES;

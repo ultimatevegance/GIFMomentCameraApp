@@ -16,6 +16,7 @@
                 <outlet property="cancel" destination="lV0-Xc-pap" id="bEk-aD-Bdb"/>
                 <outlet property="customizationOptionsView" destination="cWg-1g-UGR" id="axM-QQ-qf8"/>
                 <outlet property="save" destination="BsU-Pi-nmf" id="l8j-l2-dGU"/>
+                <outlet property="segmentCtrl" destination="yMB-CU-6ZE" id="Qmt-oG-1Dg"/>
                 <outlet property="swipeableFilterView" destination="inS-iI-Oah" id="mWE-RD-zzV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -47,14 +48,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKc-p1-vlt">
-                                        <rect key="frame" x="158.5" y="11" width="57" height="22"/>
-                                        <state key="normal" image="Filters"/>
-                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yMB-CU-6ZE">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="LKc-p1-vlt" firstAttribute="centerX" secondItem="Bcu-4c-XLh" secondAttribute="centerX" id="SQ0-2K-Ryp"/>
-                                    <constraint firstItem="LKc-p1-vlt" firstAttribute="centerY" secondItem="Bcu-4c-XLh" secondAttribute="centerY" id="dgi-jO-RU2"/>
+                                    <constraint firstItem="yMB-CU-6ZE" firstAttribute="top" secondItem="Bcu-4c-XLh" secondAttribute="top" id="8hY-2I-8aw"/>
+                                    <constraint firstItem="yMB-CU-6ZE" firstAttribute="leading" secondItem="Bcu-4c-XLh" secondAttribute="leading" id="F8Q-sN-5QR"/>
+                                    <constraint firstAttribute="bottom" secondItem="yMB-CU-6ZE" secondAttribute="bottom" id="dmf-vw-yWq"/>
+                                    <constraint firstAttribute="trailing" secondItem="yMB-CU-6ZE" secondAttribute="trailing" id="rM6-UY-8RF"/>
                                 </constraints>
                             </view>
                             <constraints>
@@ -135,7 +138,6 @@
     <resources>
         <image name="Cancel" width="21" height="21"/>
         <image name="Customization" width="144" height="15"/>
-        <image name="Filters" width="57" height="14"/>
         <image name="Save" width="39" height="14"/>
     </resources>
 </document>
