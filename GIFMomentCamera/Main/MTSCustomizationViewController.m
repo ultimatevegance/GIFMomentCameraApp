@@ -12,8 +12,8 @@
 static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
 
 @interface MTSCustomizationViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *cancel;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *save;
+@property (weak, nonatomic) IBOutlet UIButton *cancel;
+@property (weak, nonatomic) IBOutlet UIButton *save;
 @property (weak, nonatomic) IBOutlet SCSwipeableFilterView *swipeableFilterView;
 
 @property (weak, nonatomic) IBOutlet UIView *customizationOptionsView;
@@ -100,7 +100,7 @@ static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
 
 #pragma mark - ACTIONS
 
-- (IBAction)cancel:(UIBarButtonItem *)sender {
+- (IBAction)cancel:(UIButton *)sender {
     _alert = [[FCAlertView alloc] init];
     _alert.colorScheme = [UIColor colorWithGradientStyle:UIGradientStyleLeftToRight withFrame:_alert.frame andColors:@[MSOrganish,MSBarbiePink]];
     _alert.customImageScale = 2;

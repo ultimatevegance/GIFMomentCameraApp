@@ -6,23 +6,16 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Phosphate.ttc">
-            <string>Phosphate-Solid</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MTSCustomizationViewController">
             <connections>
                 <outlet property="FiltersCollectionView" destination="xhS-31-CSk" id="DbC-59-8bV"/>
-                <outlet property="cancel" destination="m7q-6q-HoM" id="D8i-uw-evb"/>
-                <outlet property="customizationOptions" destination="Vts-CJ-td9" id="IBi-vK-hTC"/>
+                <outlet property="cancel" destination="lV0-Xc-pap" id="bEk-aD-Bdb"/>
                 <outlet property="customizationOptionsView" destination="cWg-1g-UGR" id="axM-QQ-qf8"/>
-                <outlet property="save" destination="Pw2-6J-uYg" id="htl-by-1bJ"/>
+                <outlet property="save" destination="BsU-Pi-nmf" id="l8j-l2-dGU"/>
                 <outlet property="swipeableFilterView" destination="inS-iI-Oah" id="mWE-RD-zzV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -35,34 +28,11 @@
                 <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="inS-iI-Oah" customClass="SCSwipeableFilterView">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </view>
-                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1Z-Ey-Sc8">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="50.5"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="F1Z-Ey-Sc8" secondAttribute="height" multiplier="379:51" id="1Rg-b9-gVo"/>
-                    </constraints>
-                    <items>
-                        <barButtonItem image="Cancel" width="33" id="m7q-6q-HoM">
-                            <connections>
-                                <action selector="cancel:" destination="-1" id="8Gk-tb-5Nl"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="WLO-9h-SDz"/>
-                        <barButtonItem title="CUSTOMIZATION" id="feb-zW-cPy"/>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="eRB-u4-QDO"/>
-                        <barButtonItem title="SAVE" id="Pw2-6J-uYg">
-                            <connections>
-                                <action selector="save:" destination="-1" id="x33-yB-EgO"/>
-                            </connections>
-                        </barButtonItem>
-                    </items>
-                    <color key="tintColor" red="0.99046224360000001" green="0.2946490645" blue="0.57909333709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <color key="barTintColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                </toolbar>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWg-1g-UGR">
-                    <rect key="frame" x="0.0" y="500.5" width="375" height="166.5"/>
+                    <rect key="frame" x="0.0" y="500" width="375" height="167"/>
                     <subviews>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xhS-31-CSk">
-                            <rect key="frame" x="0.0" y="39" width="375" height="128"/>
+                            <rect key="frame" x="0.0" y="44" width="375" height="123"/>
                             <color key="backgroundColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MEE-II-070">
                                 <size key="itemSize" width="50" height="50"/>
@@ -71,41 +41,90 @@
                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </collectionViewFlowLayout>
                         </collectionView>
-                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vts-CJ-td9">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="39"/>
-                            <color key="backgroundColor" red="0.20784313725490194" green="0.20392156862745098" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NeD-fR-Laf">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Bcu-4c-XLh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKc-p1-vlt">
+                                        <rect key="frame" x="158.5" y="11" width="57" height="22"/>
+                                        <state key="normal" image="Filters"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="LKc-p1-vlt" firstAttribute="centerX" secondItem="Bcu-4c-XLh" secondAttribute="centerX" id="SQ0-2K-Ryp"/>
+                                    <constraint firstItem="LKc-p1-vlt" firstAttribute="centerY" secondItem="Bcu-4c-XLh" secondAttribute="centerY" id="dgi-jO-RU2"/>
+                                </constraints>
+                            </view>
                             <constraints>
-                                <constraint firstAttribute="height" constant="39" id="nsi-zp-B0e"/>
+                                <constraint firstAttribute="height" constant="44" id="YsV-3J-kWj"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Phosphate-Solid" family="Phosphate" pointSize="17"/>
-                            <state key="normal" title="Filters">
-                                <color key="titleColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
-                        </button>
+                            <blurEffect style="dark"/>
+                        </visualEffectView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="NeD-fR-Laf" firstAttribute="top" secondItem="cWg-1g-UGR" secondAttribute="top" id="3tE-lX-CXf"/>
                         <constraint firstAttribute="trailing" secondItem="xhS-31-CSk" secondAttribute="trailing" id="5JO-yK-28X"/>
-                        <constraint firstItem="Vts-CJ-td9" firstAttribute="leading" secondItem="cWg-1g-UGR" secondAttribute="leading" id="G09-W3-H9A"/>
                         <constraint firstItem="xhS-31-CSk" firstAttribute="leading" secondItem="cWg-1g-UGR" secondAttribute="leading" id="GpX-NX-shc"/>
-                        <constraint firstItem="Vts-CJ-td9" firstAttribute="top" secondItem="cWg-1g-UGR" secondAttribute="top" id="SsX-Hk-0Lk"/>
-                        <constraint firstItem="xhS-31-CSk" firstAttribute="top" secondItem="Vts-CJ-td9" secondAttribute="bottom" id="TDP-fV-YJF"/>
-                        <constraint firstAttribute="trailing" secondItem="Vts-CJ-td9" secondAttribute="trailing" id="fRA-XG-I6N"/>
+                        <constraint firstAttribute="trailing" secondItem="NeD-fR-Laf" secondAttribute="trailing" id="YaP-M7-UfP"/>
+                        <constraint firstItem="NeD-fR-Laf" firstAttribute="leading" secondItem="cWg-1g-UGR" secondAttribute="leading" id="hjF-iz-XPJ"/>
+                        <constraint firstItem="xhS-31-CSk" firstAttribute="top" secondItem="NeD-fR-Laf" secondAttribute="bottom" id="iSh-uW-ejj"/>
                         <constraint firstAttribute="bottom" secondItem="xhS-31-CSk" secondAttribute="bottom" id="tmB-Pa-N7D"/>
                     </constraints>
                 </view>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmU-7L-YnR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8uB-Qi-let">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXW-Jj-pqZ">
+                                <rect key="frame" x="115" y="14" width="144" height="22"/>
+                                <state key="normal" image="Customization"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lV0-Xc-pap">
+                                <rect key="frame" x="8" y="14" width="21" height="22"/>
+                                <state key="normal" image="Cancel"/>
+                                <connections>
+                                    <action selector="cancel:" destination="-1" eventType="touchUpInside" id="X2t-58-OX2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BsU-Pi-nmf">
+                                <rect key="frame" x="328" y="14" width="39" height="22"/>
+                                <state key="normal" image="Save"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="kXW-Jj-pqZ" firstAttribute="centerX" secondItem="8uB-Qi-let" secondAttribute="centerX" id="64U-L3-x8a"/>
+                            <constraint firstAttribute="bottom" secondItem="lV0-Xc-pap" secondAttribute="bottom" constant="12" id="9Z0-gN-Uet"/>
+                            <constraint firstAttribute="bottom" secondItem="kXW-Jj-pqZ" secondAttribute="bottom" constant="12" id="DU2-1J-9du"/>
+                            <constraint firstItem="lV0-Xc-pap" firstAttribute="top" secondItem="8uB-Qi-let" secondAttribute="top" constant="14" id="UYY-vE-yJU"/>
+                            <constraint firstItem="BsU-Pi-nmf" firstAttribute="top" secondItem="8uB-Qi-let" secondAttribute="top" constant="14" id="Z8T-Qj-iOt"/>
+                            <constraint firstAttribute="bottom" secondItem="BsU-Pi-nmf" secondAttribute="bottom" constant="12" id="gHG-nQ-0tu"/>
+                            <constraint firstItem="lV0-Xc-pap" firstAttribute="leading" secondItem="8uB-Qi-let" secondAttribute="leading" constant="8" id="qOn-k8-GPR"/>
+                            <constraint firstItem="kXW-Jj-pqZ" firstAttribute="top" secondItem="8uB-Qi-let" secondAttribute="top" constant="14" id="rBC-Ct-hnu"/>
+                            <constraint firstAttribute="trailing" secondItem="BsU-Pi-nmf" secondAttribute="trailing" constant="8" id="zTz-em-2GM"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="99Z-Rs-heS"/>
+                    </constraints>
+                    <blurEffect style="dark"/>
+                </visualEffectView>
             </subviews>
             <color key="backgroundColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="inS-iI-Oah" secondAttribute="trailing" id="4B1-2D-6x8"/>
+                <constraint firstItem="kmU-7L-YnR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5B2-4f-a14"/>
                 <constraint firstItem="cWg-1g-UGR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5UQ-5d-sX6"/>
                 <constraint firstAttribute="bottom" secondItem="cWg-1g-UGR" secondAttribute="bottom" id="8cw-x3-C6X"/>
-                <constraint firstItem="F1Z-Ey-Sc8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Iu7-dN-t0e"/>
+                <constraint firstItem="kmU-7L-YnR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="O32-bh-TRJ"/>
                 <constraint firstItem="inS-iI-Oah" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OLp-zg-4yM"/>
+                <constraint firstAttribute="trailing" secondItem="kmU-7L-YnR" secondAttribute="trailing" id="Ufg-Mx-nKy"/>
                 <constraint firstAttribute="trailing" secondItem="cWg-1g-UGR" secondAttribute="trailing" id="WN1-Ed-rhY"/>
                 <constraint firstItem="inS-iI-Oah" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hwY-pD-nYL"/>
-                <constraint firstAttribute="trailing" secondItem="F1Z-Ey-Sc8" secondAttribute="trailing" id="jHg-IF-Qqp"/>
-                <constraint firstItem="F1Z-Ey-Sc8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="o6a-Nm-O8s"/>
                 <constraint firstAttribute="bottom" secondItem="inS-iI-Oah" secondAttribute="bottom" id="p45-ft-uJ0"/>
                 <constraint firstItem="cWg-1g-UGR" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.25" id="pm8-Tl-YtJ"/>
             </constraints>
@@ -115,5 +134,8 @@
     </objects>
     <resources>
         <image name="Cancel" width="21" height="21"/>
+        <image name="Customization" width="144" height="15"/>
+        <image name="Filters" width="57" height="14"/>
+        <image name="Save" width="39" height="14"/>
     </resources>
 </document>
