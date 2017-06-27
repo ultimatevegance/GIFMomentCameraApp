@@ -9,6 +9,7 @@
 #import "MTSCustomizationViewController.h"
 #import "MTSFilterCollectionViewCell.h"
 #import "MTSFilterDataModel.h"
+#import "MTSVideoOverlayView.h"
 static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
 
 @interface MTSCustomizationViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
@@ -45,6 +46,7 @@ static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
     _swipeableFilterView.contentMode = UIViewContentModeScaleAspectFill;
     _player.SCImageView = self.swipeableFilterView;
     _swipeableFilterView.filters = _filters;
+    
 }
 
 - (void)configAppearance {
@@ -55,6 +57,10 @@ static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
     [super viewWillAppear:animated];
     [_player setItemByAsset:_recordSession.assetRepresentingSegments];
     [_player play];
+//    MTSVideoOverlayView *overlayView = [[MTSVideoOverlayView alloc] initWithFrame:_swipeableFilterView.frame];
+//    overlayView.center = _swipeableFilterView.center;
+//    [_swipeableFilterView addSubview:overlayView];
+
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -109,11 +115,11 @@ static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
     _alert.avoidCustomImageTint = YES;
     _alert.animateAlertInFromTop = YES;
     _alert.animateAlertOutToBottom = YES;
-    [_alert showAlertInView:self withTitle:@"Quit Recording?" withSubtitle:@"All the data will not be saved" withCustomImage:[UIImage imageNamed:@"Logo_small"] withDoneButtonTitle:@"YES" andButtons:nil];
-    [_alert doneActionBlock:^{
-        [self dismissViewControllerAnimated:YES completion:nil];
-    }];
+    [_alert showAlertInView:self withTitle:@"Quit Customization?" withSubtitle:@"All the data will not be saved" withCustomImage:[UIImage imageNamed:@"Logo_small"] withDoneButtonTitle:@"YES" andButtons:nil];
     __weak typeof(self) weakSelf = self;
+    [_alert doneActionBlock:^{
+        [weakSelf dismissViewControllerAnimated:YES completion:nil];
+    }];
     [_alert addButton:@"Nope" withActionBlock:^{
         [weakSelf dismissAlert];
     }];

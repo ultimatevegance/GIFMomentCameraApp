@@ -26,6 +26,10 @@
 		8D8476751F010A9D00A18A09 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D84766B1F010A9D00A18A09 /* star.png */; };
 		8D8476761F010A9D00A18A09 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 8D84766D1F010A9D00A18A09 /* .gitkeep */; };
 		8D8476771F010A9D00A18A09 /* FCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D84766F1F010A9D00A18A09 /* FCAlertView.m */; };
+		8D84767E1F02049600A18A09 /* IQLabelView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8D8476791F02049600A18A09 /* IQLabelView.bundle */; };
+		8D84767F1F02049600A18A09 /* IQLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D84767B1F02049600A18A09 /* IQLabelView.m */; };
+		8D8476801F02049600A18A09 /* UITextField+DynamicFontSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D84767D1F02049600A18A09 /* UITextField+DynamicFontSize.m */; };
+		8D8476891F023A2B00A18A09 /* MTSVideoOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8476881F023A2B00A18A09 /* MTSVideoOverlayView.m */; };
 		8D87448A1EFB89A800025AE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8744891EFB89A800025AE4 /* main.m */; };
 		8D87448D1EFB89A800025AE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D87448C1EFB89A800025AE4 /* AppDelegate.m */; };
 		8D8744951EFB89A800025AE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D8744941EFB89A800025AE4 /* Assets.xcassets */; };
@@ -160,6 +164,13 @@
 		8D84766D1F010A9D00A18A09 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		8D84766E1F010A9D00A18A09 /* FCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCAlertView.h; sourceTree = "<group>"; };
 		8D84766F1F010A9D00A18A09 /* FCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCAlertView.m; sourceTree = "<group>"; };
+		8D8476791F02049600A18A09 /* IQLabelView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQLabelView.bundle; sourceTree = "<group>"; };
+		8D84767A1F02049600A18A09 /* IQLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQLabelView.h; sourceTree = "<group>"; };
+		8D84767B1F02049600A18A09 /* IQLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQLabelView.m; sourceTree = "<group>"; };
+		8D84767C1F02049600A18A09 /* UITextField+DynamicFontSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+DynamicFontSize.h"; sourceTree = "<group>"; };
+		8D84767D1F02049600A18A09 /* UITextField+DynamicFontSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+DynamicFontSize.m"; sourceTree = "<group>"; };
+		8D8476871F023A2B00A18A09 /* MTSVideoOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSVideoOverlayView.h; sourceTree = "<group>"; };
+		8D8476881F023A2B00A18A09 /* MTSVideoOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSVideoOverlayView.m; sourceTree = "<group>"; };
 		8D8744851EFB89A800025AE4 /* GIFMomentCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFMomentCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8744891EFB89A800025AE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D87448B1EFB89A800025AE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -388,6 +399,18 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		8D8476781F02049600A18A09 /* IQLabelView */ = {
+			isa = PBXGroup;
+			children = (
+				8D8476791F02049600A18A09 /* IQLabelView.bundle */,
+				8D84767A1F02049600A18A09 /* IQLabelView.h */,
+				8D84767B1F02049600A18A09 /* IQLabelView.m */,
+				8D84767C1F02049600A18A09 /* UITextField+DynamicFontSize.h */,
+				8D84767D1F02049600A18A09 /* UITextField+DynamicFontSize.m */,
+			);
+			path = IQLabelView;
+			sourceTree = "<group>";
+		};
 		8D87447C1EFB89A800025AE4 = {
 			isa = PBXGroup;
 			children = (
@@ -458,6 +481,7 @@
 		8D8744BB1EFB89EB00025AE4 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				8D8476781F02049600A18A09 /* IQLabelView */,
 				8D8476641F010A9D00A18A09 /* FCAlertView */,
 				8D0FC0B81EFBC10F004B634E /* BlurMenu */,
 				8D9F46B41EFB94BF0015A94B /* DGActivityIndicatorView */,
@@ -541,6 +565,8 @@
 				8D9E4F011EFCEF10006D9541 /* MTSFilterCollectionViewCell.h */,
 				8D9E4F021EFCEF10006D9541 /* MTSFilterCollectionViewCell.m */,
 				8D9E4F031EFCEF10006D9541 /* MTSFilterCollectionViewCell.xib */,
+				8D8476871F023A2B00A18A09 /* MTSVideoOverlayView.h */,
+				8D8476881F023A2B00A18A09 /* MTSVideoOverlayView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -836,6 +862,7 @@
 				8D9E4EEF1EFCDD94006D9541 /* Filter_Hue_Rose.cisf in Resources */,
 				8D9E4EE21EFCDD94006D9541 /* Filter_Chrome.cisf in Resources */,
 				8D8476721F010A9D00A18A09 /* checkmark-round.png in Resources */,
+				8D84767E1F02049600A18A09 /* IQLabelView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1017,13 +1044,16 @@
 				8D9F471E1EFB94C00015A94B /* DGActivityIndicatorTwoDotsAnimation.m in Sources */,
 				8D9F47041EFB94C00015A94B /* DGActivityIndicatorBallPulseAnimation.m in Sources */,
 				8D9F47101EFB94C00015A94B /* DGActivityIndicatorDoubleBounceAnimation.m in Sources */,
+				8D84767F1F02049600A18A09 /* IQLabelView.m in Sources */,
 				8D9F47161EFB94C00015A94B /* DGActivityIndicatorNineDotsAnimation.m in Sources */,
 				8D9F470A1EFB94C00015A94B /* DGActivityIndicatorBallScaleRippleMultipleAnimation.m in Sources */,
 				8D9F47081EFB94C00015A94B /* DGActivityIndicatorBallScaleMultipleAnimation.m in Sources */,
+				8D8476801F02049600A18A09 /* UITextField+DynamicFontSize.m in Sources */,
 				8D8744CF1EFB8AA600025AE4 /* NSGIF.m in Sources */,
 				8D9F471D1EFB94C00015A94B /* DGActivityIndicatorTripleRingsAnimation.m in Sources */,
 				8D9F471F1EFB94C00015A94B /* DGActivityIndicatorView.m in Sources */,
 				8D9F46B21EFB8FAD0015A94B /* MTSMainViewController.m in Sources */,
+				8D8476891F023A2B00A18A09 /* MTSVideoOverlayView.m in Sources */,
 				8D0FC0BD1EFBC136004B634E /* BlurMenu.m in Sources */,
 				8D9F471A1EFB94C00015A94B /* DGActivityIndicatorThreeDotsAnimation.m in Sources */,
 				8D9F46FE1EFB94C00015A94B /* DGActivityIndicatorBallBeatAnimation.m in Sources */,
