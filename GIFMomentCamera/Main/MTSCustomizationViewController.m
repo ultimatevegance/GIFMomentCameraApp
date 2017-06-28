@@ -7,13 +7,15 @@
 //
 
 #import "MTSCustomizationViewController.h"
-#import "MTSFilterCollectionViewCell.h"
 #import "MTSFilterDataModel.h"
 #import "MTSVideoOverlayView.h"
 #import "HMSegmentedControl.h"
-static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
+#import "MTSFilterSelectorViewCell.h"
+#import "MTSTextSelectorViewCell.h"
+static NSString *mFilterSelectorViewID = @"MTSFilterSelectorViewCell";
+static NSString *mTextSelectorViewID = @"MTSTextSelectorViewCell";
 
-@interface MTSCustomizationViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface MTSCustomizationViewController ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *cancel;
 @property (weak, nonatomic) IBOutlet UIButton *save;
 @property (weak, nonatomic) IBOutlet SCSwipeableFilterView *swipeableFilterView;
@@ -22,10 +24,10 @@ static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
 @property (weak, nonatomic) IBOutlet UIView *customizationOptionsView;
 @property (strong, nonatomic) SCPlayer *player;
 @property (weak, nonatomic) IBOutlet UIButton *customizationOptions;
-@property (weak, nonatomic) IBOutlet UICollectionView *FiltersCollectionView;
 @property (strong, nonatomic) NSArray *filtersData;
 @property (strong, nonatomic) NSMutableArray *filters;
 @property (strong, nonatomic) FCAlertView *alert;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
@@ -35,24 +37,34 @@ static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    _FiltersCollectionView.collectionViewLayout = layout;
-    _FiltersCollectionView.delegate = self;
-    _FiltersCollectionView.dataSource = self;
-    [_FiltersCollectionView registerNib:[UINib nibWithNibName:mFilterCellID bundle:nil] forCellWithReuseIdentifier:mFilterCellID];
     [self loadFiltersData];
+    //scroll view
+    MTSFilterSelectorViewCell *filterSelectorView = [[[NSBundle mainBundle] loadNibNamed:mFilterSelectorViewID owner:self options:nil] firstObject];
+    filterSelectorView.selectCellAtIndex = ^(NSInteger index) {
+        [_swipeableFilterView setSelectedFilter:_filters[index]];
+    };
+    filterSelectorView.frame = CGRectMake(0, 0, kScreenWidth,  CGRectGetHeight(_scrollView.frame));
+    MTSTextSelectorViewCell *textSelectorView = [[[NSBundle mainBundle] loadNibNamed:mTextSelectorViewID owner:self options:nil] firstObject];
+    textSelectorView.frame = CGRectMake(kScreenWidth, 0, kScreenWidth,  CGRectGetHeight(_scrollView.frame));
     
+    _scrollView.contentSize = CGSizeMake(kScreenWidth, CGRectGetHeight(_scrollView.frame));
+    [_scrollView addSubview:filterSelectorView];
+    [_scrollView addSubview:textSelectorView];
+    _scrollView.delegate = self;
+    _scrollView.pagingEnabled = YES;
+    _scrollView.directionalLockEnabled = YES;
+    //segmentCtrl
     NSArray *sectionImages = @[[UIImage imageNamed:@"Filters"],[UIImage imageNamed:@"Text"]];
-    
     HMSegmentedControl *segCtrl = [[HMSegmentedControl alloc] initWithSectionImages:sectionImages sectionSelectedImages:sectionImages];
     segCtrl.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown;
     segCtrl.selectionIndicatorColor = [UIColor colorWithGradientStyle:UIGradientStyleLeftToRight withFrame:CGRectMake(0, 400, 200, 5) andColors:@[MSOrganish,MSBarbiePink]];
     segCtrl.selectionIndicatorHeight = 3;
     segCtrl.backgroundColor = [UIColor clearColor];
+    [segCtrl addTarget:self action:@selector(segmentedControlChangedValue:) forControlEvents:UIControlEventValueChanged];
     segCtrl.frame = _segmentCtrl.frame;
     [_segmentCtrl addSubview:segCtrl];
-    
+
+    //player
     _player = [SCPlayer player];
     _player.loopEnabled = YES;
     _swipeableFilterView.contentMode = UIViewContentModeScaleAspectFill;
@@ -81,39 +93,9 @@ static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
     [_player pause];
 }
 
-#pragma mark - UICollectionViewDataSource
-//cell config
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    MTSFilterCollectionViewCell *cell = [_FiltersCollectionView dequeueReusableCellWithReuseIdentifier:mFilterCellID forIndexPath:indexPath];
-    cell.filterData = _filtersData[indexPath.row];
-    return  cell;
-}
-// items number for section
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return _filtersData.count;
-}
-// sections number
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
-}
-#pragma mark - UICollectionViewDelegateFlowLayout
-// cell margins
-- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
-{
-    return UIEdgeInsetsMake(5, 5, 5, 5);
-}
-// cell size
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSInteger cellWidth = kScreenWidth * 0.24;
-    NSInteger cellHeight = cellWidth * 1.2;
-    return CGSizeMake(cellWidth,cellHeight );
-}
-#pragma mark - UICollectionViewDelegate
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    [_swipeableFilterView setSelectedFilter:_filters[indexPath.row]];
-}
-- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
+- (void)segmentedControlChangedValue:(HMSegmentedControl *)segmentedControl {
+    NSLog(@"Selected index %ld (via UIControlEventValueChanged)", (long)segmentedControl.selectedSegmentIndex);
+    [_scrollView setContentOffset:CGPointMake(kScreenWidth * segmentedControl.selectedSegmentIndex,0 ) animated:YES];
 }
 
 #pragma mark - ACTIONS
@@ -195,8 +177,6 @@ static NSString *mFilterCellID = @"MTSFilterCollectionViewCell";
     return dic;
     
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

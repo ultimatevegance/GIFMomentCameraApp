@@ -32,6 +32,10 @@
 		8D8476891F023A2B00A18A09 /* MTSVideoOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8476881F023A2B00A18A09 /* MTSVideoOverlayView.m */; };
 		8D84768D1F024EB400A18A09 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D84768C1F024EB400A18A09 /* HMSegmentedControl.m */; };
 		8D84768F1F02577A00A18A09 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D84768E1F02577A00A18A09 /* QuartzCore.framework */; };
+		8D8476931F025A7F00A18A09 /* MTSFilterSelectorViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8476911F025A7F00A18A09 /* MTSFilterSelectorViewCell.m */; };
+		8D8476941F025A7F00A18A09 /* MTSFilterSelectorViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8476921F025A7F00A18A09 /* MTSFilterSelectorViewCell.xib */; };
+		8D8476981F025A9400A18A09 /* MTSTextSelectorViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8476961F025A9400A18A09 /* MTSTextSelectorViewCell.m */; };
+		8D8476991F025A9400A18A09 /* MTSTextSelectorViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8476971F025A9400A18A09 /* MTSTextSelectorViewCell.xib */; };
 		8D87448A1EFB89A800025AE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8744891EFB89A800025AE4 /* main.m */; };
 		8D87448D1EFB89A800025AE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D87448C1EFB89A800025AE4 /* AppDelegate.m */; };
 		8D8744951EFB89A800025AE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D8744941EFB89A800025AE4 /* Assets.xcassets */; };
@@ -176,6 +180,12 @@
 		8D84768B1F024EB400A18A09 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
 		8D84768C1F024EB400A18A09 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
 		8D84768E1F02577A00A18A09 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8D8476901F025A7F00A18A09 /* MTSFilterSelectorViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSFilterSelectorViewCell.h; sourceTree = "<group>"; };
+		8D8476911F025A7F00A18A09 /* MTSFilterSelectorViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSFilterSelectorViewCell.m; sourceTree = "<group>"; };
+		8D8476921F025A7F00A18A09 /* MTSFilterSelectorViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTSFilterSelectorViewCell.xib; sourceTree = "<group>"; };
+		8D8476951F025A9400A18A09 /* MTSTextSelectorViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSTextSelectorViewCell.h; sourceTree = "<group>"; };
+		8D8476961F025A9400A18A09 /* MTSTextSelectorViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSTextSelectorViewCell.m; sourceTree = "<group>"; };
+		8D8476971F025A9400A18A09 /* MTSTextSelectorViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTSTextSelectorViewCell.xib; sourceTree = "<group>"; };
 		8D8744851EFB89A800025AE4 /* GIFMomentCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFMomentCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8744891EFB89A800025AE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D87448B1EFB89A800025AE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -583,6 +593,12 @@
 				8D9E4F031EFCEF10006D9541 /* MTSFilterCollectionViewCell.xib */,
 				8D8476871F023A2B00A18A09 /* MTSVideoOverlayView.h */,
 				8D8476881F023A2B00A18A09 /* MTSVideoOverlayView.m */,
+				8D8476901F025A7F00A18A09 /* MTSFilterSelectorViewCell.h */,
+				8D8476911F025A7F00A18A09 /* MTSFilterSelectorViewCell.m */,
+				8D8476921F025A7F00A18A09 /* MTSFilterSelectorViewCell.xib */,
+				8D8476951F025A9400A18A09 /* MTSTextSelectorViewCell.h */,
+				8D8476961F025A9400A18A09 /* MTSTextSelectorViewCell.m */,
+				8D8476971F025A9400A18A09 /* MTSTextSelectorViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -859,7 +875,9 @@
 				8D9E4EF51EFCDD94006D9541 /* Filter_Parallelogram.cisf in Resources */,
 				8D9E4EE71EFCDD94006D9541 /* Filter_Droste.cisf in Resources */,
 				8D9E4EFC1EFCDD94006D9541 /* Filter_Vortex.cisf in Resources */,
+				8D8476941F025A7F00A18A09 /* MTSFilterSelectorViewCell.xib in Resources */,
 				8D9E4EFE1EFCDD94006D9541 /* Filter_ZoomBlur.cisf in Resources */,
+				8D8476991F025A9400A18A09 /* MTSTextSelectorViewCell.xib in Resources */,
 				8D8476711F010A9D00A18A09 /* alert-round.png in Resources */,
 				8D8744CB1EFB8A6E00025AE4 /* MTSCustomizationViewController.xib in Resources */,
 				8D8476731F010A9D00A18A09 /* close-round.png in Resources */,
@@ -1052,6 +1070,7 @@
 				8D9F47151EFB94C00015A94B /* DGActivityIndicatorLineScalePulseOutRapidAnimation.m in Sources */,
 				8D9F47121EFB94C00015A94B /* DGActivityIndicatorLineScaleAnimation.m in Sources */,
 				8D9F470F1EFB94C00015A94B /* DGActivityIndicatorCookieTerminatorAnimation.m in Sources */,
+				8D8476931F025A7F00A18A09 /* MTSFilterSelectorViewCell.m in Sources */,
 				8D9F47111EFB94C00015A94B /* DGActivityIndicatorFiveDotsAnimation.m in Sources */,
 				8D9F471B1EFB94C00015A94B /* DGActivityIndicatorTriangleSkewSpinAnimation.m in Sources */,
 				8D9F47141EFB94C00015A94B /* DGActivityIndicatorLineScalePulseOutAnimation.m in Sources */,
@@ -1071,6 +1090,7 @@
 				8D9F471F1EFB94C00015A94B /* DGActivityIndicatorView.m in Sources */,
 				8D9F46B21EFB8FAD0015A94B /* MTSMainViewController.m in Sources */,
 				8D8476891F023A2B00A18A09 /* MTSVideoOverlayView.m in Sources */,
+				8D8476981F025A9400A18A09 /* MTSTextSelectorViewCell.m in Sources */,
 				8D0FC0BD1EFBC136004B634E /* BlurMenu.m in Sources */,
 				8D9F471A1EFB94C00015A94B /* DGActivityIndicatorThreeDotsAnimation.m in Sources */,
 				8D9F46FE1EFB94C00015A94B /* DGActivityIndicatorBallBeatAnimation.m in Sources */,

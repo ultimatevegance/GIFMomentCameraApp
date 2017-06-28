@@ -12,10 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MTSCustomizationViewController">
             <connections>
-                <outlet property="FiltersCollectionView" destination="xhS-31-CSk" id="DbC-59-8bV"/>
                 <outlet property="cancel" destination="lV0-Xc-pap" id="bEk-aD-Bdb"/>
                 <outlet property="customizationOptionsView" destination="cWg-1g-UGR" id="axM-QQ-qf8"/>
                 <outlet property="save" destination="BsU-Pi-nmf" id="l8j-l2-dGU"/>
+                <outlet property="scrollView" destination="da3-ZG-kTH" id="ZMD-wg-dHb"/>
                 <outlet property="segmentCtrl" destination="yMB-CU-6ZE" id="Qmt-oG-1Dg"/>
                 <outlet property="swipeableFilterView" destination="inS-iI-Oah" id="mWE-RD-zzV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -32,16 +32,6 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWg-1g-UGR">
                     <rect key="frame" x="0.0" y="500" width="375" height="167"/>
                     <subviews>
-                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xhS-31-CSk">
-                            <rect key="frame" x="0.0" y="44" width="375" height="123"/>
-                            <color key="backgroundColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
-                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MEE-II-070">
-                                <size key="itemSize" width="50" height="50"/>
-                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                            </collectionViewFlowLayout>
-                        </collectionView>
                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NeD-fR-Laf">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Bcu-4c-XLh">
@@ -65,16 +55,20 @@
                             </constraints>
                             <blurEffect style="dark"/>
                         </visualEffectView>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da3-ZG-kTH">
+                            <rect key="frame" x="0.0" y="44" width="375" height="123"/>
+                            <color key="backgroundColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        </scrollView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="NeD-fR-Laf" firstAttribute="top" secondItem="cWg-1g-UGR" secondAttribute="top" id="3tE-lX-CXf"/>
-                        <constraint firstAttribute="trailing" secondItem="xhS-31-CSk" secondAttribute="trailing" id="5JO-yK-28X"/>
-                        <constraint firstItem="xhS-31-CSk" firstAttribute="leading" secondItem="cWg-1g-UGR" secondAttribute="leading" id="GpX-NX-shc"/>
+                        <constraint firstItem="da3-ZG-kTH" firstAttribute="leading" secondItem="cWg-1g-UGR" secondAttribute="leading" id="8Kx-01-dvp"/>
+                        <constraint firstAttribute="bottom" secondItem="da3-ZG-kTH" secondAttribute="bottom" id="Ebr-7d-i7c"/>
+                        <constraint firstAttribute="trailing" secondItem="da3-ZG-kTH" secondAttribute="trailing" id="PLg-0G-7bw"/>
                         <constraint firstAttribute="trailing" secondItem="NeD-fR-Laf" secondAttribute="trailing" id="YaP-M7-UfP"/>
+                        <constraint firstItem="da3-ZG-kTH" firstAttribute="top" secondItem="NeD-fR-Laf" secondAttribute="bottom" id="hSj-r0-1KC"/>
                         <constraint firstItem="NeD-fR-Laf" firstAttribute="leading" secondItem="cWg-1g-UGR" secondAttribute="leading" id="hjF-iz-XPJ"/>
-                        <constraint firstItem="xhS-31-CSk" firstAttribute="top" secondItem="NeD-fR-Laf" secondAttribute="bottom" id="iSh-uW-ejj"/>
-                        <constraint firstAttribute="bottom" secondItem="xhS-31-CSk" secondAttribute="bottom" id="tmB-Pa-N7D"/>
                     </constraints>
                 </view>
                 <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmU-7L-YnR">
