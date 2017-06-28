@@ -10,4 +10,7 @@
 
 @interface MTSTextSelectorViewCell : UICollectionViewCell
 
+@property (nonatomic, copy) void (^selectedColor)(UIColor *selectedColor);
+@property (nonatomic, copy) void (^selectedFontName)( NSString *mSelectedFontName);
+
 @end

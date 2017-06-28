@@ -36,6 +36,8 @@
 		8D8476941F025A7F00A18A09 /* MTSFilterSelectorViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8476921F025A7F00A18A09 /* MTSFilterSelectorViewCell.xib */; };
 		8D8476981F025A9400A18A09 /* MTSTextSelectorViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8476961F025A9400A18A09 /* MTSTextSelectorViewCell.m */; };
 		8D8476991F025A9400A18A09 /* MTSTextSelectorViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8476971F025A9400A18A09 /* MTSTextSelectorViewCell.xib */; };
+		8D8476A11F035D4400A18A09 /* MTSFontCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D84769F1F035D4300A18A09 /* MTSFontCollectionViewCell.m */; };
+		8D8476A21F035D4400A18A09 /* MTSFontCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8476A01F035D4300A18A09 /* MTSFontCollectionViewCell.xib */; };
 		8D87448A1EFB89A800025AE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8744891EFB89A800025AE4 /* main.m */; };
 		8D87448D1EFB89A800025AE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D87448C1EFB89A800025AE4 /* AppDelegate.m */; };
 		8D8744951EFB89A800025AE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D8744941EFB89A800025AE4 /* Assets.xcassets */; };
@@ -186,6 +188,9 @@
 		8D8476951F025A9400A18A09 /* MTSTextSelectorViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSTextSelectorViewCell.h; sourceTree = "<group>"; };
 		8D8476961F025A9400A18A09 /* MTSTextSelectorViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSTextSelectorViewCell.m; sourceTree = "<group>"; };
 		8D8476971F025A9400A18A09 /* MTSTextSelectorViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTSTextSelectorViewCell.xib; sourceTree = "<group>"; };
+		8D84769E1F035D4300A18A09 /* MTSFontCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSFontCollectionViewCell.h; sourceTree = "<group>"; };
+		8D84769F1F035D4300A18A09 /* MTSFontCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSFontCollectionViewCell.m; sourceTree = "<group>"; };
+		8D8476A01F035D4300A18A09 /* MTSFontCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTSFontCollectionViewCell.xib; sourceTree = "<group>"; };
 		8D8744851EFB89A800025AE4 /* GIFMomentCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFMomentCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8744891EFB89A800025AE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D87448B1EFB89A800025AE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -599,6 +604,9 @@
 				8D8476951F025A9400A18A09 /* MTSTextSelectorViewCell.h */,
 				8D8476961F025A9400A18A09 /* MTSTextSelectorViewCell.m */,
 				8D8476971F025A9400A18A09 /* MTSTextSelectorViewCell.xib */,
+				8D84769E1F035D4300A18A09 /* MTSFontCollectionViewCell.h */,
+				8D84769F1F035D4300A18A09 /* MTSFontCollectionViewCell.m */,
+				8D8476A01F035D4300A18A09 /* MTSFontCollectionViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -857,6 +865,7 @@
 				8D9E4EEA1EFCDD94006D9541 /* Filter_Ghost.cisf in Resources */,
 				8D84765F1EFD6DBE00A18A09 /* Filter_Normal.cisf in Resources */,
 				8D9E4EEC1EFCDD94006D9541 /* Filter_Gloom.cisf in Resources */,
+				8D8476A21F035D4400A18A09 /* MTSFontCollectionViewCell.xib in Resources */,
 				8D9E4EE31EFCDD94006D9541 /* Filter_Colorful.cisf in Resources */,
 				8D9E4EF71EFCDD94006D9541 /* Filter_Poster.cisf in Resources */,
 				8D8476751F010A9D00A18A09 /* star.png in Resources */,
@@ -1060,6 +1069,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D8476A11F035D4400A18A09 /* MTSFontCollectionViewCell.m in Sources */,
 				8D9F47071EFB94C00015A94B /* DGActivityIndicatorBallScaleAnimation.m in Sources */,
 				8D0FC0CA1EFCAD8C004B634E /* SCRecordSessionManager.m in Sources */,
 				8D9F47021EFB94C00015A94B /* DGActivityIndicatorBallGridBeatAnimation.m in Sources */,

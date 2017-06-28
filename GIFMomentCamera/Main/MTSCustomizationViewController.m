@@ -20,7 +20,8 @@ static NSString *mTextSelectorViewID = @"MTSTextSelectorViewCell";
 @property (weak, nonatomic) IBOutlet UIButton *save;
 @property (weak, nonatomic) IBOutlet SCSwipeableFilterView *swipeableFilterView;
 @property (weak, nonatomic) IBOutlet UIView *segmentCtrl;
-
+@property (strong, nonatomic)UIColor *mSelectedColor;
+@property (copy, nonatomic)NSString *mSelectedFontName;
 @property (weak, nonatomic) IBOutlet UIView *customizationOptionsView;
 @property (strong, nonatomic) SCPlayer *player;
 @property (weak, nonatomic) IBOutlet UIButton *customizationOptions;
@@ -46,7 +47,12 @@ static NSString *mTextSelectorViewID = @"MTSTextSelectorViewCell";
     filterSelectorView.frame = CGRectMake(0, 0, kScreenWidth,  CGRectGetHeight(_scrollView.frame));
     MTSTextSelectorViewCell *textSelectorView = [[[NSBundle mainBundle] loadNibNamed:mTextSelectorViewID owner:self options:nil] firstObject];
     textSelectorView.frame = CGRectMake(kScreenWidth, 0, kScreenWidth,  CGRectGetHeight(_scrollView.frame));
-    
+    textSelectorView.selectedColor = ^(UIColor *selectedColor) {
+        _mSelectedColor = selectedColor;
+    };
+    textSelectorView.selectedFontName = ^(NSString *mSelectedFontName) {
+        _mSelectedFontName = mSelectedFontName;
+    };
     _scrollView.contentSize = CGSizeMake(kScreenWidth, CGRectGetHeight(_scrollView.frame));
     [_scrollView addSubview:filterSelectorView];
     [_scrollView addSubview:textSelectorView];
