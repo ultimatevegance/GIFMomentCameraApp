@@ -29,10 +29,19 @@
         [_labelView setAttributedPlaceholder:[[NSAttributedString alloc] initWithString:NSLocalizedString(@"Add Text", nil) attributes:@{ NSForegroundColorAttributeName : [UIColor whiteColor] }]];
         [self addSubview:_waterMarkImageView];
         [self addSubview:_labelView];
+        [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(addNewLabel:)]];
     }
     
     return self;
 }
 
-
+- (void)addNewLabel:(UITapGestureRecognizer *)sender{
+    IQLabelView *label = [IQLabelView new];
+    CGPoint touchPoint = [sender locationInView: self];
+    label.fontName = @"Phosphate-Inline";
+    label.fontSize = 20;
+    label.frame = CGRectMake(0, 0, 100, 50);
+    label.center = touchPoint;
+    [self addSubview:label];
+}
 @end
