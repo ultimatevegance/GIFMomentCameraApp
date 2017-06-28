@@ -7,7 +7,7 @@
 //
 
 #import "MTSFontCollectionViewCell.h"
-
+#import "Common.h"
 @implementation MTSFontCollectionViewCell
 
 - (void)awakeFromNib {
@@ -15,6 +15,16 @@
     // Initialization code
     self.layer.masksToBounds = YES;
     self.layer.cornerRadius = 8;
+}
+
+- (void)setSelected:(BOOL)selected {
+    if (selected) {
+        self.layer.borderColor = MSBarbiePink.CGColor;
+        self.layer.borderWidth = 1;
+    } else {
+        self.layer.borderColor = MSBarbiePink.CGColor;
+        self.layer.borderWidth = 0;
+    }
 }
 
 @end

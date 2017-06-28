@@ -29,6 +29,7 @@ static NSString *mTextSelectorViewID = @"MTSTextSelectorViewCell";
 @property (strong, nonatomic) NSMutableArray *filters;
 @property (strong, nonatomic) FCAlertView *alert;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) MTSVideoOverlayView *overlayView;
 
 @end
 
@@ -49,9 +50,12 @@ static NSString *mTextSelectorViewID = @"MTSTextSelectorViewCell";
     textSelectorView.frame = CGRectMake(kScreenWidth, 0, kScreenWidth,  CGRectGetHeight(_scrollView.frame));
     textSelectorView.selectedColor = ^(UIColor *selectedColor) {
         _mSelectedColor = selectedColor;
+        _overlayView.labelView.textColor = _mSelectedColor;
+
     };
     textSelectorView.selectedFontName = ^(NSString *mSelectedFontName) {
         _mSelectedFontName = mSelectedFontName;
+        _overlayView.labelView.fontName = _mSelectedFontName;
     };
     _scrollView.contentSize = CGSizeMake(kScreenWidth, CGRectGetHeight(_scrollView.frame));
     [_scrollView addSubview:filterSelectorView];
@@ -63,7 +67,7 @@ static NSString *mTextSelectorViewID = @"MTSTextSelectorViewCell";
     NSArray *sectionImages = @[[UIImage imageNamed:@"Filters"],[UIImage imageNamed:@"Text"]];
     HMSegmentedControl *segCtrl = [[HMSegmentedControl alloc] initWithSectionImages:sectionImages sectionSelectedImages:sectionImages];
     segCtrl.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown;
-    segCtrl.selectionIndicatorColor = [UIColor colorWithGradientStyle:UIGradientStyleLeftToRight withFrame:CGRectMake(0, 400, 200, 5) andColors:@[MSOrganish,MSBarbiePink]];
+    segCtrl.selectionIndicatorColor = [UIColor colorWithGradientStyle:UIGradientStyleLeftToRight withFrame:CGRectMake(0, 400, 100, 5) andColors:@[MSOrganish,MSBarbiePink]];
     segCtrl.selectionIndicatorHeight = 3;
     segCtrl.backgroundColor = [UIColor clearColor];
     [segCtrl addTarget:self action:@selector(segmentedControlChangedValue:) forControlEvents:UIControlEventValueChanged];
@@ -87,9 +91,6 @@ static NSString *mTextSelectorViewID = @"MTSTextSelectorViewCell";
     [super viewWillAppear:animated];
     [_player setItemByAsset:_recordSession.assetRepresentingSegments];
     [_player play];
-//    MTSVideoOverlayView *overlayView = [[MTSVideoOverlayView alloc] initWithFrame:_swipeableFilterView.frame];
-//    overlayView.center = _swipeableFilterView.center;
-//    [_swipeableFilterView addSubview:overlayView];
 
 }
 
@@ -102,6 +103,13 @@ static NSString *mTextSelectorViewID = @"MTSTextSelectorViewCell";
 - (void)segmentedControlChangedValue:(HMSegmentedControl *)segmentedControl {
     NSLog(@"Selected index %ld (via UIControlEventValueChanged)", (long)segmentedControl.selectedSegmentIndex);
     [_scrollView setContentOffset:CGPointMake(kScreenWidth * segmentedControl.selectedSegmentIndex,0 ) animated:YES];
+    if (segmentedControl.selectedSegmentIndex == 1) {
+        if (!_overlayView) {
+            _overlayView = [[MTSVideoOverlayView alloc] initWithFrame:_swipeableFilterView.frame];
+            _overlayView.center = _swipeableFilterView.center;
+            [_swipeableFilterView addSubview:_overlayView];
+        }
+    }
 }
 
 #pragma mark - ACTIONS

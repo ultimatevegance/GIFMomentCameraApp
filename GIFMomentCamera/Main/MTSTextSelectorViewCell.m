@@ -16,6 +16,7 @@ static NSString *mFontCellID = @"MTSFontCollectionViewCell";
 @property (strong, nonatomic)UIColor *mSelectedColor;
 @property (strong, nonatomic)UIFont *mSelectedFont;
 @property (strong, nonatomic)NSMutableArray *fonts;
+@property (strong, nonatomic)NSMutableArray *colorButtons;
 @end
 
 @implementation MTSTextSelectorViewCell
@@ -26,15 +27,20 @@ static NSString *mFontCellID = @"MTSFontCollectionViewCell";
     // add color buttons
     CGFloat buttonMargin = 12;
     CGFloat colorButtonWidth = (kScreenWidth - buttonMargin * 9) / 8;
+    NSMutableArray *temp = [NSMutableArray array];
     for (int i = 0; i < 8; i ++) {
         UIButton *colorButton = [[UIButton alloc] init];
         [colorButton setImage:[UIImage imageNamed:[NSString stringWithFormat:@"C%d",i + 1]] forState:UIControlStateNormal];
+        [colorButton setImage:[UIImage imageNamed:[NSString stringWithFormat:@"S%d",i + 1]] forState:UIControlStateSelected];
         colorButton.frame = CGRectMake(buttonMargin * (i + 1) + colorButtonWidth * i, 8, colorButtonWidth, colorButtonWidth);
+        colorButton.imageView.contentMode = UIViewContentModeCenter;
         colorButton.tag = 1000 + i;
         [colorButton addTarget:self action:@selector(colorButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
         [_colorSelecterView addSubview:colorButton];
+        [temp addObject:colorButton];
         
     }
+    _colorButtons = [NSMutableArray arrayWithArray:temp];
     //config fontSelectorCollectionView
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
@@ -51,9 +57,23 @@ static NSString *mFontCellID = @"MTSFontCollectionViewCell";
     _fonts = [NSMutableArray arrayWithArray:[UIFont familyNames]];
 }
 
-- (void)colorButtonSelected:(UIButton *)button {
-    NSLog(@"%ld", (long)button.tag);
-    NSInteger index = button.tag - 1000;
+- (void)colorButtonSelected:(UIButton *)sender {
+    NSLog(@"%ld", (long)sender.tag);
+    NSInteger index = sender.tag - 1000;
+    for (UIButton* button in _colorButtons)
+    {
+        if (button != sender)
+        {
+            [button setSelected: FALSE];
+        }
+    }
+    
+    if (sender.selected == TRUE) {
+        [sender setSelected:FALSE];
+    }
+    else if (sender.selected == FALSE) {
+        [sender setSelected:TRUE];
+    }
     switch (index) {
         case 0:
         _mSelectedColor = [UIColor colorWithHexString:@"34d6fd"];
